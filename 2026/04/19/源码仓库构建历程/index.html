@@ -17,15 +17,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
   <meta name="theme-color" content="#f9fafb">
-  <title>Scala 面向对象编程 - 妄司逸的个人博客</title>
+  <title>源码仓库和GitHub action任务设置 - 妄司逸的个人博客</title>
 
   
-    <meta name="description" content="Scala 面向对象编程 类、继承、方法与构造器汇报人：第四组   目录 Scala 与面向对象基础 类与构造器机制 继承与多态体系 进阶与总结   一、Scala 与面向对象基础1. Scala 简介 多范式语言：融合面向对象（OOP）与函数式编程（FP） 运行平台：基于 JVM 语言起源：由 Martin Odersky 于 2003 年在 EPFL 创建 特点： 静态强类型 与 Java 无">
+    <meta name="description" content="博客自动化部署配置记录一、整体思路我的博客源码在本地，GitHub 上有一个已经部署好的 Pages 仓库（flechazoyang-google.github.io）。我希望实现：本地写文章 → Git 提交 → GitHub Actions 自动构建 → 网站自动更新。 二、前期准备2.1 创建源码仓库在 GitHub 上新建了一个私有仓库 hexo-blog-source，用来存放 Hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Scala 面向对象编程">
-<meta property="og:url" content="http://example.com/2026/04/19/scala%E7%BC%96%E7%A8%8B/">
+<meta property="og:title" content="源码仓库和GitHub action任务设置">
+<meta property="og:url" content="http://example.com/2026/04/19/%E6%BA%90%E7%A0%81%E4%BB%93%E5%BA%93%E6%9E%84%E5%BB%BA%E5%8E%86%E7%A8%8B/">
 <meta property="og:site_name" content="妄司逸的个人博客">
-<meta property="og:description" content="Scala 面向对象编程 类、继承、方法与构造器汇报人：第四组   目录 Scala 与面向对象基础 类与构造器机制 继承与多态体系 进阶与总结   一、Scala 与面向对象基础1. Scala 简介 多范式语言：融合面向对象（OOP）与函数式编程（FP） 运行平台：基于 JVM 语言起源：由 Martin Odersky 于 2003 年在 EPFL 创建 特点： 静态强类型 与 Java 无">
+<meta property="og:description" content="博客自动化部署配置记录一、整体思路我的博客源码在本地，GitHub 上有一个已经部署好的 Pages 仓库（flechazoyang-google.github.io）。我希望实现：本地写文章 → Git 提交 → GitHub Actions 自动构建 → 网站自动更新。 二、前期准备2.1 创建源码仓库在 GitHub 上新建了一个私有仓库 hexo-blog-source，用来存放 Hexo">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2026-04-19T13:50:18.886Z">
 <meta property="article:modified_time" content="2026-04-19T13:50:18.886Z">
@@ -46,7 +46,7 @@
 
   
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"妄司逸","sameAs":[]},"dateCreated":"2026-04-19T13:50:18+00:00","dateModified":"2026-04-19T13:50:18+00:00","datePublished":"2026-04-19T13:50:18+00:00","description":"","headline":"Scala 面向对象编程","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2026/04/19/scala%E7%BC%96%E7%A8%8B/"},"publisher":{"@type":"Organization","name":"妄司逸","sameAs":[]},"url":"http://example.com/2026/04/19/scala%E7%BC%96%E7%A8%8B/","image":[]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"妄司逸","sameAs":[]},"dateCreated":"2026-04-19T13:50:18+00:00","dateModified":"2026-04-19T13:50:18+00:00","datePublished":"2026-04-19T13:50:18+00:00","description":"","headline":"源码仓库和GitHub action任务设置","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2026/04/19/%E6%BA%90%E7%A0%81%E4%BB%93%E5%BA%93%E6%9E%84%E5%BB%BA%E5%8E%86%E7%A8%8B/"},"publisher":{"@type":"Organization","name":"妄司逸","sameAs":[]},"url":"http://example.com/2026/04/19/%E6%BA%90%E7%A0%81%E4%BB%93%E5%BA%93%E6%9E%84%E5%BB%BA%E5%8E%86%E7%A8%8B/","image":[]}</script>
   
 </head>
 <body><div id="l_cover"></div><div class="l_body content" id="start" layout="post" type="tech" ><aside class="l_left"><div class="sidebg"></div><div class="leftbar-container">
@@ -81,212 +81,57 @@
     <div class="bottom only-title">
       
       <div class="text-area">
-        <h1 class="text title"><span>Scala 面向对象编程</span></h1>
+        <h1 class="text title"><span>源码仓库和GitHub action任务设置</span></h1>
         
       </div>
     </div>
     
   </div>
-  </div><article class="md-text content"><h1 id="Scala-面向对象编程"><a href="#Scala-面向对象编程" class="headerlink" title="Scala 面向对象编程"></a>Scala 面向对象编程</h1><blockquote>
-<p>类、继承、方法与构造器<br>汇报人：第四组</p>
+  </div><article class="md-text content"><h1 id="博客自动化部署配置记录"><a href="#博客自动化部署配置记录" class="headerlink" title="博客自动化部署配置记录"></a>博客自动化部署配置记录</h1><h2 id="一、整体思路"><a href="#一、整体思路" class="headerlink" title="一、整体思路"></a>一、整体思路</h2><p>我的博客源码在本地，GitHub 上有一个已经部署好的 Pages 仓库（<code>flechazoyang-google.github.io</code>）。我希望实现：本地写文章 → Git 提交 → GitHub Actions 自动构建 → 网站自动更新。</p>
+<h2 id="二、前期准备"><a href="#二、前期准备" class="headerlink" title="二、前期准备"></a>二、前期准备</h2><h3 id="2-1-创建源码仓库"><a href="#2-1-创建源码仓库" class="headerlink" title="2.1 创建源码仓库"></a>2.1 创建源码仓库</h3><p>在 GitHub 上新建了一个私有仓库 <code>hexo-blog-source</code>，用来存放 Hexo 源码（主题、文章等）。</p>
+<h3 id="2-2-生成-Personal-Access-Token"><a href="#2-2-生成-Personal-Access-Token" class="headerlink" title="2.2 生成 Personal Access Token"></a>2.2 生成 Personal Access Token</h3><p>在 GitHub Settings → Developer settings → Fine-grained tokens 中创建了一个 token：</p>
+<ul>
+<li>Token name: <code>blog-deploy-token</code></li>
+<li>Repository access: Only select repositories，选中 Pages 仓库 <code>flechazoyang-google.github.io</code></li>
+<li>Permissions: Contents 设置为 Read and write</li>
+</ul>
+<blockquote>
+<p>⚠️ <strong>注意</strong>：token 生成后只显示一次，一定要立即复制保存。</p>
 </blockquote>
-<hr>
-<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ol>
-<li>Scala 与面向对象基础</li>
-<li>类与构造器机制</li>
-<li>继承与多态体系</li>
-<li>进阶与总结</li>
-</ol>
-<hr>
-<h2 id="一、Scala-与面向对象基础"><a href="#一、Scala-与面向对象基础" class="headerlink" title="一、Scala 与面向对象基础"></a>一、Scala 与面向对象基础</h2><h3 id="1-Scala-简介"><a href="#1-Scala-简介" class="headerlink" title="1. Scala 简介"></a>1. Scala 简介</h3><ul>
-<li><strong>多范式语言</strong>：融合面向对象（OOP）与函数式编程（FP）</li>
-<li><strong>运行平台</strong>：基于 JVM</li>
-<li><strong>语言起源</strong>：由 Martin Odersky 于 2003 年在 EPFL 创建</li>
-<li><strong>特点</strong>：<ul>
-<li>静态强类型</li>
-<li>与 Java 无缝互操作</li>
-<li>支持模式匹配、隐式转换等</li>
-</ul>
+<h2 id="三、遇到的问题及解决"><a href="#三、遇到的问题及解决" class="headerlink" title="三、遇到的问题及解决"></a>三、遇到的问题及解决</h2><h3 id="问题-1：Git-用户名搞混了"><a href="#问题-1：Git-用户名搞混了" class="headerlink" title="问题 1：Git 用户名搞混了"></a>问题 1：Git 用户名搞混了</h3><p>我的 GitHub 用户名是 <code>flechazoyang-google</code>，但仓库地址里写成了 <code>flechazoyang-github</code>，导致推送失败。</p>
+<p><strong>解决方法</strong>：用 <code>git remote set-url</code> 修正远程地址。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote set-url origin https://github.com/flechazoyang-google/hexo-blog-source.git</span><br></pre></td></tr></table></figure>
+
+<h3 id="问题-2：本地分支是-master，远程需要-main"><a href="#问题-2：本地分支是-master，远程需要-main" class="headerlink" title="问题 2：本地分支是 master，远程需要 main"></a>问题 2：本地分支是 master，远程需要 main</h3><p>本地默认分支是 <code>master</code>，但 GitHub 新建仓库默认分支是 <code>main</code>，直接 <code>git push</code> 报错。</p>
+<p><strong>解决方法</strong>：推送时指定本地分支和远程分支的对应关系。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push -u origin master:main</span><br></pre></td></tr></table></figure>
+
+<h3 id="问题-3：网络连接失败"><a href="#问题-3：网络连接失败" class="headerlink" title="问题 3：网络连接失败"></a>问题 3：网络连接失败</h3><p>第一次推送时报错：<code>fatal: unable to access ... Recv failure: Connection was reset</code></p>
+<p><strong>解决方法</strong>：改用 SSH 方式推送。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote set-url origin git@github.com:flechazoyang-google/hexo-blog-source.git</span><br><span class="line">git push -u origin master:main</span><br></pre></td></tr></table></figure>
+
+<h3 id="问题-4：第一次-Actions-运行较慢"><a href="#问题-4：第一次-Actions-运行较慢" class="headerlink" title="问题 4：第一次 Actions 运行较慢"></a>问题 4：第一次 Actions 运行较慢</h3><p>第一次部署需要下载环境、安装依赖，花了大概 5 分钟。后续有了缓存就会快很多。</p>
+<h2 id="四、最终配置"><a href="#四、最终配置" class="headerlink" title="四、最终配置"></a>四、最终配置</h2><h3 id="4-1-添加-Secret"><a href="#4-1-添加-Secret" class="headerlink" title="4.1 添加 Secret"></a>4.1 添加 Secret</h3><p>在源码仓库 <code>hexo-blog-source</code> → Settings → Secrets → Actions 中添加：</p>
+<ul>
+<li><p>Name: <code>PAGES_TOKEN</code></p>
 </li>
-<li><strong>应用场景</strong>：<ul>
-<li>Apache Spark 核心语言</li>
-<li>被 LinkedIn、Twitter 等公司使用</li>
-</ul>
+<li><p>Value: 之前生成的 token</p>
 </li>
 </ul>
-<hr>
-<h3 id="2-面向对象核心思想"><a href="#2-面向对象核心思想" class="headerlink" title="2. 面向对象核心思想"></a>2. 面向对象核心思想</h3><h4 id="（1）封装"><a href="#（1）封装" class="headerlink" title="（1）封装"></a>（1）封装</h4><ul>
-<li>将数据与行为绑定</li>
-<li>隐藏内部实现，对外提供接口</li>
-<li>提升安全性与可维护性</li>
-</ul>
-<h4 id="（2）继承"><a href="#（2）继承" class="headerlink" title="（2）继承"></a>（2）继承</h4><ul>
-<li>基于已有类扩展新类</li>
-<li>提高代码复用率</li>
-<li>构建层次结构</li>
-</ul>
-<h4 id="（3）多态"><a href="#（3）多态" class="headerlink" title="（3）多态"></a>（3）多态</h4><ul>
-<li>同一接口，不同实现</li>
-<li>支持动态绑定</li>
-<li>提高系统扩展性</li>
-</ul>
-<hr>
-<h2 id="二、类与构造器机制"><a href="#二、类与构造器机制" class="headerlink" title="二、类与构造器机制"></a>二、类与构造器机制</h2><h3 id="1-类的定义与对象创建"><a href="#1-类的定义与对象创建" class="headerlink" title="1. 类的定义与对象创建"></a>1. 类的定义与对象创建</h3><p>class Person(name: String) {<br>  val age: Int &#x3D; 25<br>  def greet(): String &#x3D; “Hello”<br>}  </p>
-<p>val p &#x3D; new Person(“Alice”)</p>
-<ul>
-<li><code>class</code>：定义类</li>
-<li><code>new</code>：创建对象（可省略）</li>
-<li>成员：<ul>
-<li>属性：<code>val / var</code></li>
-<li>方法：<code>def</code></li>
-</ul>
+<h3 id="4-2-创建工作流文件"><a href="#4-2-创建工作流文件" class="headerlink" title="4.2 创建工作流文件"></a>4.2 创建工作流文件</h3><p>在源码仓库中创建 <code>.github/workflows/deploy.yml</code>：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">Build</span> <span class="string">and</span> <span class="string">Deploy</span> <span class="string">Hexo</span></span><br><span class="line"><span class="attr">on:</span></span><br><span class="line"> <span class="attr">push:</span></span><br><span class="line"> <span class="attr">branches:</span></span><br><span class="line"> <span class="bullet">-</span> <span class="string">main</span></span><br><span class="line"> <span class="attr">workflow_dispatch:</span></span><br><span class="line"><span class="attr">permissions:</span></span><br><span class="line"> <span class="attr">contents:</span> <span class="string">read</span></span><br><span class="line"><span class="attr">concurrency:</span></span><br><span class="line"> <span class="attr">group:</span> <span class="string">hexo-deploy</span></span><br><span class="line"> <span class="attr">cancel-in-progress:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line"> <span class="attr">build-and-deploy:</span></span><br><span class="line"> <span class="attr">runs-on:</span> <span class="string">ubuntu-latest</span></span><br><span class="line"> <span class="attr">steps:</span></span><br><span class="line"> <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Checkout</span> <span class="string">source</span> <span class="string">code</span></span><br><span class="line"> <span class="attr">uses:</span> <span class="string">actions/checkout@v4</span></span><br><span class="line"> <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Setup</span> <span class="string">Node.js</span></span><br><span class="line"> <span class="attr">uses:</span> <span class="string">actions/setup-node@v4</span></span><br><span class="line"> <span class="attr">with:</span></span><br><span class="line"> <span class="attr">node-version:</span> <span class="string">&#x27;20&#x27;</span></span><br><span class="line"> <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Install</span> <span class="string">dependencies</span></span><br><span class="line"> <span class="attr">run:</span> <span class="string">npm</span> <span class="string">ci</span></span><br><span class="line"> <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Generate</span> <span class="string">static</span> <span class="string">files</span></span><br><span class="line"> <span class="attr">run:</span> <span class="string">|</span></span><br><span class="line"><span class="string"> npx hexo clean</span></span><br><span class="line"><span class="string"> npx hexo generate</span></span><br><span class="line"><span class="string"> - name: Deploy to Pages repository</span></span><br><span class="line"><span class="string"> uses: peaceiris/actions-gh-pages@v4</span></span><br><span class="line"><span class="string"> with:</span></span><br><span class="line"><span class="string"> personal_token: $&#123;&#123; secrets.PAGES_TOKEN &#125;&#125;</span></span><br><span class="line"><span class="string"> external_repository: flechazoyang-google/flechazoyang-google.github.io</span></span><br><span class="line"><span class="string"> publish_branch: main</span></span><br><span class="line"><span class="string"> publish_dir: ./public</span></span><br><span class="line"><span class="string"> commit_message: &quot;deploy: $&#123;&#123; github.sha &#125;&#125;&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="五、最终效果"><a href="#五、最终效果" class="headerlink" title="五、最终效果"></a>五、最终效果</h2><ul>
+<li><p>✅ 本地 <code>git push</code> 后，GitHub Actions 自动运行</p>
+</li>
+<li><p>✅ 构建成功后，静态文件自动推送到 Pages 仓库</p>
+</li>
+<li><p>✅ 网站自动更新，约 1-2 分钟生效</p>
 </li>
 </ul>
-<hr>
-<h3 id="2-主构造器（Primary-Constructor）"><a href="#2-主构造器（Primary-Constructor）" class="headerlink" title="2. 主构造器（Primary Constructor）"></a>2. 主构造器（Primary Constructor）</h3><p>class Person(name: String, age: Int)</p>
-<p>特点：</p>
-<ul>
-<li>与类定义合并</li>
-<li>参数直接成为构造逻辑</li>
-<li>修饰符决定可见性：<ul>
-<li><code>val</code>：只读属性</li>
-<li><code>var</code>：可变属性</li>
-<li>无修饰符：仅构造参数</li>
-</ul>
-</li>
-</ul>
-<p>优势：</p>
-<ul>
-<li>代码简洁</li>
-<li>减少样板代码</li>
-<li>更安全（推荐不可变）</li>
-</ul>
-<hr>
-<h3 id="3-辅助构造器（Auxiliary-Constructor）"><a href="#3-辅助构造器（Auxiliary-Constructor）" class="headerlink" title="3. 辅助构造器（Auxiliary Constructor）"></a>3. 辅助构造器（Auxiliary Constructor）</h3><p>class Person(name: String) {<br>  def this() &#x3D; {<br>    this(“default”)<br>  }<br>}</p>
-<p>规则：</p>
-<ul>
-<li>必须命名为 <code>this</code></li>
-<li>第一行必须调用主构造器</li>
-<li>不能定义字段</li>
-<li>用于提供多种初始化方式</li>
-</ul>
-<hr>
-<h2 id="三、继承与多态体系"><a href="#三、继承与多态体系" class="headerlink" title="三、继承与多态体系"></a>三、继承与多态体系</h2><h3 id="1-继承（extends）"><a href="#1-继承（extends）" class="headerlink" title="1. 继承（extends）"></a>1. 继承（extends）</h3><p>class Worker(name: String, age: Int, val company: String)<br>  extends Person(name, age)</p>
-<p>特点：</p>
-<ul>
-<li>单继承</li>
-<li>默认继承 <code>AnyRef</code></li>
-<li>支持多层继承</li>
-</ul>
-<hr>
-<h3 id="2-方法重写（override）"><a href="#2-方法重写（override）" class="headerlink" title="2. 方法重写（override）"></a>2. 方法重写（override）</h3><p>override def toString: String &#x3D; “Worker”</p>
-<p>规则：</p>
-<ul>
-<li>必须使用 <code>override</code></li>
-<li>方法签名必须一致</li>
-<li>常见重写方法：<ul>
-<li><code>toString</code></li>
-<li><code>equals</code></li>
-<li><code>hashCode</code></li>
-</ul>
-</li>
-</ul>
-<hr>
-<h3 id="3-构造器与继承"><a href="#3-构造器与继承" class="headerlink" title="3. 构造器与继承"></a>3. 构造器与继承</h3><ul>
-<li>子类必须调用父类构造器</li>
-<li>使用 <code>super</code></li>
-<li>执行顺序：<ol>
-<li>父类初始化</li>
-<li>子类初始化</li>
-</ol>
-</li>
-</ul>
-<hr>
-<h3 id="4-多态与类型检查"><a href="#4-多态与类型检查" class="headerlink" title="4. 多态与类型检查"></a>4. 多态与类型检查</h3><p>val p: Person &#x3D; new Worker(…)</p>
-<ul>
-<li>父类引用指向子类对象</li>
-<li>动态绑定方法</li>
-</ul>
-<p>类型转换：</p>
-<p>if (obj.isInstanceOf[Worker]) {<br>  val w &#x3D; obj.asInstanceOf[Worker]<br>}</p>
-<hr>
-<h3 id="5-抽象类与特质"><a href="#5-抽象类与特质" class="headerlink" title="5. 抽象类与特质"></a>5. 抽象类与特质</h3><table>
-<thead>
-<tr>
-<th>对比</th>
-<th>抽象类</th>
-<th>特质</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>定义</td>
-<td>abstract class</td>
-<td>trait</td>
-</tr>
-<tr>
-<td>继承</td>
-<td>单继承</td>
-<td>多继承（with）</td>
-</tr>
-<tr>
-<td>构造参数</td>
-<td>支持</td>
-<td>不支持</td>
-</tr>
-<tr>
-<td>用途</td>
-<td>类型层次</td>
-<td>行为复用</td>
-</tr>
-</tbody></table>
-<hr>
-<h2 id="四、进阶与总结"><a href="#四、进阶与总结" class="headerlink" title="四、进阶与总结"></a>四、进阶与总结</h2><h3 id="1-单例对象（object）"><a href="#1-单例对象（object）" class="headerlink" title="1. 单例对象（object）"></a>1. 单例对象（object）</h3><p>object Utils {<br>  def hello() &#x3D; “Hi”<br>}</p>
-<p>特点：</p>
-<ul>
-<li>全局唯一实例</li>
-<li>无需 <code>new</code></li>
-<li>线程安全</li>
-</ul>
-<p>应用：</p>
-<ul>
-<li>工具类</li>
-<li>常量管理</li>
-<li>程序入口</li>
-</ul>
-<hr>
-<h3 id="2-封装与访问控制"><a href="#2-封装与访问控制" class="headerlink" title="2. 封装与访问控制"></a>2. 封装与访问控制</h3><ul>
-<li><code>private</code>：限制访问范围</li>
-<li><strong>伴生对象（Companion Object）</strong>：<ul>
-<li>与类同名</li>
-<li>可互访私有成员</li>
-</ul>
-</li>
-</ul>
-<p>示例：</p>
-<p>class Person private (name: String)  </p>
-<p>object Person {<br>  def apply(name: String) &#x3D; new Person(name)<br>}</p>
-<hr>
-<h3 id="3-常见误区"><a href="#3-常见误区" class="headerlink" title="3. 常见误区"></a>3. 常见误区</h3><ul>
-<li>忘记 <code>override</code></li>
-<li>构造器调用错误</li>
-<li>特质初始化顺序问题</li>
-<li>滥用 <code>var</code></li>
-</ul>
-<hr>
-<h3 id="4-最佳实践"><a href="#4-最佳实践" class="headerlink" title="4. 最佳实践"></a>4. 最佳实践</h3><ul>
-<li>始终使用 <code>override</code></li>
-<li>合理设计构造器</li>
-<li>使用 <code>lazy val</code></li>
-<li>优先使用不可变变量（<code>val</code>）</li>
-</ul>
-<hr>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>Scala 面向对象编程的核心优势：</p>
-<ul>
-<li>简洁优雅的语法</li>
-<li>强类型安全</li>
-<li>OOP + FP 融合</li>
-<li>高扩展性与可维护性</li>
-</ul>
+<h2 id="六、日常发文流程"><a href="#六、日常发文流程" class="headerlink" title="六、日常发文流程"></a>六、日常发文流程</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1. 写文章（在 source/_posts/ 目录下）</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. 提交并推送</span></span><br><span class="line"></span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;发布新文章：xxx&quot;</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+
+<p>后续 <code>git push</code> 已经可以直接使用，不需要每次都写 <code>master:main</code>。</p>
 </article>
 <div class="article-footer">
     <section id="license">
@@ -298,7 +143,7 @@
 
 </div>
 
-<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">Newer</div><a href="/2026/04/19/actions%E6%B5%8B%E8%AF%95/">GitHub Action测试</a></div><div class="item" id="next"><div class="note">Older</div><a href="/2026/04/19/%E6%9E%84%E5%BB%BA%E5%8E%86%E7%A8%8B/">博客搭建历程</a></div></section></div>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">Newer</div><a href="/2026/04/19/%E6%9E%84%E5%BB%BA%E5%8E%86%E7%A8%8B/">博客搭建历程</a></div><div class="item" id="next"></div></section></div>
 
 
 
@@ -311,7 +156,7 @@
 
 
 
-<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">On This Page</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Scala-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B"><span class="toc-text">Scala 面向对象编程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95"><span class="toc-text">目录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81Scala-%E4%B8%8E%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%9F%BA%E7%A1%80"><span class="toc-text">一、Scala 与面向对象基础</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Scala-%E7%AE%80%E4%BB%8B"><span class="toc-text">1. Scala 简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%A0%B8%E5%BF%83%E6%80%9D%E6%83%B3"><span class="toc-text">2. 面向对象核心思想</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%881%EF%BC%89%E5%B0%81%E8%A3%85"><span class="toc-text">（1）封装</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%882%EF%BC%89%E7%BB%A7%E6%89%BF"><span class="toc-text">（2）继承</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%883%EF%BC%89%E5%A4%9A%E6%80%81"><span class="toc-text">（3）多态</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E7%B1%BB%E4%B8%8E%E6%9E%84%E9%80%A0%E5%99%A8%E6%9C%BA%E5%88%B6"><span class="toc-text">二、类与构造器机制</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E7%B1%BB%E7%9A%84%E5%AE%9A%E4%B9%89%E4%B8%8E%E5%AF%B9%E8%B1%A1%E5%88%9B%E5%BB%BA"><span class="toc-text">1. 类的定义与对象创建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E4%B8%BB%E6%9E%84%E9%80%A0%E5%99%A8%EF%BC%88Primary-Constructor%EF%BC%89"><span class="toc-text">2. 主构造器（Primary Constructor）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E8%BE%85%E5%8A%A9%E6%9E%84%E9%80%A0%E5%99%A8%EF%BC%88Auxiliary-Constructor%EF%BC%89"><span class="toc-text">3. 辅助构造器（Auxiliary Constructor）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E7%BB%A7%E6%89%BF%E4%B8%8E%E5%A4%9A%E6%80%81%E4%BD%93%E7%B3%BB"><span class="toc-text">三、继承与多态体系</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E7%BB%A7%E6%89%BF%EF%BC%88extends%EF%BC%89"><span class="toc-text">1. 继承（extends）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%96%B9%E6%B3%95%E9%87%8D%E5%86%99%EF%BC%88override%EF%BC%89"><span class="toc-text">2. 方法重写（override）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%9E%84%E9%80%A0%E5%99%A8%E4%B8%8E%E7%BB%A7%E6%89%BF"><span class="toc-text">3. 构造器与继承</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%A4%9A%E6%80%81%E4%B8%8E%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5"><span class="toc-text">4. 多态与类型检查</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E6%8A%BD%E8%B1%A1%E7%B1%BB%E4%B8%8E%E7%89%B9%E8%B4%A8"><span class="toc-text">5. 抽象类与特质</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E8%BF%9B%E9%98%B6%E4%B8%8E%E6%80%BB%E7%BB%93"><span class="toc-text">四、进阶与总结</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%8D%95%E4%BE%8B%E5%AF%B9%E8%B1%A1%EF%BC%88object%EF%BC%89"><span class="toc-text">1. 单例对象（object）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%B0%81%E8%A3%85%E4%B8%8E%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6"><span class="toc-text">2. 封装与访问控制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%B8%B8%E8%A7%81%E8%AF%AF%E5%8C%BA"><span class="toc-text">3. 常见误区</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5"><span class="toc-text">4. 最佳实践</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-text">总结</span></a></li></ol></li></ol></div><div class="widget-footer"><a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><path stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/><path d="M7 3.338A9.95 9.95 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5"/></g></svg><span>Scroll to Top</span></a></div></widget>
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">On This Page</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8D%9A%E5%AE%A2%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95"><span class="toc-text">博客自动化部署配置记录</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E6%95%B4%E4%BD%93%E6%80%9D%E8%B7%AF"><span class="toc-text">一、整体思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%89%8D%E6%9C%9F%E5%87%86%E5%A4%87"><span class="toc-text">二、前期准备</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E5%88%9B%E5%BB%BA%E6%BA%90%E7%A0%81%E4%BB%93%E5%BA%93"><span class="toc-text">2.1 创建源码仓库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E7%94%9F%E6%88%90-Personal-Access-Token"><span class="toc-text">2.2 生成 Personal Access Token</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3"><span class="toc-text">三、遇到的问题及解决</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%97%AE%E9%A2%98-1%EF%BC%9AGit-%E7%94%A8%E6%88%B7%E5%90%8D%E6%90%9E%E6%B7%B7%E4%BA%86"><span class="toc-text">问题 1：Git 用户名搞混了</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%97%AE%E9%A2%98-2%EF%BC%9A%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF%E6%98%AF-master%EF%BC%8C%E8%BF%9C%E7%A8%8B%E9%9C%80%E8%A6%81-main"><span class="toc-text">问题 2：本地分支是 master，远程需要 main</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%97%AE%E9%A2%98-3%EF%BC%9A%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5%E5%A4%B1%E8%B4%A5"><span class="toc-text">问题 3：网络连接失败</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%97%AE%E9%A2%98-4%EF%BC%9A%E7%AC%AC%E4%B8%80%E6%AC%A1-Actions-%E8%BF%90%E8%A1%8C%E8%BE%83%E6%85%A2"><span class="toc-text">问题 4：第一次 Actions 运行较慢</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E6%9C%80%E7%BB%88%E9%85%8D%E7%BD%AE"><span class="toc-text">四、最终配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-%E6%B7%BB%E5%8A%A0-Secret"><span class="toc-text">4.1 添加 Secret</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-%E5%88%9B%E5%BB%BA%E5%B7%A5%E4%BD%9C%E6%B5%81%E6%96%87%E4%BB%B6"><span class="toc-text">4.2 创建工作流文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E6%9C%80%E7%BB%88%E6%95%88%E6%9E%9C"><span class="toc-text">五、最终效果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E6%97%A5%E5%B8%B8%E5%8F%91%E6%96%87%E6%B5%81%E7%A8%8B"><span class="toc-text">六、日常发文流程</span></a></li></ol></li></ol></div><div class="widget-footer"><a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><path stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/><path d="M7 3.338A9.95 9.95 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5"/></g></svg><span>Scroll to Top</span></a></div></widget>
 </div></aside><div class='float-panel'>
   <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
@@ -325,7 +170,7 @@
 
 <script type="text/javascript">
   window.canonical = {"closeEnable":true,"closeText":"关闭提示","originalHost":null,"officialHosts":["localhost"],"encoded":""};
-  window.canonical["param"] = {"permalink":"http://example.com/2026/04/19/scala%E7%BC%96%E7%A8%8B/","checklink":"/js/plugins/video.js"};
+  window.canonical["param"] = {"permalink":"http://example.com/2026/04/19/%E6%BA%90%E7%A0%81%E4%BB%93%E5%BA%93%E6%9E%84%E5%BB%BA%E5%8E%86%E7%A8%8B/","checklink":"/js/plugins/video.js"};
   // Fix: Ensure page is at the correct top position on data load
   if (history.scrollRestoration) {
     history.scrollRestoration = 'auto';
