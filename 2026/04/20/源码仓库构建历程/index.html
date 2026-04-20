@@ -27,8 +27,8 @@
 <meta property="og:site_name" content="妄司逸的个人博客">
 <meta property="og:description" content="博客自动化部署配置记录一、整体思路我的博客源码在本地，GitHub 上有一个已经部署好的 Pages 仓库（flechazoyang-google.github.io）。我希望实现：本地写文章 → Git 提交 → GitHub Actions 自动构建 → 网站自动更新。 二、前期准备2.1 创建源码仓库在 GitHub 上新建了一个私有仓库 hexo-blog-source，用来存放 Hexo">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-04-20T04:57:17.769Z">
-<meta property="article:modified_time" content="2026-04-20T04:57:17.769Z">
+<meta property="article:published_time" content="2026-04-20T15:03:01.807Z">
+<meta property="article:modified_time" content="2026-04-20T15:03:01.807Z">
 <meta property="article:author" content="妄司逸">
 <meta property="article:tag" content="博客历程">
 <meta name="twitter:card" content="summary">
@@ -47,7 +47,7 @@
 
   
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"妄司逸","sameAs":[]},"dateCreated":"2026-04-20T04:57:17+00:00","dateModified":"2026-04-20T04:57:17+00:00","datePublished":"2026-04-20T04:57:17+00:00","description":"","headline":"源码仓库和GitHub action任务设置","mainEntityOfPage":{"@type":"WebPage","@id":"https://flechazoyang-google-github-io.pages.dev/2026/04/20/%E6%BA%90%E7%A0%81%E4%BB%93%E5%BA%93%E6%9E%84%E5%BB%BA%E5%8E%86%E7%A8%8B/"},"publisher":{"@type":"Organization","name":"妄司逸","sameAs":[]},"url":"https://flechazoyang-google-github-io.pages.dev/2026/04/20/%E6%BA%90%E7%A0%81%E4%BB%93%E5%BA%93%E6%9E%84%E5%BB%BA%E5%8E%86%E7%A8%8B/","keywords":"博客历程","image":[]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"妄司逸","sameAs":[]},"dateCreated":"2026-04-20T15:03:01+00:00","dateModified":"2026-04-20T15:03:01+00:00","datePublished":"2026-04-20T15:03:01+00:00","description":"","headline":"源码仓库和GitHub action任务设置","mainEntityOfPage":{"@type":"WebPage","@id":"https://flechazoyang-google-github-io.pages.dev/2026/04/20/%E6%BA%90%E7%A0%81%E4%BB%93%E5%BA%93%E6%9E%84%E5%BB%BA%E5%8E%86%E7%A8%8B/"},"publisher":{"@type":"Organization","name":"妄司逸","sameAs":[]},"url":"https://flechazoyang-google-github-io.pages.dev/2026/04/20/%E6%BA%90%E7%A0%81%E4%BB%93%E5%BA%93%E6%9E%84%E5%BB%BA%E5%8E%86%E7%A8%8B/","keywords":"博客历程","image":[]}</script>
   
 </head>
 <body><div id="l_cover"></div><div class="l_body content" id="start" layout="post" type="tech" ><aside class="l_left"><div class="sidebg"></div><div class="leftbar-container">
@@ -77,7 +77,7 @@
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
 <span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E5%8D%9A%E5%AE%A2%E5%8E%86%E7%A8%8B/">博客历程</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2026-04-20T04:57:17.769Z">2026-04-20</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2026-04-20T04:57:17.769Z">2026-04-20</time></span></div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2026-04-20T15:03:01.807Z">2026-04-20</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2026-04-20T15:03:01.807Z">2026-04-20</time></span></div></div></div>
     
     <div class="bottom only-title">
       
