@@ -17,24 +17,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
   <meta name="theme-color" content="#f9fafb">
-  <title>GitHub Action测试 - 妄司逸的个人博客</title>
+  <title>源码仓库和GitHub action任务设置 - 妄司逸的个人博客</title>
 
   
-    <meta property="og:type" content="article">
-<meta property="og:title" content="GitHub Action测试">
-<meta property="og:url" content="https://flechazoyang-google-github-io.pages.dev/2026/04/20/actions%E6%B5%8B%E8%AF%95/">
+    <meta name="description" content="博客自动化部署配置记录一、整体思路我的博客源码在本地，GitHub 上有一个已经部署好的 Pages 仓库（flechazoyang-google.github.io）。我希望实现：本地写文章 → Git 提交 → GitHub Actions 自动构建 → 网站自动更新。 二、前期准备2.1 创建源码仓库在 GitHub 上新建了一个私有仓库 hexo-blog-source，用来存放 Hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="源码仓库和GitHub action任务设置">
+<meta property="og:url" content="https://flechazoyang-google-github-io.pages.dev/2026/04/21/%E6%BA%90%E7%A0%81%E4%BB%93%E5%BA%93%E6%9E%84%E5%BB%BA%E5%8E%86%E7%A8%8B/">
 <meta property="og:site_name" content="妄司逸的个人博客">
+<meta property="og:description" content="博客自动化部署配置记录一、整体思路我的博客源码在本地，GitHub 上有一个已经部署好的 Pages 仓库（flechazoyang-google.github.io）。我希望实现：本地写文章 → Git 提交 → GitHub Actions 自动构建 → 网站自动更新。 二、前期准备2.1 创建源码仓库在 GitHub 上新建了一个私有仓库 hexo-blog-source，用来存放 Hexo">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-04-20T15:06:26.121Z">
-<meta property="article:modified_time" content="2026-04-20T15:06:26.121Z">
+<meta property="article:published_time" content="2026-04-21T15:56:06.520Z">
+<meta property="article:modified_time" content="2026-04-21T15:56:06.520Z">
 <meta property="article:author" content="妄司逸">
-<meta property="article:tag" content="GitHub Action测试">
-<meta property="article:tag" content="博客测试">
+<meta property="article:tag" content="博客历程">
 <meta name="twitter:card" content="summary">
   
   
   
-  <meta name="keywords" content="博客测试,GitHub Action测试">
+  <meta name="keywords" content="博客历程">
 
   <!-- feed -->
   
@@ -46,7 +47,7 @@
 
   
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"妄司逸","sameAs":[]},"dateCreated":"2026-04-20T15:06:26+00:00","dateModified":"2026-04-20T15:06:26+00:00","datePublished":"2026-04-20T15:06:26+00:00","description":"","headline":"GitHub Action测试","mainEntityOfPage":{"@type":"WebPage","@id":"https://flechazoyang-google-github-io.pages.dev/2026/04/20/actions%E6%B5%8B%E8%AF%95/"},"publisher":{"@type":"Organization","name":"妄司逸","sameAs":[]},"url":"https://flechazoyang-google-github-io.pages.dev/2026/04/20/actions%E6%B5%8B%E8%AF%95/","keywords":"博客测试, GitHub Action测试","image":[]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"妄司逸","sameAs":[]},"dateCreated":"2026-04-21T15:56:06+00:00","dateModified":"2026-04-21T15:56:06+00:00","datePublished":"2026-04-21T15:56:06+00:00","description":"","headline":"源码仓库和GitHub action任务设置","mainEntityOfPage":{"@type":"WebPage","@id":"https://flechazoyang-google-github-io.pages.dev/2026/04/21/%E6%BA%90%E7%A0%81%E4%BB%93%E5%BA%93%E6%9E%84%E5%BB%BA%E5%8E%86%E7%A8%8B/"},"publisher":{"@type":"Organization","name":"妄司逸","sameAs":[]},"url":"https://flechazoyang-google-github-io.pages.dev/2026/04/21/%E6%BA%90%E7%A0%81%E4%BB%93%E5%BA%93%E6%9E%84%E5%BB%BA%E5%8E%86%E7%A8%8B/","keywords":"博客历程","image":[]}</script>
   
 </head>
 <body><div id="l_cover"></div><div class="l_body content" id="start" layout="post" type="tech" ><aside class="l_left"><div class="sidebg"></div><div class="leftbar-container">
@@ -63,7 +64,7 @@
 
 
 
-<widget class="widget-wrapper recent post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2026/04/20/actions%E6%B5%8B%E8%AF%95/"><span class="title">GitHub Action测试</span></a><a class="item title" href="/2026/04/20/hello-world/"><span class="title">Hello World</span></a><a class="item title" href="/2026/04/20/%E6%BA%90%E7%A0%81%E4%BB%93%E5%BA%93%E6%9E%84%E5%BB%BA%E5%8E%86%E7%A8%8B/"><span class="title">源码仓库和GitHub action任务设置</span></a><a class="item title" href="/2026/04/20/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"><span class="title">排序</span></a><a class="item title" href="/2026/04/18/%E6%9E%84%E5%BB%BA%E5%8E%86%E7%A8%8B/"><span class="title">博客搭建历程</span></a><a class="item title" href="/2026/04/20/scala%E7%BC%96%E7%A8%8B/"><span class="title">Scala 面向对象编程</span></a></div></widget>
+<widget class="widget-wrapper recent post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2026/04/21/hello-world/"><span class="title">Hello World</span></a><a class="item title" href="/2026/04/21/%E6%BA%90%E7%A0%81%E4%BB%93%E5%BA%93%E6%9E%84%E5%BB%BA%E5%8E%86%E7%A8%8B/"><span class="title">源码仓库和GitHub action任务设置</span></a><a class="item title" href="/2026/04/21/actions%E6%B5%8B%E8%AF%95/"><span class="title">GitHub Action测试</span></a><a class="item title" href="/2026/04/21/%E6%AF%8F%E5%A4%A9%E5%AD%A6%E4%B9%A0%E4%B8%80%E4%B8%AAmarkdown%E8%AF%AD%E6%B3%95/"><span class="title">每天学习一个markdown语法</span></a><a class="item title" href="/2026/04/20/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"><span class="title">排序</span></a><a class="item title" href="/2026/04/18/%E6%9E%84%E5%BB%BA%E5%8E%86%E7%A8%8B/"><span class="title">博客搭建历程</span></a><a class="item title" href="/2026/04/21/scala%E7%BC%96%E7%A8%8B/"><span class="title">Scala 面向对象编程</span></a></div></widget>
 </div>
 
 </div></aside><div class="l_main" id="main">
@@ -75,19 +76,64 @@
 <div class="article banner top">
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
-<span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E5%8D%9A%E5%AE%A2%E6%B5%8B%E8%AF%95/">博客测试</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2026-04-20T15:06:26.121Z">2026-04-20</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2026-04-20T15:06:26.121Z">2026-04-20</time></span></div></div></div>
+<span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E5%8D%9A%E5%AE%A2%E5%8E%86%E7%A8%8B/">博客历程</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2026-04-21T15:56:06.520Z">2026-04-21</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2026-04-21T15:56:06.520Z">2026-04-21</time></span></div></div></div>
     
     <div class="bottom only-title">
       
       <div class="text-area">
-        <h1 class="text title"><span>GitHub Action测试</span></h1>
+        <h1 class="text title"><span>源码仓库和GitHub action任务设置</span></h1>
         
       </div>
     </div>
     
   </div>
-  </div><article class="md-text content"></article>
+  </div><article class="md-text content"><h1 id="博客自动化部署配置记录"><a href="#博客自动化部署配置记录" class="headerlink" title="博客自动化部署配置记录"></a>博客自动化部署配置记录</h1><h2 id="一、整体思路"><a href="#一、整体思路" class="headerlink" title="一、整体思路"></a>一、整体思路</h2><p>我的博客源码在本地，GitHub 上有一个已经部署好的 Pages 仓库（<code>flechazoyang-google.github.io</code>）。我希望实现：本地写文章 → Git 提交 → GitHub Actions 自动构建 → 网站自动更新。</p>
+<h2 id="二、前期准备"><a href="#二、前期准备" class="headerlink" title="二、前期准备"></a>二、前期准备</h2><h3 id="2-1-创建源码仓库"><a href="#2-1-创建源码仓库" class="headerlink" title="2.1 创建源码仓库"></a>2.1 创建源码仓库</h3><p>在 GitHub 上新建了一个私有仓库 <code>hexo-blog-source</code>，用来存放 Hexo 源码（主题、文章等）。</p>
+<h3 id="2-2-生成-Personal-Access-Token"><a href="#2-2-生成-Personal-Access-Token" class="headerlink" title="2.2 生成 Personal Access Token"></a>2.2 生成 Personal Access Token</h3><p>在 GitHub Settings → Developer settings → Fine-grained tokens 中创建了一个 token：</p>
+<ul>
+<li>Token name: <code>blog-deploy-token</code></li>
+<li>Repository access: Only select repositories，选中 Pages 仓库 <code>flechazoyang-google.github.io</code></li>
+<li>Permissions: Contents 设置为 Read and write</li>
+</ul>
+<blockquote>
+<p>⚠️ <strong>注意</strong>：token 生成后只显示一次，一定要立即复制保存。</p>
+</blockquote>
+<h2 id="三、遇到的问题及解决"><a href="#三、遇到的问题及解决" class="headerlink" title="三、遇到的问题及解决"></a>三、遇到的问题及解决</h2><h3 id="问题-1：Git-用户名搞混了"><a href="#问题-1：Git-用户名搞混了" class="headerlink" title="问题 1：Git 用户名搞混了"></a>问题 1：Git 用户名搞混了</h3><p>我的 GitHub 用户名是 <code>flechazoyang-google</code>，但仓库地址里写成了 <code>flechazoyang-github</code>，导致推送失败。</p>
+<p><strong>解决方法</strong>：用 <code>git remote set-url</code> 修正远程地址。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote set-url origin https://github.com/flechazoyang-google/hexo-blog-source.git</span><br></pre></td></tr></table></figure>
+
+<h3 id="问题-2：本地分支是-master，远程需要-main"><a href="#问题-2：本地分支是-master，远程需要-main" class="headerlink" title="问题 2：本地分支是 master，远程需要 main"></a>问题 2：本地分支是 master，远程需要 main</h3><p>本地默认分支是 <code>master</code>，但 GitHub 新建仓库默认分支是 <code>main</code>，直接 <code>git push</code> 报错。</p>
+<p><strong>解决方法</strong>：推送时指定本地分支和远程分支的对应关系。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push -u origin master:main</span><br></pre></td></tr></table></figure>
+
+<h3 id="问题-3：网络连接失败"><a href="#问题-3：网络连接失败" class="headerlink" title="问题 3：网络连接失败"></a>问题 3：网络连接失败</h3><p>第一次推送时报错：<code>fatal: unable to access ... Recv failure: Connection was reset</code></p>
+<p><strong>解决方法</strong>：改用 SSH 方式推送。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote set-url origin git@github.com:flechazoyang-google/hexo-blog-source.git</span><br><span class="line">git push -u origin master:main</span><br></pre></td></tr></table></figure>
+
+<h3 id="问题-4：第一次-Actions-运行较慢"><a href="#问题-4：第一次-Actions-运行较慢" class="headerlink" title="问题 4：第一次 Actions 运行较慢"></a>问题 4：第一次 Actions 运行较慢</h3><p>第一次部署需要下载环境、安装依赖，花了大概 5 分钟。后续有了缓存就会快很多。</p>
+<h2 id="四、最终配置"><a href="#四、最终配置" class="headerlink" title="四、最终配置"></a>四、最终配置</h2><h3 id="4-1-添加-Secret"><a href="#4-1-添加-Secret" class="headerlink" title="4.1 添加 Secret"></a>4.1 添加 Secret</h3><p>在源码仓库 <code>hexo-blog-source</code> → Settings → Secrets → Actions 中添加：</p>
+<ul>
+<li><p>Name: <code>PAGES_TOKEN</code></p>
+</li>
+<li><p>Value: 之前生成的 token</p>
+</li>
+</ul>
+<h3 id="4-2-创建工作流文件"><a href="#4-2-创建工作流文件" class="headerlink" title="4.2 创建工作流文件"></a>4.2 创建工作流文件</h3><p>在源码仓库中创建 <code>.github/workflows/deploy.yml</code>：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">Build</span> <span class="string">and</span> <span class="string">Deploy</span> <span class="string">Hexo</span></span><br><span class="line"><span class="attr">on:</span></span><br><span class="line"> <span class="attr">push:</span></span><br><span class="line"> <span class="attr">branches:</span></span><br><span class="line"> <span class="bullet">-</span> <span class="string">main</span></span><br><span class="line"> <span class="attr">workflow_dispatch:</span></span><br><span class="line"><span class="attr">permissions:</span></span><br><span class="line"> <span class="attr">contents:</span> <span class="string">read</span></span><br><span class="line"><span class="attr">concurrency:</span></span><br><span class="line"> <span class="attr">group:</span> <span class="string">hexo-deploy</span></span><br><span class="line"> <span class="attr">cancel-in-progress:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line"> <span class="attr">build-and-deploy:</span></span><br><span class="line"> <span class="attr">runs-on:</span> <span class="string">ubuntu-latest</span></span><br><span class="line"> <span class="attr">steps:</span></span><br><span class="line"> <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Checkout</span> <span class="string">source</span> <span class="string">code</span></span><br><span class="line"> <span class="attr">uses:</span> <span class="string">actions/checkout@v4</span></span><br><span class="line"> <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Setup</span> <span class="string">Node.js</span></span><br><span class="line"> <span class="attr">uses:</span> <span class="string">actions/setup-node@v4</span></span><br><span class="line"> <span class="attr">with:</span></span><br><span class="line"> <span class="attr">node-version:</span> <span class="string">&#x27;20&#x27;</span></span><br><span class="line"> <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Install</span> <span class="string">dependencies</span></span><br><span class="line"> <span class="attr">run:</span> <span class="string">npm</span> <span class="string">ci</span></span><br><span class="line"> <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Generate</span> <span class="string">static</span> <span class="string">files</span></span><br><span class="line"> <span class="attr">run:</span> <span class="string">|</span></span><br><span class="line"><span class="string"> npx hexo clean</span></span><br><span class="line"><span class="string"> npx hexo generate</span></span><br><span class="line"><span class="string"> - name: Deploy to Pages repository</span></span><br><span class="line"><span class="string"> uses: peaceiris/actions-gh-pages@v4</span></span><br><span class="line"><span class="string"> with:</span></span><br><span class="line"><span class="string"> personal_token: $&#123;&#123; secrets.PAGES_TOKEN &#125;&#125;</span></span><br><span class="line"><span class="string"> external_repository: flechazoyang-google/flechazoyang-google.github.io</span></span><br><span class="line"><span class="string"> publish_branch: main</span></span><br><span class="line"><span class="string"> publish_dir: ./public</span></span><br><span class="line"><span class="string"> commit_message: &quot;deploy: $&#123;&#123; github.sha &#125;&#125;&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="五、最终效果"><a href="#五、最终效果" class="headerlink" title="五、最终效果"></a>五、最终效果</h2><ul>
+<li><p>✅ 本地 <code>git push</code> 后，GitHub Actions 自动运行</p>
+</li>
+<li><p>✅ 构建成功后，静态文件自动推送到 Pages 仓库</p>
+</li>
+<li><p>✅ 网站自动更新，约 1-2 分钟生效</p>
+</li>
+</ul>
+<h2 id="六、日常发文流程"><a href="#六、日常发文流程" class="headerlink" title="六、日常发文流程"></a>六、日常发文流程</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1. 写文章（在 source/_posts/ 目录下）</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. 提交并推送</span></span><br><span class="line"></span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;发布新文章：xxx&quot;</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+
+<p>后续 <code>git push</code> 已经可以直接使用，不需要每次都写 <code>master:main</code>。</p>
+</article>
 <div class="article-footer">
     <section id="license">
       <div class="header"><span>许可协议</span></div>
@@ -98,7 +144,7 @@
 
 </div>
 
-<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2026/04/20/hello-world/">Hello World</a></div></section></div>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/2026/04/21/scala%E7%BC%96%E7%A8%8B/">Scala 面向对象编程</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2026/04/21/actions%E6%B5%8B%E8%AF%95/">GitHub Action测试</a></div></section></div>
 
 
 
@@ -107,7 +153,12 @@
 
 <footer class="page-footer footnote"><hr><div class="text"><p>本站由 <a href="/">妄司逸</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.33.1">Stellar 1.33.1</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
 </div></footer>
-<div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right"></aside><div class='float-panel'>
+<div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right"><div class="widgets">
+
+
+
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8D%9A%E5%AE%A2%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95"><span class="toc-text">博客自动化部署配置记录</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E6%95%B4%E4%BD%93%E6%80%9D%E8%B7%AF"><span class="toc-text">一、整体思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%89%8D%E6%9C%9F%E5%87%86%E5%A4%87"><span class="toc-text">二、前期准备</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E5%88%9B%E5%BB%BA%E6%BA%90%E7%A0%81%E4%BB%93%E5%BA%93"><span class="toc-text">2.1 创建源码仓库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E7%94%9F%E6%88%90-Personal-Access-Token"><span class="toc-text">2.2 生成 Personal Access Token</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3"><span class="toc-text">三、遇到的问题及解决</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%97%AE%E9%A2%98-1%EF%BC%9AGit-%E7%94%A8%E6%88%B7%E5%90%8D%E6%90%9E%E6%B7%B7%E4%BA%86"><span class="toc-text">问题 1：Git 用户名搞混了</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%97%AE%E9%A2%98-2%EF%BC%9A%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF%E6%98%AF-master%EF%BC%8C%E8%BF%9C%E7%A8%8B%E9%9C%80%E8%A6%81-main"><span class="toc-text">问题 2：本地分支是 master，远程需要 main</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%97%AE%E9%A2%98-3%EF%BC%9A%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5%E5%A4%B1%E8%B4%A5"><span class="toc-text">问题 3：网络连接失败</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%97%AE%E9%A2%98-4%EF%BC%9A%E7%AC%AC%E4%B8%80%E6%AC%A1-Actions-%E8%BF%90%E8%A1%8C%E8%BE%83%E6%85%A2"><span class="toc-text">问题 4：第一次 Actions 运行较慢</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E6%9C%80%E7%BB%88%E9%85%8D%E7%BD%AE"><span class="toc-text">四、最终配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-%E6%B7%BB%E5%8A%A0-Secret"><span class="toc-text">4.1 添加 Secret</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-%E5%88%9B%E5%BB%BA%E5%B7%A5%E4%BD%9C%E6%B5%81%E6%96%87%E4%BB%B6"><span class="toc-text">4.2 创建工作流文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E6%9C%80%E7%BB%88%E6%95%88%E6%9E%9C"><span class="toc-text">五、最终效果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E6%97%A5%E5%B8%B8%E5%8F%91%E6%96%87%E6%B5%81%E7%A8%8B"><span class="toc-text">六、日常发文流程</span></a></li></ol></li></ol></div><div class="widget-footer"><a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><path stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/><path d="M7 3.338A9.95 9.95 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5"/></g></svg><span>回到顶部</span></a></div></widget>
+</div></aside><div class='float-panel'>
   <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
   </button>
@@ -120,7 +171,7 @@
 
 <script type="text/javascript">
   window.canonical = {"closeEnable":true,"closeText":"关闭提示","originalHost":null,"officialHosts":["localhost"],"encoded":""};
-  window.canonical["param"] = {"permalink":"https://flechazoyang-google-github-io.pages.dev/2026/04/20/actions%E6%B5%8B%E8%AF%95/","checklink":"/js/plugins/video.js"};
+  window.canonical["param"] = {"permalink":"https://flechazoyang-google-github-io.pages.dev/2026/04/21/%E6%BA%90%E7%A0%81%E4%BB%93%E5%BA%93%E6%9E%84%E5%BB%BA%E5%8E%86%E7%A8%8B/","checklink":"/js/plugins/video.js"};
   // Fix: Ensure page is at the correct top position on data load
   if (history.scrollRestoration) {
     history.scrollRestoration = 'auto';
