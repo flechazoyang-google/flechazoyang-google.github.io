@@ -1,1 +1,901 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.33.1" theme-name="Stellar" theme-version="1.33.1"><link rel="canonical" href="https://blog.flechazo.icu/changelog/"><meta name="generator" content="Hexo 8.1.1"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="preconnect" href="https://gcore.jsdelivr.net" crossorigin><link rel="preconnect" href="https://gcore.jsdelivr.net" crossorigin><link rel="preconnect" href="https://unpkg.com" crossorigin><meta name="renderer" content="webkit"><meta name="force-rendering" content="webkit"><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><meta name="HandheldFriendly" content="True"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000"><meta name="theme-color" content="#f9fafb"><title>更新日志 - 妄司逸</title><meta name="description" content="博客所有更新记录，自动从 Git 提交历史生成"><meta property="og:type" content="website"><meta property="og:title" content="更新日志"><meta property="og:url" content="https://blog.flechazo.icu/changelog/"><meta property="og:site_name" content="妄司逸"><meta property="og:description" content="博客所有更新记录，自动从 Git 提交历史生成"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/banner/books.jpg"><meta property="og:image" content="https://blog.flechazo.icu/images/avatar.jpg"><meta property="article:published_time" content="2026-05-06T16:00:00.000Z"><meta property="article:modified_time" content="2026-05-11T05:51:17.553Z"><meta property="article:author" content="妄司逸"><meta property="article:tag" content="个人博客, 学习, 技术, 个人成长"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/banner/books.jpg"><meta name="keywords" content="个人博客, 学习, 技术, 个人成长"><link rel="alternate" href="/atom.xml" title="妄司逸" type="application/atom+xml"><link rel="stylesheet" href="/css/main.css?v=1.33.1"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Website","@id":"https://blog.flechazo.icu/changelog/","author":{"@type":"Person","name":"妄司逸","sameAs":["https://github.com/flechazo-google"]},"name":"更新日志","description":"博客所有更新记录，自动从 Git 提交历史生成","url":"https://blog.flechazo.icu/changelog/","keywords":"个人博客, 学习, 技术, 个人成长"}</script></head><body><div id="l_cover"></div><div class="l_body content" id="start" layout="page" type="tech"><aside class="l_left"><div class="sidebg"></div><div class="leftbar-container"><header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp)"></div><img no-lazy class="avatar" src="/images/avatar.jpg" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main">妄司逸</div><div class="sub normal cap">学无止尽</div><div class="sub hover cap" style="opacity:0">拥抱未来</div></a></div></header><div class="nav-area"><nav class="menu dis-select"><a class="nav-item" title="博客" href="/" style="color:#1bcdfc"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M5.879 2.879C5 3.757 5 5.172 5 8v8c0 2.828 0 4.243.879 5.121C6.757 22 8.172 22 11 22h2c2.828 0 4.243 0 5.121-.879C19 20.243 19 18.828 19 16V8c0-2.828 0-4.243-.879-5.121C17.243 2 15.828 2 13 2h-2c-2.828 0-4.243 0-5.121.879M8.25 17a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75M9 12.25a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5zM8.25 9A.75.75 0 0 1 9 8.25h6a.75.75 0 0 1 0 1.5H9A.75.75 0 0 1 8.25 9" clip-rule="evenodd"/><path fill="currentColor" d="M5.235 4.058C5 4.941 5 6.177 5 8v8c0 1.823 0 3.058.235 3.942L5 19.924c-.975-.096-1.631-.313-2.121-.803C2 18.243 2 16.828 2 14v-4c0-2.829 0-4.243.879-5.121c.49-.49 1.146-.707 2.121-.803zm13.53 15.884C19 19.058 19 17.822 19 16V8c0-1.823 0-3.059-.235-3.942l.235.018c.975.096 1.631.313 2.121.803C22 5.757 22 7.17 22 9.999v4c0 2.83 0 4.243-.879 5.122c-.49.49-1.146.707-2.121.803z" opacity=".5"/></svg></a><a class="nav-item" title="文档" href="/wiki/" style="color:#f44336"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M14.25 4.48v3.057c0 .111 0 .27.02.406a.936.936 0 0 0 .445.683a.96.96 0 0 0 .783.072c.13-.04.272-.108.378-.159L17 8.005l1.124.534c.106.05.248.119.378.16a.958.958 0 0 0 .783-.073a.936.936 0 0 0 .444-.683c.021-.136.021-.295.021-.406V3.031c.113-.005.224-.01.332-.013C21.154 2.98 22 3.86 22 4.933v11.21c0 1.112-.906 2.01-2.015 2.08c-.97.06-2.108.179-2.985.41c-1.082.286-1.99 1.068-3.373 1.436c-.626.167-1.324.257-1.627.323V5.174c.32-.079 1.382-.203 1.674-.371c.184-.107.377-.216.576-.323m5.478 8.338a.75.75 0 0 1-.546.91l-4 1a.75.75 0 0 1-.364-1.456l4-1a.75.75 0 0 1 .91.546" clip-rule="evenodd"/><path fill="currentColor" d="M18.25 3.151c-.62.073-1.23.18-1.75.336a8.2 8.2 0 0 0-.75.27v3.182l.75-.356l.008-.005a1.13 1.13 0 0 1 .492-.13c.047 0 .094.004.138.01c.175.029.315.1.354.12l.009.005l.749.356V3.647z"/><path fill="currentColor" d="M12 5.214c-.334-.064-1.057-.161-1.718-.339C8.938 4.515 8.05 3.765 7 3.487c-.887-.234-2.041-.352-3.018-.412C2.886 3.007 2 3.9 2 4.998v11.146c0 1.11.906 2.01 2.015 2.079c.97.06 2.108.179 2.985.41c.486.129 1.216.431 1.873.726c1.005.451 2.052.797 3.127 1.034z" opacity=".5"/><path fill="currentColor" d="M4.273 12.818a.75.75 0 0 1 .91-.545l4 1a.75.75 0 1 1-.365 1.455l-4-1a.75.75 0 0 1-.545-.91m.909-4.545a.75.75 0 1 0-.364 1.455l4 1a.75.75 0 0 0 .364-1.455z"/></svg></a><a class="nav-item" title="友链" href="/friends/" style="color:#fa6400"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m13.629 20.472l-.542.916c-.483.816-1.69.816-2.174 0l-.542-.916c-.42-.71-.63-1.066-.968-1.262c-.338-.197-.763-.204-1.613-.219c-1.256-.021-2.043-.098-2.703-.372a5 5 0 0 1-2.706-2.706C2 14.995 2 13.83 2 11.5v-1c0-3.273 0-4.91.737-6.112a5 5 0 0 1 1.65-1.651C5.59 2 7.228 2 10.5 2h3c3.273 0 4.91 0 6.113.737a5 5 0 0 1 1.65 1.65C22 5.59 22 7.228 22 10.5v1c0 2.33 0 3.495-.38 4.413a5 5 0 0 1-2.707 2.706c-.66.274-1.447.35-2.703.372c-.85.015-1.275.022-1.613.219c-.338.196-.548.551-.968 1.262" opacity=".5"/><path fill="currentColor" d="M10.99 14.308c-1.327-.978-3.49-2.84-3.49-4.593c0-2.677 2.475-3.677 4.5-1.609c2.025-2.068 4.5-1.068 4.5 1.609c0 1.752-2.163 3.615-3.49 4.593c-.454.335-.681.502-1.01.502c-.329 0-.556-.167-1.01-.502"/></svg></a><a class="nav-item active" title="关于" href="/about/" style="color:#f44336"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M20 12a8 8 0 1 1-16 0a8 8 0 0 1 16 0" opacity=".5"/><path fill="currentColor" d="M17.712 5.453c1.047-.193 2.006-.259 2.797-.152c.77.103 1.536.393 1.956 1.064c.446.714.312 1.542-.012 2.258c-.33.728-.918 1.499-1.672 2.268c-1.516 1.547-3.836 3.226-6.597 4.697c-2.763 1.472-5.495 2.484-7.694 2.92c-1.095.217-2.098.299-2.923.201c-.8-.095-1.6-.383-2.032-1.075c-.47-.752-.296-1.63.07-2.379c.375-.768 1.032-1.586 1.872-2.403L4 12.416c0 .219.083.71.168 1.146c.045.23.09.444.123.596c-.652.666-1.098 1.263-1.339 1.756c-.277.567-.208.825-.145.925c.072.116.305.305.937.38c.609.073 1.44.018 2.455-.183c2.02-.4 4.613-1.351 7.28-2.772c2.667-1.42 4.85-3.015 6.23-4.423c.694-.707 1.15-1.334 1.377-1.836c.233-.515.167-.75.107-.844c-.07-.112-.289-.294-.883-.374c-.542-.072-1.272-.041-2.163.112L16.87 5.656c.338-.101.658-.17.842-.203"/></svg></a></nav></div><div class="widgets"><div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571L792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="站内搜索"></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div><widget class="widget-wrapper recent post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2026/05/06/%E5%9F%9F%E5%90%8D%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8D%9A%E5%AE%A2%E5%85%B3%E8%81%94%E5%9F%9F%E5%90%8D%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/"><span class="title">域名注册与博客绑定指南</span></a><a class="item title" href="/2026/05/02/Claude-Code-%E5%AE%89%E8%A3%85%E4%B8%8E%E6%8E%A5%E5%85%A5DeepSeek%E5%8F%8A%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/"><span class="title">Claude Code 安装与接入 DeepSeek 及使用指南</span></a><a class="item title" href="/2026/05/06/Windows%E5%91%BD%E4%BB%A4%E4%B8%8ELinux%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8%E5%8C%BA%E5%88%AB/"><span class="title">Windows命令与Linux命令使用区别</span></a><a class="item title" href="/2026/05/11/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%80%BB%E7%BB%93-md/"><span class="title">博客搭建总结</span></a><a class="item title" href="/2026/04/17/%E6%9E%84%E5%BB%BA%E5%8E%86%E7%A8%8B/"><span class="title">博客搭建历程</span></a><a class="item title" href="/2026/04/21/markdown%E8%AF%AD%E6%B3%95/"><span class="title">markdown语法</span></a><a class="item title" href="/2026/04/19/%E5%8D%81%E5%A4%A7%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/"><span class="title">十大经典排序算法</span></a><a class="item title" href="/2026/04/29/%E9%9C%8D%E5%A4%AB%E5%8F%98%E6%8D%A2/"><span class="title">霍夫变换底层原理</span></a><a class="item title" href="/2026/04/18/%E6%BA%90%E7%A0%81%E4%BB%93%E5%BA%93%E6%9E%84%E5%BB%BA%E5%8E%86%E7%A8%8B/"><span class="title">源码仓库和GitHub action任务设置</span></a><a class="item title" href="/2026/04/19/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/"><span class="title">数据结构测试笔记</span></a></div></widget></div><footer class="footer dis-select"><div class="social-wrap"><a class="social" href="https://github.com/flechazoyang-google" target="_blank" rel="external nofollow noopener noreferrer"><img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/08a41b181ce68.svg"></a><a class="social" href="mailto:3134825482@qq.com" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4l-8 5-8-5V6l8 5 8-5z"/></svg></a><a class="social" onclick="switchTheme()"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 1024 1024"><path fill="currentColor" fill-rule="evenodd" d="M582.4 326.4c-140.8 0-256 115.2-256 256s115.2 256 256 256 256-115.2 256-256-115.2-256-256-256z m0 448c-70.4 0-131.2-36.8-164.8-92.8 12.8 3.2 27.2 4.8 40 4.8 121.6 0 219.2-99.2 219.2-219.2 0-17.6-1.6-35.2-6.4-52.8 60.8 32 102.4 96 102.4 169.6 1.6 104-84.8 190.4-190.4 190.4zM582.4 262.4c17.6 0 32-14.4 32-32v-128c0-17.6-14.4-32-32-32s-32 14.4-32 32v128c0 17.6 14.4 32 32 32zM262.4 582.4c0-17.6-14.4-32-32-32h-128c-17.6 0-32 14.4-32 32s14.4 32 32 32h128c17.6 0 32-14.4 32-32zM310.4 356.8c6.4 6.4 14.4 9.6 22.4 9.6 8 0 16-3.2 22.4-9.6 12.8-12.8 12.8-32 0-44.8l-91.2-91.2c-12.8-12.8-32-12.8-44.8 0-12.8 12.8-12.8 32 0 44.8l91.2 91.2zM944 220.8c-12.8-12.8-32-12.8-44.8 0l-91.2 91.2c-12.8 12.8-12.8 32 0 44.8 6.4 6.4 14.4 9.6 22.4 9.6 8 0 16-3.2 22.4-9.6l91.2-91.2c12.8-12.8 12.8-33.6 0-44.8zM310.4 808l-91.2 91.2c-12.8 12.8-12.8 32 0 44.8 6.4 6.4 14.4 9.6 22.4 9.6 8 0 16-3.2 22.4-9.6l91.2-91.2c12.8-12.8 12.8-32 0-44.8-11.2-11.2-32-11.2-44.8 0z"></path></svg></a></div></footer></div></aside><div class="l_main" id="main"><div class="article banner top"><div class="content"><div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a> <span class="sep"></span> <a class="cap breadcrumb" href="/changelog/">更新日志</a></div><div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2026-05-06T16:00:00.000Z">2026-05-07</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2026-05-11T05:51:17.553Z">2026-05-11</time></span></div></div></div></div></div><article class="md-text content"><style>.article.banner.top .top .post-meta,.bread-nav{display:none!important}</style><div class="tag-plugin banner"><img class="lazy bg" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/banner/books.jpg"><div class="content"><div class="top"><button class="back cap" onclick="window.history.back()"><svg aria-hidden="true" viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" d="M7.78 12.53a.75.75 0 01-1.06 0L2.47 8.28a.75.75 0 010-1.06l4.25-4.25a.75.75 0 011.06 1.06L4.81 7h7.44a.75.75 0 010 1.5H4.81l2.97 2.97a.75.75 0 010 1.06z"></path></svg></button><div class="tag-plugin navbar"><a class="link" href="/">博客</a><a class="link" href="/wiki/">文档</a><a class="link" href="/friends/">友链</a><a class="link active" href="/changelog/">日志</a><a class="link" href="/about/">关于</a></div></div><div class="bottom"><img class="avatar" src="/images/avatar.jpg"><div class="text-area"><div class="text title">更新日志</div></div></div></div></div><div class="tag-plugin timeline cl-changelog"><div class="timenode year-node" index="0"><div class="header"><span>2026</span></div></div><div class="timenode" index="1"><div class="header"><span>5/11</span></div><div class="body fs14"><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">更新</span> <span class="cl-desc">测试Waline001</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/c047351" target="_blank" rel="noopener" class="cl-hash">#c047351</a></div><div class="cl-files"><div>_config.stellar.yml</div><div>source/_data/changelog.json</div><div>themes/stellar/source/js/services/waline_latest_comment.js</div></div></div></div></div><div class="timenode" index="2"><div class="header"><span>5/10</span></div><div class="body fs14"><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#ef4444">修复</span> <span class="cl-desc">从 Waline 切换到 Giscus，修复主题切换时同步 Giscus 主题</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/2509a8b" target="_blank" rel="noopener" class="cl-hash">#2509a8b</a></div><div class="cl-files"><div>_config.stellar.yml</div><div>source/_data/changelog.json</div><div>themes/stellar/layout/_partial/scripts/theme.ejs</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">更新</span> <span class="cl-desc">waline url</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/520285b" target="_blank" rel="noopener" class="cl-hash">#520285b</a></div><div class="cl-files"><div>_config.stellar.yml</div><div>source/_data/changelog.json</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#ef4444">修复</span> <span class="cl-desc">serverURL 改为 Vercel 原始域名，绕过 Cloudflare 代理层</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/93ea4bb" target="_blank" rel="noopener" class="cl-hash">#93ea4bb</a></div><div class="cl-files"><div>_config.stellar.yml</div><div>source/_data/changelog.json</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#ef4444">修复</span> <span class="cl-desc">将 serverURL 从 comment.flechazo.icu 改为 Vercel 原始域名，绕过 Cloudflare 代理层连接问题</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/0487a92" target="_blank" rel="noopener" class="cl-hash">#0487a92</a></div><div class="cl-files"><div>_config.stellar.yml</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#ef4444">修复</span> <span class="cl-desc">降级 Waline 客户端至 v2 以兼容后端 v1.39.3</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/d296369" target="_blank" rel="noopener" class="cl-hash">#d296369</a></div><div class="cl-files"><div>_config.stellar.yml</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#ef4444">修复</span> <span class="cl-desc">修复 Waline 评论列表不显示问题</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/91104a2" target="_blank" rel="noopener" class="cl-hash">#91104a2</a></div><div class="cl-files"><div>_config.stellar.yml</div><div>source/_data/changelog.json</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#ef4444">修复</span> <span class="cl-desc">修复 Waline 前端加载失败问题</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/afe540a" target="_blank" rel="noopener" class="cl-hash">#afe540a</a></div><div class="cl-files"><div>_config.stellar.yml</div><div>source/_data/changelog.json</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#22c55e">新增</span> <span class="cl-desc">切换评论系统从 Twikoo 到 Waline</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/7bc865f" target="_blank" rel="noopener" class="cl-hash">#7bc865f</a></div><div class="cl-files"><div>_config.stellar.yml</div><div>source/_data/changelog.json</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#3b82f6">文档</span> <span class="cl-desc">更新友链页面文案，添加QQ联系方式和加入指引</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/de08581" target="_blank" rel="noopener" class="cl-hash">#de08581</a></div><div class="cl-files"><div>source/friends/index.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#22c55e">新增</span> <span class="cl-desc">添加 RSS 订阅支持 (hexo-generator-feed)</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/a8c0855" target="_blank" rel="noopener" class="cl-hash">#a8c0855</a></div><div class="cl-files"><div>_config.yml</div><div>package-lock.json</div><div>package.json</div><div>source/_data/changelog.json</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">更新</span> <span class="cl-desc">友链+友链文章聚合显示</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/5287684" target="_blank" rel="noopener" class="cl-hash">#5287684</a></div><div class="cl-files"><div>source/friends/index.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#ef4444">修复</span> <span class="cl-desc">修复友链加载失败问题</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/99cd6f3" target="_blank" rel="noopener" class="cl-hash">#99cd6f3</a></div><div class="cl-files"><div>source/_data/changelog.json</div><div>source/friends/index.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#22c55e">新增</span> <span class="cl-desc">切换评论系统从 Giscus 到 Twikoo</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/785a922" target="_blank" rel="noopener" class="cl-hash">#785a922</a></div><div class="cl-files"><div>_config.stellar.yml</div><div>source/_data/changelog.json</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">修改</span> <span class="cl-desc">更新友链</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/25d68bb" target="_blank" rel="noopener" class="cl-hash">#25d68bb</a></div><div class="cl-files"><div>source/_data/changelog.json</div><div>source/friends/index.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">更新</span> <span class="cl-desc">一点文字bug</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/d1208a4" target="_blank" rel="noopener" class="cl-hash">#d1208a4</a></div><div class="cl-files"><div>_config.stellar.yml</div><div>source/about/index.md</div><div>source/changelog/index.md</div><div>source/friends/index.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#78716c">杂项</span> <span class="cl-desc">博客域名从 flechazo.icu 变更为 blog.flechazo.icu</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/2a5fa2a" target="_blank" rel="noopener" class="cl-hash">#2a5fa2a</a></div><div class="cl-files"><div>_config.stellar.yml</div><div>_config.yml</div><div>source/_data/changelog.json</div></div></div></div></div><div class="timenode" index="3"><div class="header"><span>5/9</span></div><div class="body fs14"><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#ef4444">修复</span> <span class="cl-desc">恢复手机端右下角左侧边栏按钮</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/48e72d9" target="_blank" rel="noopener" class="cl-hash">#48e72d9</a></div><div class="cl-files"><div>source/_data/changelog.json</div><div>themes/stellar/layout/_partial/menubtn.ejs</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#ef4444">修复</span> <span class="cl-desc">缩小社交栏图标尺寸至18×18并启用flex居中对齐</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/55c15ee" target="_blank" rel="noopener" class="cl-hash">#55c15ee</a></div><div class="cl-files"><div>source/_data/changelog.json</div><div>themes/stellar/_data/icons.yml</div><div>themes/stellar/source/css/_components/sidebar/footer.styl</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#ef4444">修复</span> <span class="cl-desc">给 default:theme SVG 补充 width/height 属性使图标尺寸一致</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/59ff70a" target="_blank" rel="noopener" class="cl-hash">#59ff70a</a></div><div class="cl-files"><div>themes/stellar/_data/icons.yml</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#ef4444">修复</span> <span class="cl-desc">修复侧边栏底部主题切换和邮箱图标白天模式不可见的问题</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/574777b" target="_blank" rel="noopener" class="cl-hash">#574777b</a></div><div class="cl-files"><div>_config.stellar.yml</div><div>source/_data/changelog.json</div><div>themes/stellar/_data/icons.yml</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#78716c">杂项</span> <span class="cl-desc">clean up temp files, stop server</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/0315dff" target="_blank" rel="noopener" class="cl-hash">#0315dff</a></div><div class="cl-files"><div>scripts/_data.txt</div><div>source/_data/changelog.json</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#22c55e">新增</span> <span class="cl-desc">add theme toggle button to float panel</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/1794d69" target="_blank" rel="noopener" class="cl-hash">#1794d69</a></div><div class="cl-files"><div>themes/stellar/layout/_partial/menubtn.ejs</div><div>themes/stellar/layout/_partial/scripts/theme.ejs</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#22c55e">新增</span> <span class="cl-desc">move theme toggle to sidebar footer social area</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/e705f03" target="_blank" rel="noopener" class="cl-hash">#e705f03</a></div><div class="cl-files"><div>_config.stellar.yml</div><div>themes/stellar/layout/_partial/menubtn.ejs</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">更新</span> <span class="cl-desc">头像优化</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/fcf88ac" target="_blank" rel="noopener" class="cl-hash">#fcf88ac</a></div><div class="cl-files"><div>source/_data/changelog.json</div><div>source/about/index.md</div><div>source/changelog/index.md</div><div>source/friends/index.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">修改</span> <span class="cl-desc">优化页面布局与修复changelog重复输出问题</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/f3e4eaf" target="_blank" rel="noopener" class="cl-hash">#f3e4eaf</a></div><div class="cl-files"><div>scripts/changelog-gen.js</div><div>source/_data/changelog.json</div><div>source/about/index.md</div><div>source/changelog/index.md</div><div>source/friends/index.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#22c55e">新增</span> <span class="cl-desc">about页面隐藏面包屑和发布时间，保留banner和navbar</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/b03c45a" target="_blank" rel="noopener" class="cl-hash">#b03c45a</a></div><div class="cl-files"><div>source/about/index.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">修改</span> <span class="cl-desc">更新 changelog：记录关于页面重构提交</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/c20f212" target="_blank" rel="noopener" class="cl-hash">#c20f212</a></div><div class="cl-files"><div>source/_data/changelog.json</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">修改</span> <span class="cl-desc">更新 changelog.json：记录关于页面重构</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/7f133e8" target="_blank" rel="noopener" class="cl-hash">#7f133e8</a></div><div class="cl-files"><div>source/_data/changelog.json</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#f97316">重构</span> <span class="cl-desc">重构关于页面：使用 {% about %} 标签，添加日志链接</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/32d4d35" target="_blank" rel="noopener" class="cl-hash">#32d4d35</a></div><div class="cl-files"><div>source/_data/changelog.json</div><div>source/about/index.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">更新</span> <span class="cl-desc">为关于、友链、日志页面添加banner导航栏</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/fd78baa" target="_blank" rel="noopener" class="cl-hash">#fd78baa</a></div><div class="cl-files"><div>source/_data/changelog.json</div><div>source/about/index.md</div><div>source/changelog/index.md</div><div>source/friends/index.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#78716c">杂项</span> <span class="cl-desc">add .workbuddy/ and .claude/settings.local.json to .gitignore</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/c4c9eaa" target="_blank" rel="noopener" class="cl-hash">#c4c9eaa</a></div><div class="cl-files"><div>.claude/settings.local.json</div><div>.gitignore</div><div>.workbuddy/memory/2026-05-06.md</div><div>.workbuddy/memory/2026-05-07.md</div><div>.workbuddy/memory/MEMORY.md</div><div>.workbuddy/plans/将博客搭建历程改为探索专栏_a1729679.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">更新</span> <span class="cl-desc">readme</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/bb80357" target="_blank" rel="noopener" class="cl-hash">#bb80357</a></div><div class="cl-files"><div>README.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#3b82f6">文档</span> <span class="cl-desc">rewrite README in Chinese</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/c0e2bda" target="_blank" rel="noopener" class="cl-hash">#c0e2bda</a></div><div class="cl-files"><div>README.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#3b82f6">文档</span> <span class="cl-desc">add project README</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/5f181fc" target="_blank" rel="noopener" class="cl-hash">#5f181fc</a></div><div class="cl-files"><div>README.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">更新</span> <span class="cl-desc">博客GitHub地址改成成品库</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/62094c4" target="_blank" rel="noopener" class="cl-hash">#62094c4</a></div><div class="cl-files"><div>_config.stellar.yml</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">更新</span> <span class="cl-desc">成品仓库设置commit信息</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/7e3b0f7" target="_blank" rel="noopener" class="cl-hash">#7e3b0f7</a></div><div class="cl-files"><div>.github/workflows/deploy.yml</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">更新</span> <span class="cl-desc">footer格式问题修复</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/e1337b2" target="_blank" rel="noopener" class="cl-hash">#e1337b2</a></div><div class="cl-files"><div>_config.stellar.yml</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">修改</span> <span class="cl-desc">完善footer内容</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/cd2c245" target="_blank" rel="noopener" class="cl-hash">#cd2c245</a></div><div class="cl-files"><div>_config.stellar.yml</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#22c55e">新增</span> <span class="cl-desc">add privacy policy page</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/15d3324" target="_blank" rel="noopener" class="cl-hash">#15d3324</a></div><div class="cl-files"><div>source/privacy/index.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#f97316">重构</span> <span class="cl-desc">changelog file list one per line with hover reveal</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/1ded97d" target="_blank" rel="noopener" class="cl-hash">#1ded97d</a></div><div class="cl-files"><div>scripts/changelog-gen.js</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#f97316">重构</span> <span class="cl-desc">rewrite changelog format with per-commit file list, remove colored tag badges</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/074730b" target="_blank" rel="noopener" class="cl-hash">#074730b</a></div><div class="cl-files"><div>scripts/changelog-gen.js</div><div>source/_data/changelog.json</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">更新</span> <span class="cl-desc">日志色调调整</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/21f86f9" target="_blank" rel="noopener" class="cl-hash">#21f86f9</a></div><div class="cl-files"><div>scripts/changelog-gen.js</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#78716c">杂项</span> <span class="cl-desc">remove AGENTS.md and REASONIX.md from repo, add to gitignore</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/9ff27da" target="_blank" rel="noopener" class="cl-hash">#9ff27da</a></div><div class="cl-files"><div>.gitignore</div><div>AGENTS.md</div><div>REASONIX.md</div></div></div></div></div><div class="timenode" index="4"><div class="header"><span>5/8</span></div><div class="body fs14"><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#a855f7">样式</span> <span class="cl-desc">optimize changelog tag colors and item styles, fix wiki layout to page</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/e4ec04f" target="_blank" rel="noopener" class="cl-hash">#e4ec04f</a></div><div class="cl-files"><div>.claude/settings.local.json</div><div>AGENTS.md</div><div>REASONIX.md</div><div>scripts/changelog-gen.js</div><div>source/_data/changelog.json</div><div>source/_data/wiki/datastruct.yml</div><div>source/wiki/datastruct/binary-tree.md</div><div>source/wiki/datastruct/graph.md</div><div>source/wiki/datastruct/linear-list.md</div><div>source/wiki/datastruct/overview.md</div><div>source/wiki/datastruct/searching.md</div><div>source/wiki/datastruct/sorting.md</div><div>source/wiki/datastruct/stack-queue.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#22c55e">新增</span> <span class="cl-desc">新增数据结构 Wiki 项目，修复 wiki menu_id 高亮</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/f26cffd" target="_blank" rel="noopener" class="cl-hash">#f26cffd</a></div><div class="cl-files"><div>_config.stellar.yml</div><div>source/_data/changelog.json</div><div>source/_data/wiki.yml</div><div>source/_data/wiki/datastruct.yml</div><div>source/wiki/datastruct/binary-tree.md</div><div>source/wiki/datastruct/graph.md</div><div>source/wiki/datastruct/linear-list.md</div><div>source/wiki/datastruct/overview.md</div><div>source/wiki/datastruct/searching.md</div><div>source/wiki/datastruct/sorting.md</div><div>source/wiki/datastruct/stack-queue.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#22c55e">新增</span> <span class="cl-desc">移除专栏系统，changelog 改用 timeline 展示，简化关于页面</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/5b45f80" target="_blank" rel="noopener" class="cl-hash">#5b45f80</a></div><div class="cl-files"><div>CLAUDE.md</div><div>_config.stellar.yml</div><div>scripts/changelog-gen.js</div><div>source/_data/changelog.json</div><div>source/_data/topic/blog-building.yml</div><div>source/_data/topic/学习类.yml</div><div>source/_data/topic/技术类.yml</div><div>source/_posts/Claude-Code-安装与接入DeepSeek及使用指南.md</div><div>source/_posts/Windows命令与Linux命令使用区别.md</div><div>source/_posts/markdown语法.md</div><div>source/_posts/scala编程.md</div><div>source/_posts/域名注册与博客关联域名操作指南.md</div><div>source/_posts/构建历程.md</div><div>source/_posts/霍夫变换.md</div><div>source/about/index.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#ef4444">修复</span> <span class="cl-desc">关于图标从 chat 改为 planet</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/8834f49" target="_blank" rel="noopener" class="cl-hash">#8834f49</a></div><div class="cl-files"><div>_config.stellar.yml</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#ef4444">修复</span> <span class="cl-desc">友链图标改用 chat-square-like</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/8f176db" target="_blank" rel="noopener" class="cl-hash">#8f176db</a></div><div class="cl-files"><div>_config.stellar.yml</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#ef4444">修复</span> <span class="cl-desc">恢复 index_topic.base_dir 为 topic，避免覆盖友链页面</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/4ed7bbb" target="_blank" rel="noopener" class="cl-hash">#4ed7bbb</a></div><div class="cl-files"><div>_config.stellar.yml</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#ef4444">修复</span> <span class="cl-desc">友链图标改用短名称避免截断</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/9a7e622" target="_blank" rel="noopener" class="cl-hash">#9a7e622</a></div><div class="cl-files"><div>_config.stellar.yml</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#22c55e">新增</span> <span class="cl-desc">侧边栏探索改为友链，修复 friends 页面 menu_id</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/49b7a45" target="_blank" rel="noopener" class="cl-hash">#49b7a45</a></div><div class="cl-files"><div>_config.stellar.yml</div><div>source/_data/changelog.json</div><div>source/friends/index.md</div></div></div></div></div><div class="timenode" index="5"><div class="header"><span>5/7</span></div><div class="body fs14"><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#ef4444">修复</span> <span class="cl-desc">修复wiki布局警告，侧边栏探索改为友链</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/f799449" target="_blank" rel="noopener" class="cl-hash">#f799449</a></div><div class="cl-files"><div>.workbuddy/memory/2026-05-07.md</div><div>_config.stellar.yml</div><div>_config.yml</div><div>source/_data/changelog.json</div><div>source/_posts/十大排序算法.md</div><div>source/_posts/数据结构测试笔记.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">更新</span> <span class="cl-desc">文档位置</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/9a0670d" target="_blank" rel="noopener" class="cl-hash">#9a0670d</a></div><div class="cl-files"><div>_config.stellar.yml</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">更新</span> <span class="cl-desc">页面布局</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/0814077" target="_blank" rel="noopener" class="cl-hash">#0814077</a></div><div class="cl-files"><div>source/_data/changelog.json</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">p1</span> <span class="cl-desc">补充 about 页面联系方式</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/8ca1f6a" target="_blank" rel="noopener" class="cl-hash">#8ca1f6a</a></div><div class="cl-files"><div>.claude/settings.local.json</div><div>.workbuddy/memory/2026-05-06.md</div><div>.workbuddy/memory/2026-05-07.md</div><div>.workbuddy/memory/MEMORY.md</div><div>.workbuddy/plans/将博客搭建历程改为探索专栏_a1729679.md</div><div>source/_data/changelog.json</div><div>source/about/index.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#22c55e">新增</span> <span class="cl-desc">新增说说页面、三大专栏体系、文章topic分配</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/0fe0a56" target="_blank" rel="noopener" class="cl-hash">#0fe0a56</a></div><div class="cl-files"><div>source/_data/changelog.json</div><div>source/_data/topic/学习类.yml</div><div>source/_data/topic/技术类.yml</div><div>source/_posts/Claude-Code-安装与接入DeepSeek及使用指南.md</div><div>source/_posts/Windows命令与Linux命令使用区别.md</div><div>source/_posts/markdown语法.md</div><div>source/_posts/scala编程.md</div><div>source/_posts/域名注册与博客关联域名操作指南.md</div><div>source/_posts/霍夫变换.md</div><div>source/changelog/index.md</div><div>source/friends/index.md</div><div>source/say/index.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#f97316">重构</span> <span class="cl-desc">重构博客结构，激活 Wiki 知识库系统</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/4b53082" target="_blank" rel="noopener" class="cl-hash">#4b53082</a></div><div class="cl-files"><div>_config.stellar.yml</div><div>source/_data/notebooks/notes.yml</div><div>source/_data/notebooks/数字图像处理.yml</div><div>source/_data/notebooks/数据结构.yml</div><div>source/_data/notebooks/计算机组成原理.yml</div><div>source/_data/wiki/wiki.yml</div><div>source/about/index.md</div><div>source/notes/数据结构测试笔记.md</div><div>source/wiki/十大排序算法.md</div><div>source/wiki/数据结构测试笔记.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#22c55e">新增</span> <span class="cl-desc">将博客搭建历程设为专栏</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/7d58404" target="_blank" rel="noopener" class="cl-hash">#7d58404</a></div><div class="cl-files"><div>source/_data/changelog.json</div><div>source/_posts/构建历程.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#ef4444">修复</span> <span class="cl-desc">关于/友链/日志导航与博客导航分离</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/5722d65" target="_blank" rel="noopener" class="cl-hash">#5722d65</a></div><div class="cl-files"><div>_config.stellar.yml</div><div>scripts/social-nav.js</div><div>source/about/index.md</div><div>source/changelog/index.md</div><div>source/friends/index.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#22c55e">新增</span> <span class="cl-desc">更新日志页面优化 + 关于/友链/日志三页导航统一</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/fe5f7a2" target="_blank" rel="noopener" class="cl-hash">#fe5f7a2</a></div><div class="cl-files"><div>_config.stellar.yml</div><div>scripts/changelog-gen.js</div><div>source/_data/changelog.json</div><div>source/about/index.md</div><div>source/changelog/index.md</div><div>source/friends/index.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#ef4444">修复</span> <span class="cl-desc">修复笔记本系统路径冲突并增加笔记AI摘要支持</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/eab4ece" target="_blank" rel="noopener" class="cl-hash">#eab4ece</a></div><div class="cl-files"><div>_config.stellar.yml</div><div>scripts/ai-summary-notes.js</div><div>source/_data/notebooks/notes.yml</div><div>source/_data/notebooks/数字图像处理.yml</div><div>source/_data/notebooks/数据结构.yml</div><div>source/_data/notebooks/计算机组成原理.yml</div><div>source/_posts/构建历程.md</div><div>source/notes/index.md</div><div>themes/stellar/scripts/events/lib/notebooks.js</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#ef4444">修复</span> <span class="cl-desc">将十大排序算法从 _posts 移至 notes 以加入数据结构笔记本</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/f855668" target="_blank" rel="noopener" class="cl-hash">#f855668</a></div><div class="cl-files"><div>source/notes/十大排序算法.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#ef4444">修复</span> <span class="cl-desc">修复 note_tags.ejs 中 page.tags 不可迭代导致构建失败</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/2ef4af1" target="_blank" rel="noopener" class="cl-hash">#2ef4af1</a></div><div class="cl-files"><div>themes/stellar/layout/_partial/main/notebook/note_tags.ejs</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#22c55e">新增</span> <span class="cl-desc">将十大排序算法文章归入数据结构笔记本</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/c2a5bbc" target="_blank" rel="noopener" class="cl-hash">#c2a5bbc</a></div><div class="cl-files"><div>source/_posts/十大排序算法.md</div></div></div></div></div><div class="timenode" index="6"><div class="header"><span>5/6</span></div><div class="body fs14"><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#22c55e">新增</span> <span class="cl-desc">补充 Markdown 语法文章 - 007 代码语法章节</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/a901acf" target="_blank" rel="noopener" class="cl-hash">#a901acf</a></div><div class="cl-files"><div>source/_posts/markdown语法.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#ef4444">修复</span> <span class="cl-desc">修复专栏卡片图标裂图，改用真实的 Iconify SVG URL</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/8e13311" target="_blank" rel="noopener" class="cl-hash">#8e13311</a></div><div class="cl-files"><div>source/_data/topic/blog-building.yml</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#f97316">重构</span> <span class="cl-desc">将构建历程改为专栏（Topic），探索菜单指向专栏列表页</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/c74b584" target="_blank" rel="noopener" class="cl-hash">#c74b584</a></div><div class="cl-files"><div>_config.stellar.yml</div><div>source/_data/topic/blog-building.yml</div><div>source/_posts/构建历程.md</div><div>source/explore/index.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#f97316">重构</span> <span class="cl-desc">重写博客搭建历程：基于git历史还原完整时间线</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/de01e02" target="_blank" rel="noopener" class="cl-hash">#de01e02</a></div><div class="cl-files"><div>source/_posts/构建历程.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">修改</span> <span class="cl-desc">修改文章标题：域名注册与博客绑定指南</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/d45f7ce" target="_blank" rel="noopener" class="cl-hash">#d45f7ce</a></div><div class="cl-files"><div>source/_posts/域名注册与博客关联域名操作指南.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#22c55e">新增</span> <span class="cl-desc">新增文章：域名注册与博客关联域名操作指南</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/970b9b1" target="_blank" rel="noopener" class="cl-hash">#970b9b1</a></div><div class="cl-files"><div>source/_posts/域名注册与博客关联域名操作指南.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#22c55e">新增</span> <span class="cl-desc">新增文章：Windows命令与Linux命令使用区别</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/36592ef" target="_blank" rel="noopener" class="cl-hash">#36592ef</a></div><div class="cl-files"><div>source/_posts/Windows命令与Linux命令使用区别.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#64748b">清理</span> <span class="cl-desc">清理Meow主题，优化底部社交链接，重写排序文章为十大经典排序算法</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/9e4ce43" target="_blank" rel="noopener" class="cl-hash">#9e4ce43</a></div><div class="cl-files"><div>_config.meow.yml</div><div>_config.stellar.yml</div><div>source/_posts/十大排序算法.md</div><div>source/_posts/数据结构.md</div><div>themes/meow/LICENSE</div><div>themes/meow/README-EN.md</div><div>themes/meow/README.md</div><div>themes/meow/_config.yml</div><div>themes/meow/languages/en.yml</div><div>themes/meow/languages/ja.yml</div><div>themes/meow/languages/zh-CN.yml</div><div>themes/meow/languages/zh-TW.yml</div><div>themes/meow/layout/archive.pug</div><div>themes/meow/layout/components/banner.pug</div><div>themes/meow/layout/components/comment/comment.pug</div><div>themes/meow/layout/components/comment/waline.pug</div><div>themes/meow/layout/components/essay/artitalk.pug</div><div>themes/meow/layout/components/footer.pug</div><div>themes/meow/layout/components/head.pug</div><div>themes/meow/layout/components/header.pug</div><div>themes/meow/layout/components/music/aplayer.pug</div><div>themes/meow/layout/components/paginator.pug</div><div>themes/meow/layout/components/scripts.pug</div><div>themes/meow/layout/components/search.pug</div><div>themes/meow/layout/components/toolbar.pug</div><div>themes/meow/layout/index.pug</div><div>themes/meow/layout/layout.pug</div><div>themes/meow/layout/page.pug</div><div>themes/meow/layout/pages/404.pug</div><div>themes/meow/layout/pages/albums.pug</div><div>themes/meow/layout/pages/categories.pug</div><div>themes/meow/layout/pages/essay.pug</div><div>themes/meow/layout/pages/friends.pug</div><div>themes/meow/layout/pages/homepage/home-articles.pug</div><div>themes/meow/layout/pages/homepage/home-banner.pug</div><div>themes/meow/layout/pages/homepage/sidebar.pug</div><div>themes/meow/layout/pages/homepage/subtitle-typewriter.pug</div><div>themes/meow/layout/pages/page-template.pug</div><div>themes/meow/layout/pages/post/post-copyright.pug</div><div>themes/meow/layout/pages/post/post-meta.pug</div><div>themes/meow/layout/pages/post/post-progressbar.pug</div><div>themes/meow/layout/pages/post/post-reward.pug</div><div>themes/meow/layout/pages/post/posts.pug</div><div>themes/meow/layout/pages/post/toc.pug</div><div>themes/meow/layout/pages/tags.pug</div><div>themes/meow/layout/post.pug</div><div>themes/meow/scripts/events/welcome.js</div><div>themes/meow/scripts/filters/codeblock-handler.js</div><div>themes/meow/scripts/filters/cover-handler.js</div><div>themes/meow/scripts/filters/iframe-handler.js</div><div>themes/meow/scripts/filters/image-handler.js</div><div>themes/meow/scripts/filters/stylus-renderer.js</div><div>themes/meow/scripts/filters/table-handler.js</div><div>themes/meow/scripts/generators/404.js</div><div>themes/meow/scripts/generators/file-generator.js</div><div>themes/meow/scripts/helpers/image-helper.js</div><div>themes/meow/scripts/helpers/page-helper.js</div><div>themes/meow/scripts/helpers/post-helper.js</div><div>themes/meow/scripts/helpers/theme-helper.js</div><div>themes/meow/scripts/tags/button.js</div><div>themes/meow/scripts/tags/chatbox.js</div><div>themes/meow/scripts/tags/fiction.js</div><div>themes/meow/scripts/tags/fold.js</div><div>themes/meow/scripts/tags/mask.js</div><div>themes/meow/scripts/tags/music.js</div><div>themes/meow/scripts/tags/note.js</div><div>themes/meow/scripts/tags/tabs.js</div><div>themes/meow/scripts/tags/timeline.js</div><div>themes/meow/scripts/tags/title.js</div><div>themes/meow/source/assets/fonts/SFMonoRegular/063c86.woff2</div><div>themes/meow/source/assets/fonts/SFMonoRegular/09a6e7.woff2</div><div>themes/meow/source/assets/fonts/SFMonoRegular/280d9c.woff2</div><div>themes/meow/source/assets/fonts/SFMonoRegular/48e551.woff2</div><div>themes/meow/source/assets/fonts/SFMonoRegular/670656.woff2</div><div>themes/meow/source/assets/fonts/SFMonoRegular/85845e.woff2</div><div>themes/meow/source/assets/fonts/SFMonoRegular/acce90.woff2</div><div>themes/meow/source/assets/fonts/SFMonoRegular/b87b2f.woff2</div><div>themes/meow/source/assets/fonts/SFMonoRegular/bc9564.woff2</div><div>themes/meow/source/assets/fonts/SFMonoRegular/c26931.woff2</div><div>themes/meow/source/assets/fonts/SFMonoRegular/e7158f.woff2</div><div>themes/meow/source/assets/fonts/SFMonoRegular/ef4ea2.woff2</div><div>themes/meow/source/assets/fonts/SFMonoRegular/f4ed7b.woff2</div><div>themes/meow/source/assets/fonts/SFMonoRegular/result.css</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/01be4db404d151676b7ecf07f75c55b6.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/07f9c1d85ed32454fc226964434bb4a8.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/0bcb6498407b86d29ca59a3ea29cf704.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/0c823f8ee0fbdd3f7460ce06752c0703.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/0e5a0b458add0d57be3197a0b687cb38.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/124fb41f4335caae0d92faecb75a6da5.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/164e009de330314cc20c5865ae20a481.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/18c57826cf6b9df006abbe79a255e197.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/19980c214db09440907592ac9f02fbb7.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/19bc449dc70fbc161fd0a3e8de2b3ef5.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/1b42f37bccf33573233dcdcc4f7c99df.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/1c5116f6519a4edef13ae032dcb95acc.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/1f149eb76aba734a607cb4aee6dd3aad.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/1f4efc356f879e3b646bd79b42e66e53.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/206363a4ac5b97aebf48f789fa2b2f39.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/20ab12ee6ca8ad10df7b46c9e3c8f99c.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/20b6faf2385db6264b9192daae953109.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/245b9d9c3709fab1916307823e8ba589.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/2cea4ae811cdb0f361853da1b8e68293.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/2e221dcdc6fc1b6352ceae7b45f03194.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/3338807c42b9143b7c5911605afec0e8.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/3338fb993d02ad5469c098d05a4ef48c.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/3460f06366983534fb62888b8d6ad71f.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/3465749ecde3b7bfb890a0181b12f819.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/34828ae7e78e15a2414f82bc5b9ce680.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/383d53b11de8022d94d4c7b7a38c415f.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/3b4ec78d58bbb4091cc3e339d35a43bc.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/3e7d159d7971dbef5794fa9843df456b.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/44349d89466a4875450ecdd60d38e789.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/45e7e17e1ac38332d195d7081a4ec33f.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/46cee163d9ce5bc3242100dc6323bd88.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/47ce57135afd185de7f0bc854bcd9762.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/4c495b894186131cd67ffe0b924d4987.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/5123fe9c7f85b703638b22ee211c86e3.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/5346b076b6b635aa22d6ff9923ff104d.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/556c1fe2e45167e8661dd3d33da26e2a.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/55d7388c8ac57064fe001783f26e7187.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/5610631a7fba06e578c231932c0db70a.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/574b8ee55f58acf7e5cedb619ec071a9.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/5bdf74f23f1484e11d8652b5ea20d82e.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/5bf19974cd97092f477b1da0ddd6c7f2.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/5c8a504c83319adcc9c1929289b8cfa5.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/5e2ea0ca937402bfb4d092d123803655.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/6024944d5c4c322e5436280543862ee7.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/630ed038e58ad301eedab787b51e9fa9.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/6341647403cdc52501205452806e567e.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/63fe25b2fc3ecc9e7a2416cb10551572.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/64f7c0d8c98e2a5dbedfcb2255a558f5.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/66d9401c2edf8aaa898522964579a327.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/69e3c85d7e29adfe898064f697189cb8.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/6c2c10084359869177a61d235540028c.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/6e0e49a891c299659e375ca04189deb7.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/6f636dba7c73a6307bed1a08365cde1a.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/771103e0f132bd25fb021a1c3f1b8553.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/772b996d1230551f4c06e0ab57a06928.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/778530a8acae6560579a8a29b3681647.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/79b19ddca4cbced4f38258f729c94093.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/7bded808124cacd78ee44761652b1a92.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/7df26843c881342ffc92802bf9ddf8c4.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/7f6955efa0a5fb0ddcec766286f526b6.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/8097fcaa8b5a98bff3a318d115e39dcf.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/8103dead175afd92d3c56d47959294fd.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/81503827417164de740b22262bb8de5b.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/81eb454ebdb27087b901d410dba13cc8.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/82b397f4b907a2cb55b6afb71a12f10b.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/830a95d33cc8b02cca2b26ce263e0897.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/85cb1a07f6eacaaed6a91bcaf444d582.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/85e052647a8d396d604e7d8a6ef8a7e1.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/876a1e5081230851dfff87c392523ec2.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/89095e2cc7c4d94a72671e875d1da898.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/8e98dd3bdd43daf7d807092cdbd35bd9.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/8f46416bf301e621eb57f970473b0228.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/90497bd452402292bb57446e36f9a589.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/9086481a75bf0b79e05424427c1ffab3.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/911d8307de1cd6d9094232e3afe68f22.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/924b88a295a67ecb9d25acd5099db82a.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/9258bbffe8e420ca30c1bfbe2ec3f114.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/97289aed0c8ea01291a88db728b9a440.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/9795c832c7d63a526ff461f22c5f8c83.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/97bf9329a4286d036f7347f6b887e860.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/988efe9dbd9f960da56f02153c6d44ea.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/9a4d7ba773c7967ab5bfe8af655f9318.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/9c6d3d95ef01ab8c34693a41ca3dd2e2.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/9c9e9c090f51093af1bb0aa69ad73d94.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/9cd39ebe130435da176074eb6afca2fb.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/a00e8122f28b77de4c66bf829a1bc58f.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/a04a12f8804cd681b23ce036f36cdf27.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/a10083ad9ab8daf514644aefc935b53d.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/a2f813aeb7ab4f9711e0cdffd2e5dba1.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/a360b0cad3d7cacc972bc1a26b3ba7f6.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/a5d3699386dc4cc71fd01b1b0b1caff0.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/a67755af49f907d811a0065c05506f8a.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/a8d5e1061cc036af8beb9456c57a6ba3.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/ac2dd2b19488551037cbbe05eaa4b8ab.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/ac4fb3e1905b2a54fafc3852c418dff4.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/ae580a2f0c1ca8d903761756021e06be.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/b1d6b43393d71b86ec27f9e205627e4d.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/b6026f9f1b2c4ed083bc9026464d8d2e.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/b6d5b9c2c22e9d1e8fdf9a2e6c5f60b6.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/b885fa702b7899ea8244ff8fd3615de9.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/b9ed3ba73b77d7302a48d8345044040f.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/bae741af2d66a902df0be5f07e2d5132.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/bbab9a24a0386663a142e7bb73359c52.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/bcd4613f5b8c8965f1709a1baae9e3f7.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/bd597ccd2223ef1c8c5184104e2944e4.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/bdabe7af6177a154fbbba7d9997e9fd5.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/bf0147f551f7565e513904eaeb91ab59.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/c1cb7dae1ce3e8d2711af0fbfab119f5.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/c22c1db2c55791f65da763f8dc07cbed.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/c2f5b1ab8d5be0f3531da490f506fc62.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/c4cebf4d9416bee1bf9dd239f7d1ef88.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/c70b2150bee60c6149bd3ddb1eaf924d.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/c9ef059afe4681625e977ab0cb21f101.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/cb60da78cf29f34d105b31fd67014583.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/cd29b25f3097691056f859b7985e0062.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/d2c9281ce7bfcab5cc281163a08b845a.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/d61996dc9809819cf062fea5b5916e49.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/dc5eaff013e40db3b2216a9d653982ce.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/dc6e06ad0d7f21c8a5460630d7844937.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/ddd021a88ce17422301721891969b38e.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/ded87d9dc5d158ed57ab4ccab5c9ed0f.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/e10236c2c46a4b6c9e9ef7ccf6437182.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/e45f63cde2ec79575b3a42247facc852.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/e56c025baa6171778806003aa42da5b5.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/e89c4d3a5c9d6c14db4258770d4c4dd1.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/e963bf0681b76b4a75f55d8c7215f731.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/eff456e6bf8c2af448f291d2102dbe47.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/f24a20149d8d29302c7026e07e51fdea.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/f39c5518261f3a99e6f3202e2a46cc09.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/f3d1e08f338458fb635d4c51e4579bce.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/f5cc0598dba9dfd0bf3cd4a6955bfdf1.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/f649327c9f6efd68db8cd458c42cc12c.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/fd3fd379148fa27bac008aae55bbcbeb.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/ffdbfd08d3d32eb5868839a9fbda239c.woff2</div><div>themes/meow/source/assets/fonts/vivoSans-Regular/result.css</div><div>themes/meow/source/assets/images/Hexo-Theme-MEOW.ico</div><div>themes/meow/source/assets/images/Hexo-Theme-MEOW.png</div><div>themes/meow/source/assets/images/Meow-Loading.webp</div><div>themes/meow/source/assets/images/svg/brand/brand-ao3.svg</div><div>themes/meow/source/assets/images/svg/brand/brand-bilibili.svg</div><div>themes/meow/source/assets/images/svg/brand/brand-facebook.svg</div><div>themes/meow/source/assets/images/svg/brand/brand-github.svg</div><div>themes/meow/source/assets/images/svg/brand/brand-instagram.svg</div><div>themes/meow/source/assets/images/svg/brand/brand-mail.svg</div><div>themes/meow/source/assets/images/svg/brand/brand-mastodon.svg</div><div>themes/meow/source/assets/images/svg/brand/brand-qq.svg</div><div>themes/meow/source/assets/images/svg/brand/brand-rss.svg</div><div>themes/meow/source/assets/images/svg/brand/brand-steam.svg</div><div>themes/meow/source/assets/images/svg/brand/brand-tiktok.svg</div><div>themes/meow/source/assets/images/svg/brand/brand-wechat.svg</div><div>themes/meow/source/assets/images/svg/brand/brand-weibo.svg</div><div>themes/meow/source/assets/images/svg/brand/brand-x.svg</div><div>themes/meow/source/assets/images/svg/custom/xiaohongshu.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-about.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-announcement.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-archive.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-article.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-bookmark.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-category.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-check.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-click.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-close.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-comment.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-copy.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-down.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-face.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-fire.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-friend.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-gift.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-home.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-key.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-link.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-loading.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-lock.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-menu.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-moon.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-people.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-picture.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-pubdate.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-search.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-setting.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-share.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-site.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-sun.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-tag.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-text-minus.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-text-plus.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-time.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-toc.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-up.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-update.svg</div><div>themes/meow/source/assets/images/svg/ta/ta-write.svg</div><div>themes/meow/source/assets/images/svg/uc/uc-about.svg</div><div>themes/meow/source/assets/images/svg/uc/uc-announcement.svg</div><div>themes/meow/source/assets/images/svg/uc/uc-archive.svg</div><div>themes/meow/source/assets/images/svg/uc/uc-article.svg</div><div>themes/meow/source/assets/images/svg/uc/uc-bookmark.svg</div><div>themes/meow/source/assets/images/svg/uc/uc-category.svg</div><div>themes/meow/source/assets/images/svg/uc/uc-check.svg</div><div>themes/meow/source/assets/images/svg/uc/uc-comment.svg</div><div>themes/meow/source/assets/images/svg/uc/uc-down.svg</div><div>themes/meow/source/assets/images/svg/uc/uc-face.svg</div><div>themes/meow/source/assets/images/svg/uc/uc-friend.svg</div><div>themes/meow/source/assets/images/svg/uc/uc-gift.svg</div><div>themes/meow/source/assets/images/svg/uc/uc-home.svg</div><div>themes/meow/source/assets/images/svg/uc/uc-key.svg</div><div>themes/meow/source/assets/images/svg/uc/uc-link.svg</div><div>themes/meow/source/assets/images/svg/uc/uc-lock.svg</div><div>themes/meow/source/assets/images/svg/uc/uc-menu.svg</div><div>themes/meow/source/assets/images/svg/uc/uc-picture.svg</div><div>themes/meow/source/assets/images/svg/uc/uc-search.svg</div><div>themes/meow/source/assets/images/svg/uc/uc-setting.svg</div><div>themes/meow/source/assets/images/svg/uc/uc-site.svg</div><div>themes/meow/source/assets/images/svg/uc/uc-sun.svg</div><div>themes/meow/source/assets/images/svg/uc/uc-tag.svg</div><div>themes/meow/source/assets/images/svg/uc/uc-up.svg</div><div>themes/meow/source/assets/images/wallhaven-5yl597.webp</div><div>themes/meow/source/assets/images/wallhaven-e7zogk.webp</div><div>themes/meow/source/css/common/animation.styl</div><div>themes/meow/source/css/common/basic.styl</div><div>themes/meow/source/css/common/code-highlight/dark/panda-syntax-dark.styl</div><div>themes/meow/source/css/common/code-highlight/dark/tomorrow-night.styl</div><div>themes/meow/source/css/common/code-highlight/highlight.styl</div><div>themes/meow/source/css/common/code-highlight/light/panda-syntax-light.styl</div><div>themes/meow/source/css/common/code-highlight/light/solar-flare-light.styl</div><div>themes/meow/source/css/common/color-mode.styl</div><div>themes/meow/source/css/common/color.styl</div><div>themes/meow/source/css/common/comment/comment.styl</div><div>themes/meow/source/css/common/comment/waline.styl</div><div>themes/meow/source/css/common/images.styl</div><div>themes/meow/source/css/common/markdown.styl</div><div>themes/meow/source/css/common/swup.styl</div><div>themes/meow/source/css/common/variables.styl</div><div>themes/meow/source/css/layout/_partial/banner.styl</div><div>themes/meow/source/css/layout/_partial/code.styl</div><div>themes/meow/source/css/layout/_partial/footer.styl</div><div>themes/meow/source/css/layout/_partial/header.styl</div><div>themes/meow/source/css/layout/_partial/music.styl</div><div>themes/meow/source/css/layout/_partial/paginator.styl</div><div>themes/meow/source/css/layout/_partial/post/post-copyright.styl</div><div>themes/meow/source/css/layout/_partial/post/post-info.styl</div><div>themes/meow/source/css/layout/_partial/post/post-progressbar.styl</div><div>themes/meow/source/css/layout/_partial/post/post-reward.styl</div><div>themes/meow/source/css/layout/_partial/post/toc.styl</div><div>themes/meow/source/css/layout/_partial/search.styl</div><div>themes/meow/source/css/layout/_partial/sidebar.styl</div><div>themes/meow/source/css/layout/_partial/snackbar.styl</div><div>themes/meow/source/css/layout/_partial/toolbar.styl</div><div>themes/meow/source/css/layout/archives.styl</div><div>themes/meow/source/css/layout/categories.styl</div><div>themes/meow/source/css/layout/homepage.styl</div><div>themes/meow/source/css/layout/page.styl</div><div>themes/meow/source/css/layout/pages/404.styl</div><div>themes/meow/source/css/layout/pages/albums/album.styl</div><div>themes/meow/source/css/layout/pages/albums/albums.styl</div><div>themes/meow/source/css/layout/pages/essay/artitalk.styl</div><div>themes/meow/source/css/layout/pages/essay/local-essay.styl</div><div>themes/meow/source/css/layout/pages/friends.styl</div><div>themes/meow/source/css/layout/post.styl</div><div>themes/meow/source/css/layout/tags.styl</div><div>themes/meow/source/css/style.styl</div><div>themes/meow/source/css/tags/button.styl</div><div>themes/meow/source/css/tags/chatbox.styl</div><div>themes/meow/source/css/tags/fiction.styl</div><div>themes/meow/source/css/tags/fold.styl</div><div>themes/meow/source/css/tags/mask.styl</div><div>themes/meow/source/css/tags/note.styl</div><div>themes/meow/source/css/tags/tabs.styl</div><div>themes/meow/source/css/tags/timeline.styl</div><div>themes/meow/source/css/tags/title.styl</div><div>themes/meow/source/css/third-party/dist/APlayer.min.css</div><div>themes/meow/source/css/third-party/dist/snackbar.min.css</div><div>themes/meow/source/css/third-party/dist/waline.css</div><div>themes/meow/source/js/main.js</div><div>themes/meow/source/js/plugins/artitalk.js</div><div>themes/meow/source/js/plugins/dist/APlayer.min.js</div><div>themes/meow/source/js/plugins/dist/Meting.min.js</div><div>themes/meow/source/js/plugins/dist/Swup.umd.js</div><div>themes/meow/source/js/plugins/dist/lazyload.min.js</div><div>themes/meow/source/js/plugins/dist/search.js</div><div>themes/meow/source/js/plugins/dist/snackbar.min.js</div><div>themes/meow/source/js/plugins/dist/typed.umd.js</div><div>themes/meow/source/js/plugins/dist/waline.js</div><div>themes/meow/source/js/plugins/view-image.min.js</div><div>themes/meow/source/js/theme/albums.js</div><div>themes/meow/source/js/theme/category.js</div><div>themes/meow/source/js/theme/code.js</div><div>themes/meow/source/js/theme/focus.js</div><div>themes/meow/source/js/theme/friendLink.js</div><div>themes/meow/source/js/theme/menu.js</div><div>themes/meow/source/js/theme/search.js</div><div>themes/meow/source/js/theme/tags.js</div><div>themes/meow/source/js/theme/toolbar.js</div><div>themes/meow/source/js/theme/tools/copy.js</div><div>themes/meow/source/js/theme/tools/datetime.js</div><div>themes/meow/source/js/theme/tools/imageview.js</div><div>themes/meow/source/js/theme/tools/keyboard.js</div><div>themes/meow/source/js/theme/tools/lazyload.js</div><div>themes/meow/source/js/theme/tools/mouse.js</div><div>themes/meow/source/js/theme/tools/scroll.js</div><div>themes/meow/source/js/theme/tools/swup.js</div><div>themes/meow/source/js/theme/tools/utils.js</div></div></div></div></div><div class="timenode" index="7"><div class="header"><span>5/5</span></div><div class="body fs14"><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">修改</span> <span class="cl-desc">更新域名配置为 flechazo.icu</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/612ccda" target="_blank" rel="noopener" class="cl-hash">#612ccda</a></div><div class="cl-files"><div>_config.stellar.yml</div><div>_config.yml</div></div></div></div></div><div class="timenode" index="8"><div class="header"><span>5/4</span></div><div class="body fs14"><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">修改</span> <span class="cl-desc">整理文章分类结构，修复GitHub链接</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/0abbe35" target="_blank" rel="noopener" class="cl-hash">#0abbe35</a></div><div class="cl-files"><div>source/_posts/markdown语法.md</div><div>source/_posts/scala编程.md</div><div>source/_posts/数据结构.md</div><div>source/_posts/构建历程.md</div><div>source/_posts/源码仓库构建历程.md</div><div>source/_posts/霍夫变换.md</div><div>source/about/index.md</div><div>source/friends/index.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">更新</span> <span class="cl-desc">为博客添加夜间模式切换按钮</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/45c9b22" target="_blank" rel="noopener" class="cl-hash">#45c9b22</a></div><div class="cl-files"><div>themes/stellar/layout/_partial/menubtn.ejs</div></div></div></div></div><div class="timenode" index="9"><div class="header"><span>5/3</span></div><div class="body fs14"><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">修改</span> <span class="cl-desc">更新markdown语法文章，新增列表语法章节</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/00becdd" target="_blank" rel="noopener" class="cl-hash">#00becdd</a></div><div class="cl-files"><div>source/_posts/markdown语法.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#ef4444">修复</span> <span class="cl-desc">修复博客多项问题：API密钥泄露、标签语法、代码块、清理冗余内容</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/04fd94c" target="_blank" rel="noopener" class="cl-hash">#04fd94c</a></div><div class="cl-files"><div>.gitignore</div><div>CLAUDE.md</div><div>_config.yml</div><div>source/_posts/actions测试.md</div><div>source/_posts/hello-world.md</div><div>source/_posts/markdown语法.md</div><div>source/_posts/scala编程.md</div><div>source/_posts/数据结构.md</div><div>source/_posts/构建历程.md</div><div>source/_posts/源码仓库构建历程.md</div><div>source/_posts/霍夫变换.md</div><div>source/friends/index.md</div></div></div></div></div><div class="timenode" index="10"><div class="header"><span>5/2</span></div><div class="body fs14"><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#22c55e">新增</span> <span class="cl-desc">发布 Claude Code 安装与接入 DeepSeek 及使用指南文章</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/61ad2bb" target="_blank" rel="noopener" class="cl-hash">#61ad2bb</a></div><div class="cl-files"><div>source/_posts/Claude-Code-安装与接入DeepSeek及使用指南.md</div></div></div></div></div><div class="timenode" index="11"><div class="header"><span>4/30</span></div><div class="body fs14"><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">修改</span> <span class="cl-desc">更新ai摘要功能</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/5849b1a" target="_blank" rel="noopener" class="cl-hash">#5849b1a</a></div><div class="cl-files"><div>_config.stellar.yml</div><div>_config.yml</div><div>package-lock.json</div><div>package.json</div><div>source/_posts/actions测试.md</div><div>source/_posts/hello-world.md</div><div>source/_posts/markdown语法.md</div><div>source/_posts/scala编程.md</div><div>source/_posts/数据结构.md</div><div>source/_posts/构建历程.md</div><div>source/_posts/源码仓库构建历程.md</div><div>source/_posts/霍夫变换.md</div></div></div></div></div><div class="timenode" index="12"><div class="header"><span>4/29</span></div><div class="body fs14"><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">更新</span> <span class="cl-desc">公式适配</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/2e501e4" target="_blank" rel="noopener" class="cl-hash">#2e501e4</a></div><div class="cl-files"><div>_config.stellar.yml</div><div>source/_posts/霍夫变换.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">更新</span> <span class="cl-desc">霍夫变换</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/46d141b" target="_blank" rel="noopener" class="cl-hash">#46d141b</a></div><div class="cl-files"><div>source/_posts/霍夫变换.md</div><div>source/notes/霍夫变换.md</div></div></div></div></div><div class="timenode" index="13"><div class="header"><span>4/28</span></div><div class="body fs14"><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">修改</span> <span class="cl-desc">更新markdown语法</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/0ee51bb" target="_blank" rel="noopener" class="cl-hash">#0ee51bb</a></div><div class="cl-files"><div>source/_posts/markdown语法.md</div><div>source/_posts/每天学习一个markdown语法.md</div></div></div></div></div><div class="timenode" index="14"><div class="header"><span>4/25</span></div><div class="body fs14"><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">修改</span> <span class="cl-desc">更新头像</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/cd216ff" target="_blank" rel="noopener" class="cl-hash">#cd216ff</a></div><div class="cl-files"><div>_config.stellar.yml</div><div>source/_data/notebooks/计算机组成原理.yml</div><div>source/about/index.md</div><div>source/images/aboutme.png</div><div>source/images/android-chrome-192x192.png</div><div>source/images/android-chrome-512x512.png</div><div>source/images/apple-touch-icon.png</div><div>source/images/banner/学无止尽.png</div><div>source/images/favicon-16x16.png</div><div>source/images/favicon-32x32.png</div><div>source/images/favicon.ico</div><div>source/images/site.webmanifest</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">修改</span> <span class="cl-desc">更新关于页面</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/eb2a137" target="_blank" rel="noopener" class="cl-hash">#eb2a137</a></div><div class="cl-files"><div>_config.stellar.yml</div><div>_config.yml</div><div>source/about/index.md</div><div>source/images/avatar.jpg</div><div>source/notes/霍夫变换.md</div></div></div></div></div><div class="timenode" index="15"><div class="header"><span>4/23</span></div><div class="body fs14"><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">修改</span> <span class="cl-desc">更新文章：markdown语法</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/f57a0c3" target="_blank" rel="noopener" class="cl-hash">#f57a0c3</a></div><div class="cl-files"><div>source/_posts/每天学习一个markdown语法.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">修改</span> <span class="cl-desc">更新笔记功能</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/ef39c2f" target="_blank" rel="noopener" class="cl-hash">#ef39c2f</a></div><div class="cl-files"><div>_config.stellar.yml</div><div>source/_data/notebooks/notes.yml</div><div>source/_data/notebooks/数字图像处理.yml</div><div>source/_data/notebooks/数据结构.yml</div><div>source/_data/notebooks/计算机组成原理.yml</div><div>source/explore/index.md</div><div>source/friends/index.md</div><div>source/notes/index.md</div><div>source/notes/数据结构测试笔记.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">修改</span> <span class="cl-desc">更新笔记功能</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/0b530ef" target="_blank" rel="noopener" class="cl-hash">#0b530ef</a></div><div class="cl-files"><div>_config.stellar.yml</div><div>package-lock.json</div><div>package.json</div><div>source/_data/notebooks/notes.yml</div><div>source/notes/index.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#22c55e">新增</span> <span class="cl-desc">开启评论功能</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/88ecf8e" target="_blank" rel="noopener" class="cl-hash">#88ecf8e</a></div><div class="cl-files"><div>_config.stellar.yml</div></div></div></div></div><div class="timenode" index="16"><div class="header"><span>4/22</span></div><div class="body fs14"><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">修改</span> <span class="cl-desc">更新：每天学习一个markdown语法</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/0651a7a" target="_blank" rel="noopener" class="cl-hash">#0651a7a</a></div><div class="cl-files"><div>source/_posts/每天学习一个markdown语法.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">修改</span> <span class="cl-desc">修改时间显示</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/201d766" target="_blank" rel="noopener" class="cl-hash">#201d766</a></div><div class="cl-files"><div>source/_posts/构建历程.md</div><div>source/_posts/每天学习一个markdown语法.md</div><div>source/_posts/源码仓库构建历程.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#22c55e">新增</span> <span class="cl-desc">添加git时间插件</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/7f1fb7f" target="_blank" rel="noopener" class="cl-hash">#7f1fb7f</a></div><div class="cl-files"><div>package-lock.json</div><div>package.json</div></div></div></div></div><div class="timenode" index="17"><div class="header"><span>4/21</span></div><div class="body fs14"><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">修改</span> <span class="cl-desc">更新文章：每天学习一个markdown语法</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/048cfe8" target="_blank" rel="noopener" class="cl-hash">#048cfe8</a></div><div class="cl-files"><div>source/_posts/每天学习一个markdown语法.md</div></div></div></div></div><div class="timenode" index="18"><div class="header"><span>4/20</span></div><div class="body fs14"><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">修改</span> <span class="cl-desc">更新文章：排序</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/83a9b0a" target="_blank" rel="noopener" class="cl-hash">#83a9b0a</a></div><div class="cl-files"><div>source/_posts/数据结构.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">修改</span> <span class="cl-desc">更新文章：排序</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/4c1b730" target="_blank" rel="noopener" class="cl-hash">#4c1b730</a></div><div class="cl-files"><div>source/数据结构.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">更新</span> <span class="cl-desc">文章发布时间和上次修改时间</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/b76c784" target="_blank" rel="noopener" class="cl-hash">#b76c784</a></div><div class="cl-files"><div>source/_posts/actions测试.md</div><div>source/_posts/scala编程.md</div><div>source/_posts/构建历程.md</div><div>source/_posts/源码仓库构建历程.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">更新</span> <span class="cl-desc">categories拼写错误</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/2868935" target="_blank" rel="noopener" class="cl-hash">#2868935</a></div><div class="cl-files"><div>source/_posts/actions测试.md</div><div>source/_posts/scala编程.md</div><div>source/_posts/构建历程.md</div><div>source/_posts/源码仓库构建历程.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#ef4444">修复</span> <span class="cl-desc">修复分类显示</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/11e888b" target="_blank" rel="noopener" class="cl-hash">#11e888b</a></div><div class="cl-files"><div>source/_posts/actions测试.md</div><div>source/_posts/scala编程.md</div><div>source/_posts/构建历程.md</div><div>source/_posts/源码仓库构建历程.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">修改</span> <span class="cl-desc">更新分类标签</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/14bf778" target="_blank" rel="noopener" class="cl-hash">#14bf778</a></div><div class="cl-files"><div>_config.yml</div><div>source/_posts/actions测试.md</div><div>source/_posts/scala编程.md</div><div>source/_posts/构建历程.md</div><div>source/_posts/源码仓库构建历程.md</div></div></div></div></div><div class="timenode" index="19"><div class="header"><span>4/19</span></div><div class="body fs14"><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">修改</span> <span class="cl-desc">更新搭建历程</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/74c323d" target="_blank" rel="noopener" class="cl-hash">#74c323d</a></div><div class="cl-files"><div>source/_posts/构建历程.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">修改</span> <span class="cl-desc">更新文章源码仓库构建历程</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/266983b" target="_blank" rel="noopener" class="cl-hash">#266983b</a></div><div class="cl-files"><div>source/_posts/actions测试.md</div><div>source/_posts/构建历程.md</div><div>source/_posts/源码仓库构建历程.md</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">更新</span> <span class="cl-desc">Add GitHub Actions workflow for Hexo deployment</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/03f322c" target="_blank" rel="noopener" class="cl-hash">#03f322c</a></div><div class="cl-files"><div>.github/workflows/deploy.yml</div></div></div></div></div></div><style>.cl-changelog .cl-block{padding:6px 0}.cl-changelog .cl-block+.cl-block{border-top:1px solid var(--block-border);margin-top:2px}.cl-changelog .cl-line{font-size:.875rem;line-height:1.6}.cl-changelog .cl-type{font-weight:600;letter-spacing:.02em}.cl-changelog .cl-desc{color:var(--text-p1)}.cl-changelog .cl-hash{font-size:.7rem;color:var(--text-p4);text-decoration:none;font-family:Menlo,Monaco,Consolas,monospace;opacity:.45;margin-left:4px;transition:opacity .2s,color .15s}.cl-changelog .cl-hash:hover{opacity:1;color:var(--theme-color)}.cl-changelog .cl-files{margin-top:4px;padding-left:0;max-height:0;overflow:hidden;transition:max-height .2s ease}.cl-changelog .cl-files div{font-size:.76rem;color:var(--text-p4);line-height:1.5;padding:0 0 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cl-changelog .cl-block:hover .cl-files{max-height:200px}.cl-changelog .timenode.year-node>.header{margin-top:.5rem}.cl-changelog .timenode.year-node>.header span{font-size:1.2rem;font-weight:700;color:var(--theme-color);letter-spacing:.02em}</style></article><footer class="page-footer footnote"><hr><div class="sitemap" style="column-count:4"><div class="sitemap-group"><span class="fs15">博客</span><a href="/">近期发布</a><a href="/blog/categories/">分类</a><a href="/blog/tags/">标签</a><a href="/blog/archives/">归档</a></div><div class="sitemap-group"><span class="fs15">项目</span><a target="_blank" rel="noopener" href="https://github.com/flechazoyang-google/flechazoyang-google.github.io">博客</a><a target="_blank" rel="noopener" href="https://github.com/flechazoyang-google/puzzle-game">puzzle-game</a><a target="_blank" rel="noopener" href="https://github.com/flechazoyang-google/enterprise-website">enterprise-website</a></div><div class="sitemap-group"><span class="fs15">社交</span><a target="_blank" rel="noopener" href="https://github.com/flechazoyang-google">GitHub</a><a href="mailto:3134825482@qq.com">Email</a><a target="_blank" rel="noopener" href="https://xhslink.com/m/vESjf2Xayb">小红书</a><a target="_blank" rel="noopener" href="https://b23.tv/MBV0zls">bilibili</a></div><div class="sitemap-group"><span class="fs15">关于</span><a href="/about/">关于我</a><a href="/changelog/">博客日志</a><a href="/privacy/">隐私政策</a></div></div><div class="text"><p>本站由 <a href="/">妄司逸</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.33.1">Stellar 1.33.1</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p></div></footer><div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right"></aside><div class="float-panel"><button type="button" class="rightbar-toggle" onclick="sidebar.rightbar()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></button> <button type="button" class="theme-toggle" onclick="switchTheme()"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 1024 1024"><path fill="currentColor" fill-rule="evenodd" d="M582.4 326.4c-140.8 0-256 115.2-256 256s115.2 256 256 256 256-115.2 256-256-115.2-256-256-256z m0 448c-70.4 0-131.2-36.8-164.8-92.8 12.8 3.2 27.2 4.8 40 4.8 121.6 0 219.2-99.2 219.2-219.2 0-17.6-1.6-35.2-6.4-52.8 60.8 32 102.4 96 102.4 169.6 1.6 104-84.8 190.4-190.4 190.4zM582.4 262.4c17.6 0 32-14.4 32-32v-128c0-17.6-14.4-32-32-32s-32 14.4-32 32v128c0 17.6 14.4 32 32 32zM262.4 582.4c0-17.6-14.4-32-32-32h-128c-17.6 0-32 14.4-32 32s14.4 32 32 32h128c17.6 0 32-14.4 32-32zM310.4 356.8c6.4 6.4 14.4 9.6 22.4 9.6 8 0 16-3.2 22.4-9.6 12.8-12.8 12.8-32 0-44.8l-91.2-91.2c-12.8-12.8-32-12.8-44.8 0-12.8 12.8-12.8 32 0 44.8l91.2 91.2zM944 220.8c-12.8-12.8-32-12.8-44.8 0l-91.2 91.2c-12.8 12.8-12.8 32 0 44.8 6.4 6.4 14.4 9.6 22.4 9.6 8 0 16-3.2 22.4-9.6l91.2-91.2c12.8-12.8 12.8-33.6 0-44.8zM310.4 808l-91.2 91.2c-12.8 12.8-12.8 32 0 44.8 6.4 6.4 14.4 9.6 22.4 9.6 8 0 16-3.2 22.4-9.6l91.2-91.2c12.8-12.8 12.8-32 0-44.8-11.2-11.2-32-11.2-44.8 0z"></path></svg></button> <button type="button" class="mobile-only leftbar-toggle mobile" onclick="sidebar.leftbar()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 11c0-3.771 0-5.657 1.172-6.828C4.343 3 6.229 3 10 3h4c3.771 0 5.657 0 6.828 1.172C22 5.343 22 7.229 22 11v2c0 3.771 0 5.657-1.172 6.828C19.657 21 17.771 21 14 21h-4c-3.771 0-5.657 0-6.828-1.172C2 18.657 2 16.771 2 13z"/><path id="sep" stroke-linecap="round" d="M5.5 10h6m-5 4h4m4.5 7V3"/></g></svg></button></div></div><div class="scripts"><script>window.canonical={closeEnable:!0,closeText:"关闭提示",originalHost:"blog.flechazo.icu",officialHosts:["localhost","blog.flechazo.icu","www.flechazo.icu","flechazoyang-google-github-io.pages.dev","flechazoyang-google-github-io.vercel.app"],encoded:"YmxvZy5mbGVjaGF6by5pY3U="},window.canonical.param={permalink:"https://blog.flechazo.icu/changelog/",checklink:"/js/plugins/video.js"},history.scrollRestoration&&(history.scrollRestoration="auto"),function(){const e=()=>{const e=document.querySelector("#l_cover .l_cover.wiki"),o=document.getElementById("start");e&&o?window.scrollTo(0,o.offsetTop):window.scrollTo(0,0)};"loading"!==document.readyState?e():document.addEventListener("DOMContentLoaded",e)}();const ctx={date_suffix:{just:"刚刚",min:"分钟前",hour:"小时前",day:"天前"},root:"/",tag_plugins:{chat:Object.assign({api:"https://siteinfo.listentothewind.cn/api/v1"})},search:{}};if(ctx.search.service="local_search","local_search"==ctx.search.service){let e=Object.assign({},'{"field":"all","path":"/search.json","content":true,"skip_search":null,"sort":"-date"}');ctx.search[ctx.search.service]=e}const def={avatar:"https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/3442075.svg",cover:"https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/cover/76b86c0226ffd.svg",loading:"https://api.iconify.design/eos-icons:three-dots-loading.svg?color=%231cd0fd"},deps={jquery:"https://gcore.jsdelivr.net/npm/jquery@3.7/dist/jquery.min.js",marked:"https://gcore.jsdelivr.net/npm/marked@13.0/lib/marked.umd.min.js",lazyload:"/%5Bobject%20Object%5D"}</script><script>function RunItem(){function e(e,t){this.name=t||e.name,this.run=()=>{try{e()}catch(e){console.log(e)}}}this.list=[],this.start=()=>{for(var e=0;e<this.list.length;e++)this.list[e].run()},this.push=(t,i,n=!0)=>{let s=t;n&&(s=()=>{utils.requestAnimationFrame(t)});var a=new e(s,i);this.list.push(a)},this.remove=e=>{for(let t=this.list.length-1;t>=0;t--){this.list[t].name===e&&this.list.splice(t,1)}}}const utils={_loadedStyles:new Set,css:(e,t,i,n)=>{if(utils._loadedStyles.has(e))return null;var s,a=window.document,r=a.createElement("link");if(t)s=t;else{var o=(a.body||a.getElementsByTagName("head")[0]).childNodes;s=o[o.length-1]}var l=a.styleSheets;if(n)for(var u in n)n.hasOwnProperty(u)&&r.setAttribute(u,n[u]);r.rel="stylesheet",r.href=e,r.media="only x",utils._loadedStyles.add(e),function e(t){if(a.body)return t();setTimeout(function(){e(t)})}(function(){s.parentNode.insertBefore(r,t?s:s.nextSibling)});var d=function(e){for(var t=r.href,i=l.length;i--;)if(l[i].href===t)return e();setTimeout(function(){d(e)})};function c(){r.addEventListener&&r.removeEventListener("load",c),r.media=i||"all"}return r.addEventListener&&r.addEventListener("load",c),r.onloadcssdefined=d,d(c),r},_loadedScripts:new Set,_loadedElements:new WeakSet,js:(e,t)=>new Promise((i,n)=>{if(e.startsWith("/")&&(e=ctx.root+e.substring(1)),utils._loadedScripts.has(e))i();else{var s=document.createElement("script");if(s.src=e,t)for(let e of Object.keys(t))s[e]=t[e];else s.async=!0;s.onerror=n,s.onload=s.onreadystatechange=function(){const t=this.readyState;t&&"loaded"!==t&&"complete"!==t||(s.onload=s.onreadystatechange=null,utils._loadedScripts.add(e),i())},document.head.appendChild(s)}}),_pjaxListeners:new Set,jq:(e,t=!0)=>{"undefined"==typeof jQuery?utils.js(deps.jquery).then(e):e(),t&&!e._pjax_registered&&(document.addEventListener("pjax:complete",e),e._pjax_registered=!0,utils._pjaxListeners.add(e))},cleanupPjaxListeners:()=>{utils._pjaxListeners.forEach(e=>{document.removeEventListener("pjax:complete",e),e._pjax_registered=!1}),utils._pjaxListeners.clear()},onLoading:e=>{e&&0===$(e).find(".loading-wrap").length&&$(e).append('<div class="loading-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" stroke-opacity=".3" d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="1.3s" values="60;0"/></path><path stroke-dasharray="15" stroke-dashoffset="15" d="M12 3C16.9706 3 21 7.02944 21 12"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="15;0"/><animateTransform attributeName="transform" dur="1.5s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"/></path></g></svg></div>')},onLoadSuccess:e=>{e&&$(e).find(".loading-wrap").remove()},onLoadFailure:e=>{e&&($(e).find(".loading-wrap svg").remove(),$(e).find(".loading-wrap").append('<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" d="M12 3L21 20H3L12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/></path><path stroke-dasharray="6" stroke-dashoffset="6" d="M12 10V14"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="6;0"/></path></g><circle cx="12" cy="17" r="1" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.4s" values="0;1"/></circle></svg>'),$(e).find(".loading-wrap").addClass("error"))},request:(e,t,i,n)=>{if(e&&utils._loadedElements.has(e))return;let s=0;return new Promise((a,r)=>{const o=()=>{utils.onLoading?.(e);let l=!1;const u=setTimeout(()=>{l=!0,console.warn("[request] 超时:",t),++s>=3?(utils.onLoadFailure?.(e),n?.(),r("请求超时")):setTimeout(o,1e3)},5e3);fetch(t).then(e=>{if(!l){if(clearTimeout(u),!e.ok)throw new Error("响应失败");return e}}).then(t=>{l||(e&&utils._loadedElements.add(e),utils.onLoadSuccess?.(e),i(t),a(t))}).catch(t=>{clearTimeout(u),console.warn("[request] 错误:",t),++s>=3?(utils.onLoadFailure?.(e),n?.(),r(t)):setTimeout(o,1e3)})};o()})},requestWithoutLoading:(e,t={},i=2,n=5e3)=>new Promise((s,a)=>{let r=0;const o=()=>{let l=!1;const u=setTimeout(()=>{l=!0,++r>i?a("timeout"):o()},n);fetch(e,t).then(e=>{if(clearTimeout(u),!e.ok)throw new Error("bad response");s(e)}).catch(e=>{clearTimeout(u),++r>i?a(e):setTimeout(o,500)})};o()}),requestAnimationFrame:e=>{window.requestAnimationFrame||(window.requestAnimationFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame),window.requestAnimationFrame(e)},dark:{},_pluginInitializers:[],_pluginCleanups:new Map,initPlugin:(e,t,i={})=>{if(!e||"function"!=typeof e)return;const n=t||e.name;if(utils._pluginInitializers.some(e=>e.name===n))return;const s=()=>{try{if(utils._pluginCleanups.has(n)){const e=utils._pluginCleanups.get(n);"function"==typeof e&&e()}const t=e();"function"==typeof t&&utils._pluginCleanups.set(n,t)}catch(e){console.error(`[Plugin ${n}] 初始化失败:`,e)}};utils._pluginInitializers.push({fn:s,name:n,options:i}),"complete"===document.readyState||"interactive"===document.readyState?s():window.addEventListener("DOMContentLoaded",s,{once:!0})},reinitPlugins:()=>{utils._pluginInitializers.forEach(e=>{if(!e.options.skipReinit)try{e.fn()}catch(t){console.error(`[Plugin ${e.name}] 重新初始化失败:`,t)}})},cleanupPlugins:()=>{utils._pluginCleanups.forEach((e,t)=>{try{e()}catch(e){console.error(`[Plugin ${t}] 清理失败:`,e)}}),utils._pluginCleanups.clear()},cleanupAll:()=>{utils.cleanupPlugins(),utils.cleanupPjaxListeners()}};document.addEventListener("pjax:before",()=>{}),document.addEventListener("pjax:complete",()=>{utils.reinitPlugins()}),utils.dark.method={toggle:new RunItem},utils.dark=Object.assign(utils.dark,{push:utils.dark.method.toggle.push})</script><script>const sidebar={leftbar:()=>{l_body&&(l_body.toggleAttribute("leftbar"),l_body.removeAttribute("rightbar"))},rightbar:()=>{l_body&&(l_body.toggleAttribute("rightbar"),l_body.removeAttribute("leftbar"))},dismiss:()=>{l_body&&(l_body.removeAttribute("leftbar"),l_body.removeAttribute("rightbar"))},toggleTOC:()=>{document.querySelector("#data-toc").classList.toggle("collapse")}}</script><script>(()=>{const e=document.querySelectorAll(".tag-subtree.parent-tag > a > .tag-switcher-wrapper");for(const t of e)t.addEventListener("click",e=>{e.target.closest(".tag-subtree.parent-tag").classList.toggle("expanded"),e.preventDefault()});const t=new URLSearchParams(window.location.search).get("tag");if(t){let e=document.querySelector(`.tag-subtree[data-tag="${t}"]`);if(e)for(e.querySelector("a").classList.add("active");e;)e.classList.add("expanded"),e=e.parentElement.closest(".tag-subtree.parent-tag")}})()</script><script async src="https://gcore.jsdelivr.net/npm/vanilla-lazyload@19.1/dist/lazyload.min.js"></script><script>window.lazyLoadOptions={elements_selector:".lazy",callback_loaded:e=>{e.classList.add("loaded");const a=e.closest(".lazy-box"),t=a?.querySelector(".lazy-icon");t&&t.remove()}},window.addEventListener("LazyLoad::Initialized",function(e){window.lazyLoadInstance=e.detail.instance},!1),document.addEventListener("DOMContentLoaded",function(){window.lazyLoadInstance?.update()}),window.wrapLazyloadImages=e=>{if("string"==typeof e&&(e=document.querySelector(e)),!e)return;e.querySelectorAll("img").forEach(e=>{if(e.classList.contains("lazy"))return;const a=e.getAttribute("src");if(!a)return;const t=document.createElement("div");t.className="lazy-box";const n=e.cloneNode();n.removeAttribute("src"),n.setAttribute("data-src",a),n.classList.add("lazy");const d=document.createElement("div");d.className="lazy-icon",def.loading&&(d.style.backgroundImage=`url("${def.loading}")`),t.appendChild(n),t.appendChild(d),e.replaceWith(t)}),window.lazyLoadInstance?.update&&window.lazyLoadInstance.update()}</script><script src="/js/main.js?v=1.33.1" defer></script><script>const applyTheme=e=>{"auto"===e?document.documentElement.removeAttribute("data-theme"):document.documentElement.setAttribute("data-theme",e),applyThemeToGiscus(e)},applyThemeToGiscus=e=>{e="auto"===e?"preferred_color_scheme":e;const t=document.getElementById("giscus");t&&t.setAttribute("data-theme",e);const a=document.querySelector("#comments > section.giscus > iframe");if(a){const t=a.src.replace(/theme=[\w]+/,`theme=${e}`);a.src=t}},switchTheme=()=>{let e;switch(document.documentElement.getAttribute("data-theme")){case"light":e="dark";break;case"dark":e="auto";break;default:e="light"}applyTheme(e),window.localStorage.setItem("Stellar.theme",e),utils.dark.mode="auto"===e?window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light":e,utils.dark.method.toggle.start();const t={light:"切换到浅色模式",dark:"切换到深色模式",auto:"切换到跟随系统配色"};hud?.toast?.(t[e])};(()=>{const e=window.localStorage.getItem("Stellar.theme");null!==e?applyTheme(e):utils.dark.mode=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light",utils.dark.method.toggle.start()})(),window.switchTheme=switchTheme</script><script type="module">import{init}from"https://gcore.jsdelivr.net/npm/@waline/client@3.13.0/dist/waline.js";const lazyload=!1;function initWaline(){const e=document.getElementById("waline_container");e&&util.viewportLazyload(e,function(){utils.css("https://gcore.jsdelivr.net/npm/@waline/client@3.13.0/dist/waline.css"),utils.css("https://gcore.jsdelivr.net/npm/@waline/client@3.13.0/dist/waline-meta.css");const t=e.getAttribute("comment_id")??decodeURI(window.location.pathname);init(Object.assign({js:"https://gcore.jsdelivr.net/npm/@waline/client@3.13.0/dist/waline.js",css:"https://gcore.jsdelivr.net/npm/@waline/client@3.13.0/dist/waline.css",meta_css:"https://gcore.jsdelivr.net/npm/@waline/client@3.13.0/dist/waline-meta.css",serverURL:"https://blogcomments-omega.vercel.app/",commentCount:!0,pageview:!1},{el:"#waline_container",path:t}))},false)}window.stellar=window.stellar||{},window.stellar.initComments=window.stellar.initComments||{},window.stellar.initComments.waline=initWaline,initWaline()</script><script defer>const initServices=()=>{let e=[];ctx.services=Object.assign({},JSON.parse('{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"rating":{"js":"/js/services/rating.js","api":"https://star-vote.xaox.cc/api/rating"},"vote":{"js":"/js/services/vote.js","api":"https://star-vote.xaox.cc/api/vote"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"friends_and_posts":{"js":"/js/services/friends_and_posts.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"},"voice":{"js":"/js/plugins/voice.js"},"video":{"js":"/js/plugins/video.js"},"download-file":{"js":"/js/plugins/download-file.js"},"twikoo":{"js":"/js/services/twikoo_latest_comment.js"},"waline":{"js":"/js/services/waline_latest_comment.js"},"artalk":{"js":"/js/services/artalk_latest_comment.js"},"giscus":{"js":"/js/services/giscus_latest_comment.js"},"contributors":{"edit_this_page":{"_posts/":null,"wiki/stellar/":"https://github.com/xaoxuu/hexo-theme-stellar-docs/blob/main/"},"js":"/js/services/contributors.js"},"rss":{"js":"/js/services/rss.js"}}'));for(let l of Object.keys(ctx.services)){const a=ctx.services[l].js;if("siteinfo"==l){const u=document.querySelectorAll("a.link-card[cardlink]");u?.length>0&&utils.js(a,{defer:!0}).then(function(){setCardLink(u)})}else if("ghinfo"==l){document.querySelectorAll(".ds-ghinfo").length>0&&utils.js(a,{defer:!0})}else if("voice"==l){const j=document.querySelectorAll(".voice>audio");j?.length>0&&utils.js(a,{defer:!0}).then(function(){createVoiceDom(j)})}else if("video"==l){const d=document.querySelectorAll(".video>video");d?.length>0&&utils.js(a,{defer:!0}).then(function(){videoEvents(d)})}else if("download-file"==l){const h=document.querySelectorAll(".chat-file");h?.length>0&&utils.js(a,{defer:!0}).then(function(){downloadFileEvent(h)})}else{const v=document.getElementsByClassName(`ds-${l}`);v?.length>0&&utils.jq(()=>{"timeline"==l||"memos"==l||"marked"==l?utils.js(deps.marked).then(function(){utils.js(a,{defer:!0})}):utils.js(a,{defer:!0})},!1)}}if(ctx.search&&"function"==typeof searchFunc){const f=$("input#search-input");if(f.length>0&&!f[0]._searchInitialized){const m=ctx.search.path.startsWith("/")?ctx.root+ctx.search.path.substring(1):ctx.root+ctx.search.path,g=f.attr("data-filter")||"";searchFunc(m,g,"search-wrapper","search-input","search-result"),f[0]._searchInitialized=!0}}let s=document.querySelectorAll(".chat .status-bar .time"),t=null,i=null;if(s.length>0){n();const p=(new Date).getSeconds();function n(){for(let e=0;e<s.length;++e){const t=s[e],i=new Date,n=i.getHours(),r=i.getMinutes();t.innerHTML=c(n)+":"+c(r)}}function c(e){return e<10?"0"+e:e}t=setInterval(function(){n(),t&&(clearInterval(t),t=null);i=setInterval(n,6e4),e.push(i)},1e3*(60-p)),e.push(t)}const r=new Map,o=new IntersectionObserver((e,s)=>{e.filter(e=>e.isIntersecting).sort((e,s)=>e.intersectionRect.y!==s.intersectionRect.y?e.intersectionRect.y-s.intersectionRect.y:e.intersectionRect.x-s.intersectionRect.x).forEach((e,t)=>{s.unobserve(e.target),setTimeout(()=>{e.target.classList.add("quote-blink"),setTimeout(()=>{e.target.classList.remove("quote-blink")},1e3)},Math.max(100,16)*(t+1))})});return document.querySelectorAll(".chat .talk .quote").forEach(e=>{const s=function(){var s=document.getElementById("quote-"+e.getAttribute("quotedCellTag"));if(s){var t=s.parentElement,i=t.clientHeight/2;s.offsetTop>i-s.clientHeight/2?t.scrollTo({top:s.offsetTop-i+s.clientHeight/2,behavior:"smooth"}):t.scrollTo({top:0,behavior:"smooth"}),o.observe(s)}};e.addEventListener("click",s),r.set(e,s)}),()=>{e.forEach(e=>{e&&clearInterval(e)}),e=[],t&&(clearInterval(t),t=null),i&&(clearInterval(i),i=null),o&&o.disconnect(),r.forEach((e,s)=>{s.removeEventListener("click",e)}),r.clear()}};utils.initPlugin(initServices,"services")</script><script>window.addEventListener("DOMContentLoaded",e=>{ctx.search={path:"/search.json"},utils.js("/js/search/local-search.js",{defer:!0})})</script><script>window.FPConfig={delay:0,ignoreKeywords:[],maxRPS:5,hoverDelay:25}</script><script defer src="https://gcore.jsdelivr.net/npm/flying-pages@2/flying-pages.min.js"></script><script>ctx.fancybox={selector:".timenode p>img",css:"https://gcore.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css",js:"https://gcore.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"};var selector="[data-fancybox]:not(.error), .with-fancybox .atk-content img:not([atk-emoticon])";ctx.fancybox.selector&&(selector+=`, ${ctx.fancybox.selector}`);var needFancybox=0!==document.querySelectorAll(selector).length;if(!needFancybox){const e=document.getElementsByClassName("ds-memos");null!=e&&e.length>0&&(needFancybox=!0);const t=document.getElementsByClassName("with-fancybox");null!=t&&t.length>0&&(needFancybox=!0)}needFancybox&&(utils.css(ctx.fancybox.css),utils.js(ctx.fancybox.js,{defer:!0}).then(function(){Fancybox.bind(selector,{hideScrollbar:!1,Thumbs:{autoStart:!1},caption:(e,t)=>t.triggerEl.alt||t.triggerEl.dataset.caption||null})}))</script><script>utils.initPlugin(()=>{const e=document.getElementById("swiper-api");null!=e&&(utils.css("https://unpkg.com/swiper@10.3/swiper-bundle.min.css"),utils.js("https://unpkg.com/swiper@10.3/swiper-bundle.min.js",{defer:!0}).then(function(){const i=e.getAttribute("effect")||"";new Swiper(".swiper#swiper-api",{slidesPerView:"auto",spaceBetween:8,centeredSlides:!0,effect:i,rewind:!0,pagination:{el:".swiper-pagination",clickable:!0},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}})}))},"swiper")</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.23/dist/katex.min.css" crossorigin="anonymous"><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.23/dist/katex.min.js" crossorigin="anonymous"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.23/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script><script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}]})})</script><script>utils.initPlugin(()=>{const t=document.querySelectorAll(".code");t.length>0&&(ctx.copycode={default_text:"Copy",success_text:"Copied",toast:"复制成功"},utils.js("/js/plugins/copycode.js",{defer:!0}).then(()=>{"function"==typeof createCopyButtons&&createCopyButtons(t)}))},"copycode")</script></div><div class="page-loading-bar"><img src="https://api.iconify.design/eos-icons:three-dots-loading.svg?color=%231cd0fd"></div></body></html>
+
+<!DOCTYPE html><html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.33.1" theme-name="Stellar" theme-version="1.33.1">
+  <link rel="canonical" href="https://blog.flechazo.icu/changelog/">
+  
+  <meta name="generator" content="Hexo 8.1.2">
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel="preconnect" href="https://gcore.jsdelivr.net" crossorigin><link rel="preconnect" href="https://gcore.jsdelivr.net" crossorigin><link rel="preconnect" href="https://unpkg.com" crossorigin>
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
+  <meta name="theme-color" content="#f9fafb">
+  <title>更新日志 - 妄司逸</title>
+
+  
+    <meta name="description" content="博客所有更新记录，自动从 Git 提交历史生成">
+<meta property="og:type" content="website">
+<meta property="og:title" content="更新日志">
+<meta property="og:url" content="https://blog.flechazo.icu/changelog/">
+<meta property="og:site_name" content="妄司逸">
+<meta property="og:description" content="博客所有更新记录，自动从 Git 提交历史生成">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/banner/books.jpg">
+<meta property="og:image" content="https://blog.flechazo.icu/images/avatar.jpg">
+<meta property="article:published_time" content="2026-05-06T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-05-11T13:40:37.904Z">
+<meta property="article:author" content="妄司逸">
+<meta property="article:tag" content="个人博客, 学习, 技术, 个人成长">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/banner/books.jpg">
+  
+  
+  
+  <meta name="keywords" content="个人博客, 学习, 技术, 个人成长">
+
+  <!-- feed -->
+  
+    <link rel="alternate" href="/atom.xml" title="妄司逸" type="application/atom+xml">
+  
+
+  <link rel="stylesheet" href="/css/main.css?v=1.33.1">
+
+
+  
+
+  
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Website","@id":"https://blog.flechazo.icu/changelog/","author":{"@type":"Person","name":"妄司逸","sameAs":[]},"name":"更新日志","description":"博客所有更新记录，自动从 Git 提交历史生成","url":"https://blog.flechazo.icu/changelog/","keywords":"个人博客, 学习, 技术, 个人成长"}</script>
+  
+</head>
+<body>
+
+<div class="l_body content" id="start" layout="page" type="tech" ><aside class="l_left"><div class="sidebg"></div><div class="leftbar-container">
+
+
+<header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="/images/avatar.jpg" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main">妄司逸</div><div class="sub normal cap">学无止尽</div><div class="sub hover cap" style="opacity:0"> 拥抱未来</div></a></div></header>
+
+<div class="nav-area">
+
+<nav class="menu dis-select"><a class="nav-item" title="博客" href="/" style="color:#1BCDFC"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M5.879 2.879C5 3.757 5 5.172 5 8v8c0 2.828 0 4.243.879 5.121C6.757 22 8.172 22 11 22h2c2.828 0 4.243 0 5.121-.879C19 20.243 19 18.828 19 16V8c0-2.828 0-4.243-.879-5.121C17.243 2 15.828 2 13 2h-2c-2.828 0-4.243 0-5.121.879M8.25 17a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75M9 12.25a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5zM8.25 9A.75.75 0 0 1 9 8.25h6a.75.75 0 0 1 0 1.5H9A.75.75 0 0 1 8.25 9" clip-rule="evenodd"/><path fill="currentColor" d="M5.235 4.058C5 4.941 5 6.177 5 8v8c0 1.823 0 3.058.235 3.942L5 19.924c-.975-.096-1.631-.313-2.121-.803C2 18.243 2 16.828 2 14v-4c0-2.829 0-4.243.879-5.121c.49-.49 1.146-.707 2.121-.803zm13.53 15.884C19 19.058 19 17.822 19 16V8c0-1.823 0-3.059-.235-3.942l.235.018c.975.096 1.631.313 2.121.803C22 5.757 22 7.17 22 9.999v4c0 2.83 0 4.243-.879 5.122c-.49.49-1.146.707-2.121.803z" opacity=".5"/></svg></a><a class="nav-item" title="文档" href="/wiki/" style="color:#F44336"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M14.25 4.48v3.057c0 .111 0 .27.02.406a.936.936 0 0 0 .445.683a.96.96 0 0 0 .783.072c.13-.04.272-.108.378-.159L17 8.005l1.124.534c.106.05.248.119.378.16a.958.958 0 0 0 .783-.073a.936.936 0 0 0 .444-.683c.021-.136.021-.295.021-.406V3.031c.113-.005.224-.01.332-.013C21.154 2.98 22 3.86 22 4.933v11.21c0 1.112-.906 2.01-2.015 2.08c-.97.06-2.108.179-2.985.41c-1.082.286-1.99 1.068-3.373 1.436c-.626.167-1.324.257-1.627.323V5.174c.32-.079 1.382-.203 1.674-.371c.184-.107.377-.216.576-.323m5.478 8.338a.75.75 0 0 1-.546.91l-4 1a.75.75 0 0 1-.364-1.456l4-1a.75.75 0 0 1 .91.546" clip-rule="evenodd"/><path fill="currentColor" d="M18.25 3.151c-.62.073-1.23.18-1.75.336a8.2 8.2 0 0 0-.75.27v3.182l.75-.356l.008-.005a1.13 1.13 0 0 1 .492-.13c.047 0 .094.004.138.01c.175.029.315.1.354.12l.009.005l.749.356V3.647z"/><path fill="currentColor" d="M12 5.214c-.334-.064-1.057-.161-1.718-.339C8.938 4.515 8.05 3.765 7 3.487c-.887-.234-2.041-.352-3.018-.412C2.886 3.007 2 3.9 2 4.998v11.146c0 1.11.906 2.01 2.015 2.079c.97.06 2.108.179 2.985.41c.486.129 1.216.431 1.873.726c1.005.451 2.052.797 3.127 1.034z" opacity=".5"/><path fill="currentColor" d="M4.273 12.818a.75.75 0 0 1 .91-.545l4 1a.75.75 0 1 1-.365 1.455l-4-1a.75.75 0 0 1-.545-.91m.909-4.545a.75.75 0 1 0-.364 1.455l4 1a.75.75 0 0 0 .364-1.455z"/></svg></a><a class="nav-item" title="友链" href="/friends/" style="color:#FA6400"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m13.629 20.472l-.542.916c-.483.816-1.69.816-2.174 0l-.542-.916c-.42-.71-.63-1.066-.968-1.262c-.338-.197-.763-.204-1.613-.219c-1.256-.021-2.043-.098-2.703-.372a5 5 0 0 1-2.706-2.706C2 14.995 2 13.83 2 11.5v-1c0-3.273 0-4.91.737-6.112a5 5 0 0 1 1.65-1.651C5.59 2 7.228 2 10.5 2h3c3.273 0 4.91 0 6.113.737a5 5 0 0 1 1.65 1.65C22 5.59 22 7.228 22 10.5v1c0 2.33 0 3.495-.38 4.413a5 5 0 0 1-2.707 2.706c-.66.274-1.447.35-2.703.372c-.85.015-1.275.022-1.613.219c-.338.196-.548.551-.968 1.262" opacity=".5"/><path fill="currentColor" d="M10.99 14.308c-1.327-.978-3.49-2.84-3.49-4.593c0-2.677 2.475-3.677 4.5-1.609c2.025-2.068 4.5-1.068 4.5 1.609c0 1.752-2.163 3.615-3.49 4.593c-.454.335-.681.502-1.01.502c-.329 0-.556-.167-1.01-.502"/></svg></a><a class="nav-item active" title="关于" href="/about/" style="color:#F44336"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M20 12a8 8 0 1 1-16 0a8 8 0 0 1 16 0" opacity=".5"/><path fill="currentColor" d="M17.712 5.453c1.047-.193 2.006-.259 2.797-.152c.77.103 1.536.393 1.956 1.064c.446.714.312 1.542-.012 2.258c-.33.728-.918 1.499-1.672 2.268c-1.516 1.547-3.836 3.226-6.597 4.697c-2.763 1.472-5.495 2.484-7.694 2.92c-1.095.217-2.098.299-2.923.201c-.8-.095-1.6-.383-2.032-1.075c-.47-.752-.296-1.63.07-2.379c.375-.768 1.032-1.586 1.872-2.403L4 12.416c0 .219.083.71.168 1.146c.045.23.09.444.123.596c-.652.666-1.098 1.263-1.339 1.756c-.277.567-.208.825-.145.925c.072.116.305.305.937.38c.609.073 1.44.018 2.455-.183c2.02-.4 4.613-1.351 7.28-2.772c2.667-1.42 4.85-3.015 6.23-4.423c.694-.707 1.15-1.334 1.377-1.836c.233-.515.167-.75.107-.844c-.07-.112-.289-.294-.883-.374c-.542-.072-1.272-.041-2.163.112L16.87 5.656c.338-.101.658-.17.842-.203"/></svg></a></nav>
+</div>
+<div class="widgets">
+<div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571L792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="站内搜索"></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div>
+
+<widget class="widget-wrapper recent post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2026/05/02/Claude-Code-%E5%AE%89%E8%A3%85%E4%B8%8E%E6%8E%A5%E5%85%A5DeepSeek%E5%8F%8A%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/"><span class="title">Claude Code 安装与接入 DeepSeek 及使用指南</span></a><a class="item title" href="/2026/05/06/%E5%9F%9F%E5%90%8D%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8D%9A%E5%AE%A2%E5%85%B3%E8%81%94%E5%9F%9F%E5%90%8D%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/"><span class="title">域名注册与博客绑定指南</span></a><a class="item title" href="/2026/05/11/hello-world/"><span class="title">Hello World</span></a><a class="item title" href="/2026/05/06/Windows%E5%91%BD%E4%BB%A4%E4%B8%8ELinux%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8%E5%8C%BA%E5%88%AB/"><span class="title">Windows命令与Linux命令使用区别</span></a><a class="item title" href="/2026/05/11/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%80%BB%E7%BB%93-md/"><span class="title">博客搭建总结</span></a><a class="item title" href="/2026/04/17/%E6%9E%84%E5%BB%BA%E5%8E%86%E7%A8%8B/"><span class="title">博客搭建历程</span></a><a class="item title" href="/2026/04/21/markdown%E8%AF%AD%E6%B3%95/"><span class="title">markdown语法</span></a><a class="item title" href="/2026/04/19/%E5%8D%81%E5%A4%A7%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/"><span class="title">十大经典排序算法</span></a><a class="item title" href="/2026/04/29/%E9%9C%8D%E5%A4%AB%E5%8F%98%E6%8D%A2/"><span class="title">霍夫变换底层原理</span></a><a class="item title" href="/2026/04/18/%E6%BA%90%E7%A0%81%E4%BB%93%E5%BA%93%E6%9E%84%E5%BB%BA%E5%8E%86%E7%A8%8B/"><span class="title">源码仓库和GitHub action任务设置</span></a></div></widget>
+</div>
+<footer class="footer dis-select"><div class="social-wrap"><a class="social" href="https://github.com/flechazoyang-google" target="_blank" rel="external nofollow noopener noreferrer"><img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/08a41b181ce68.svg"/></a><a class="social" href="mailto:3134825482@qq.com" rel="noopener noreferrer">default:email</a><a class="social" onclick="switchTheme()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path fill="currentColor" fill-rule="evenodd" d="M582.4 326.4c-140.8 0-256 115.2-256 256s115.2 256 256 256 256-115.2 256-256-115.2-256-256-256z m0 448c-70.4 0-131.2-36.8-164.8-92.8 12.8 3.2 27.2 4.8 40 4.8 121.6 0 219.2-99.2 219.2-219.2 0-17.6-1.6-35.2-6.4-52.8 60.8 32 102.4 96 102.4 169.6 1.6 104-84.8 190.4-190.4 190.4zM582.4 262.4c17.6 0 32-14.4 32-32v-128c0-17.6-14.4-32-32-32s-32 14.4-32 32v128c0 17.6 14.4 32 32 32zM262.4 582.4c0-17.6-14.4-32-32-32h-128c-17.6 0-32 14.4-32 32s14.4 32 32 32h128c17.6 0 32-14.4 32-32zM310.4 356.8c6.4 6.4 14.4 9.6 22.4 9.6 8 0 16-3.2 22.4-9.6 12.8-12.8 12.8-32 0-44.8l-91.2-91.2c-12.8-12.8-32-12.8-44.8 0-12.8 12.8-12.8 32 0 44.8l91.2 91.2zM944 220.8c-12.8-12.8-32-12.8-44.8 0l-91.2 91.2c-12.8 12.8-12.8 32 0 44.8 6.4 6.4 14.4 9.6 22.4 9.6 8 0 16-3.2 22.4-9.6l91.2-91.2c12.8-12.8 12.8-33.6 0-44.8zM310.4 808l-91.2 91.2c-12.8 12.8-12.8 32 0 44.8 6.4 6.4 14.4 9.6 22.4 9.6 8 0 16-3.2 22.4-9.6l91.2-91.2c12.8-12.8 12.8-32 0-44.8-11.2-11.2-32-11.2-44.8 0z"></path></svg></a></div></footer>
+</div></aside><div class="l_main" id="main">
+
+
+
+
+
+<div class="article banner top">
+  <div class="content">
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
+
+  <span class="sep"></span>
+  <a class="cap breadcrumb" href="/changelog/">更新日志</a>
+  </div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2026-05-06T16:00:00.000Z">2026-05-07</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2026-05-11T13:40:37.904Z">2026-05-11</time></span></div></div></div>
+    
+  </div>
+  </div><article class="md-text content"><style>
+.bread-nav, .article.banner.top .top .post-meta { display: none !important; }
+</style>
+<div class="tag-plugin banner"><img class="lazy bg" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/banner/books.jpg"><div class="content"><div class="top">
+    <button class="back cap" onclick="window.history.back()">
+      <svg aria-hidden="true" viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" d="M7.78 12.53a.75.75 0 01-1.06 0L2.47 8.28a.75.75 0 010-1.06l4.25-4.25a.75.75 0 011.06 1.06L4.81 7h7.44a.75.75 0 010 1.5H4.81l2.97 2.97a.75.75 0 010 1.06z"></path></svg>
+    </button>
+    <div class="tag-plugin navbar"><a class="link" href="/">博客</a><a class="link" href="/wiki/">文档</a><a class="link" href="/friends/">友链</a><a class="link active" href="/changelog/">日志</a><a class="link" href="/about/">关于</a></div></div><div class="bottom"><img class="avatar" src="/images/avatar.jpg"><div class="text-area"><div class="text title">更新日志</div></div></div></div></div>
+
+<div class="tag-plugin timeline cl-changelog"><div class="timenode year-node" index="0"><div class="header"><span>2026</span></div></div><div class="timenode" index="1"><div class="header"><span>5/11</span></div><div class="body fs14"><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#78716c">杂项</span> <span class="cl-desc">将 REASONIX.md 加入 gitignore</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/65385d5" target="_blank" rel="noopener" class="cl-hash">#65385d5</a></div><div class="cl-files"><div>.gitignore</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#78716c">杂项</span> <span class="cl-desc">删除冗余的 _config.stellar副本.yml</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/95b9ab1" target="_blank" rel="noopener" class="cl-hash">#95b9ab1</a></div><div class="cl-files"><div>_config.stellar副本.yml</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">更新</span> <span class="cl-desc">waline修复完成</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/cb8936a" target="_blank" rel="noopener" class="cl-hash">#cb8936a</a></div><div class="cl-files"><div>source/_data/changelog.json</div></div></div><div class="cl-block"><div class="cl-line"><span class="cl-type" style="color:#0ea5e9">更新</span> <span class="cl-desc">001</span> <a href="https://github.com/flechazoyang-google/flechazoyang-google.github.io/commit/4da03ab" target="_blank" rel="noopener" class="cl-hash">#4da03ab</a></div><div class="cl-files"><div>.github/dependabot.yml</div><div>.gitignore</div><div>_config.landscape.yml</div><div>_config.stellar.yml</div><div>_config.stellar副本.yml</div><div>_config.yml</div><div>package-lock.json</div><div>package.json</div><div>scaffolds/draft.md</div><div>scaffolds/page.md</div><div>scaffolds/post.md</div><div>scripts/changelog-gen.js</div><div>scripts/social-nav.js</div><div>source/_data/changelog.json</div><div>source/_data/wiki.yml</div><div>source/_data/wiki/datastruct.yml</div><div>source/_data/wiki/wiki.yml</div><div>source/_posts/Claude-Code-安装与接入DeepSeek及使用指南.md</div><div>source/_posts/Windows命令与Linux命令使用区别.md</div><div>source/_posts/hello-world.md</div><div>source/_posts/markdown语法.md</div><div>source/_posts/scala编程.md</div><div>source/_posts/十大排序算法.md</div><div>source/_posts/博客搭建总结-md.md</div><div>source/_posts/域名注册与博客关联域名操作指南.md</div><div>source/_posts/数据结构测试笔记.md</div><div>source/_posts/构建历程.md</div><div>source/_posts/源码仓库构建历程.md</div><div>source/_posts/霍夫变换.md</div><div>source/about/index.md</div><div>source/changelog/index.md</div><div>source/friends/index.md</div><div>source/images/aboutme.png</div><div>source/images/android-chrome-192x192.png</div><div>source/images/android-chrome-512x512.png</div><div>source/images/apple-touch-icon.png</div><div>source/images/avatar.jpg</div><div>source/images/banner/学无止尽.png</div><div>source/images/favicon-16x16.png</div><div>source/images/favicon-32x32.png</div><div>source/images/favicon.ico</div><div>source/images/site.webmanifest</div><div>source/privacy/index.md</div><div>source/say/index.md</div><div>source/wiki/datastruct/binary-tree.md</div><div>source/wiki/datastruct/graph.md</div><div>source/wiki/datastruct/linear-list.md</div><div>source/wiki/datastruct/overview.md</div><div>source/wiki/datastruct/searching.md</div><div>source/wiki/datastruct/sorting.md</div><div>source/wiki/datastruct/stack-queue.md</div><div>themes/.gitkeep</div></div></div></div></div></div><style>
+.cl-changelog .cl-block {
+  padding: 6px 0;
+}
+.cl-changelog .cl-block + .cl-block {
+  border-top: 1px solid var(--block-border);
+  margin-top: 2px;
+}
+.cl-changelog .cl-line {
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+.cl-changelog .cl-type {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.cl-changelog .cl-desc {
+  color: var(--text-p1);
+}
+.cl-changelog .cl-hash {
+  font-size: 0.7rem;
+  color: var(--text-p4);
+  text-decoration: none;
+  font-family: Menlo, Monaco, Consolas, monospace;
+  opacity: 0.45;
+  margin-left: 4px;
+  transition: opacity 0.2s, color 0.15s;
+}
+.cl-changelog .cl-hash:hover {
+  opacity: 1;
+  color: var(--theme-color);
+}
+.cl-changelog .cl-files {  margin-top: 4px;
+  padding-left: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease;
+}
+.cl-changelog .cl-files div {
+  font-size: 0.76rem;
+  color: var(--text-p4);
+  line-height: 1.5;
+  padding: 0 0 1px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cl-changelog .cl-block:hover .cl-files {
+  max-height: 200px;
+}
+.cl-changelog .timenode.year-node>.header {
+  margin-top: 0.5rem;
+}
+.cl-changelog .timenode.year-node>.header span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--theme-color);
+  letter-spacing: 0.02em;
+}
+</style>
+</article>
+
+
+
+<footer class="page-footer footnote"><hr><div class="sitemap" style="column-count:4;"><div class="sitemap-group"><span class="fs15">博客</span><a href="/">近期发布</a><a href="/blog/categories/">分类</a><a href="/blog/tags/">标签</a><a href="/blog/archives/">归档</a></div><div class="sitemap-group"><span class="fs15">项目</span><a target="_blank" rel="noopener" href="https://github.com/flechazoyang-google/flechazoyang-google.github.io">博客</a><a target="_blank" rel="noopener" href="https://github.com/flechazoyang-google/puzzle-game">puzzle-game</a><a target="_blank" rel="noopener" href="https://github.com/flechazoyang-google/enterprise-website">enterprise-website</a></div><div class="sitemap-group"><span class="fs15">社交</span><a target="_blank" rel="noopener" href="https://github.com/flechazoyang-google">GitHub</a><a href="mailto:3134825482@qq.com">Email</a><a target="_blank" rel="noopener" href="https://xhslink.com/m/vESjf2Xayb">小红书</a><a target="_blank" rel="noopener" href="https://b23.tv/MBV0zls">bilibili</a></div><div class="sitemap-group"><span class="fs15">关于</span><a href="/about/">关于我</a><a href="/changelog/">博客日志</a><a href="/privacy/">隐私政策</a></div></div><div class="text"><p>本站由 <a href="/">妄司逸</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.33.1">Stellar 1.33.1</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+</div></footer>
+<div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
+</aside><div class='float-panel'>
+  <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
+  </button>
+  <button type='button' style='display:none' class='mobile-only leftbar-toggle mobile' onclick='sidebar.leftbar()'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 11c0-3.771 0-5.657 1.172-6.828C4.343 3 6.229 3 10 3h4c3.771 0 5.657 0 6.828 1.172C22 5.343 22 7.229 22 11v2c0 3.771 0 5.657-1.172 6.828C19.657 21 17.771 21 14 21h-4c-3.771 0-5.657 0-6.828-1.172C2 18.657 2 16.771 2 13z"/><path id="sep" stroke-linecap="round" d="M5.5 10h6m-5 4h4m4.5 7V3"/></g></svg>
+  </button>
+</div>
+</div><div class="scripts">
+
+
+<script type="text/javascript">
+  window.canonical = {"originalHost":"blog.flechazo.icu","officialHosts":["localhost","blog.flechazo.icu","www.flechazo.icu","flechazoyang-google-github-io.pages.dev","flechazoyang-google-github-io.vercel.app"],"closeEnable":true,"closeText":"关闭提示","encoded":"YmxvZy5mbGVjaGF6by5pY3U="};
+  const ctx = {
+    date_suffix: {
+      just: `刚刚`,
+      min: `分钟前`,
+      hour: `小时前`,
+      day: `天前`,
+    },
+    root : `/`,
+    tag_plugins: {
+      chat: Object.assign({"api":"https://siteinfo.listentothewind.cn/api/v1"}),
+    }
+  };
+
+  // required plugins (only load if needs)
+  if (`local_search`) {
+    ctx.search = {};
+    ctx.search.service = `local_search`;
+    if (ctx.search.service == 'local_search') {
+      let service_obj = Object.assign({}, `{"field":"all","path":"/search.json","content":true,"skip_search":null,"sort":"-date"}`);
+      ctx.search[ctx.search.service] = service_obj;
+    }
+  }
+  const def = {
+    avatar: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/3442075.svg`,
+    cover: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/cover/76b86c0226ffd.svg`,
+    loading: `https://api.iconify.design/eos-icons:three-dots-loading.svg?color=%231cd0fd`,
+  };
+  const deps = {
+    jquery: `https://gcore.jsdelivr.net/npm/jquery@3.7/dist/jquery.min.js`,
+    marked: `https://gcore.jsdelivr.net/npm/marked@13.0/lib/marked.umd.min.js`,
+    lazyload: `/%5Bobject%20Object%5D`
+  }
+  
+
+</script>
+
+<script type="text/javascript">
+  
+  function RunItem() {
+    this.list = []; // 存放回调函数
+    this.start = () => {
+      for (var i = 0; i < this.list.length; i++) {
+        this.list[i].run();
+      }
+    };
+    this.push = (fn, name, setRequestAnimationFrame = true) => {
+      let myfn = fn
+      if (setRequestAnimationFrame) {
+        myfn = () => {
+          utils.requestAnimationFrame(fn)
+        }
+      }
+      var f = new Item(myfn, name);
+      this.list.push(f);
+    };
+    this.remove = (name) => {
+      for (let index = 0; index < this.list.length; index++) {
+        const e = this.list[index];
+        if (e.name == name) {
+          this.list.splice(index, 1);
+        }
+      }
+    }
+    // 构造一个可以run的对象
+    function Item(fn, name) {
+      // 函数名称
+      this.name = name || fn.name;
+      // run方法
+      this.run = () => {
+        try {
+          fn()
+        } catch (error) {
+          console.log(error);
+        }
+      };
+    }
+  }
+
+  const utils = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    css: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    js: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      if (src.startsWith('/')) {
+        src = ctx.root + src.substring(1);
+      }
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function () {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    jq: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        utils.js(deps.jquery).then(fn)
+      } else {
+        fn()
+      }
+    },
+
+    onLoading: (el) => {
+      if (el) {
+        $(el).append('<div class="loading-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" stroke-opacity=".3" d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="1.3s" values="60;0"/></path><path stroke-dasharray="15" stroke-dashoffset="15" d="M12 3C16.9706 3 21 7.02944 21 12"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="15;0"/><animateTransform attributeName="transform" dur="1.5s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"/></path></g></svg></div>');
+      }
+    },
+    onLoadSuccess: (el) => {
+      if (el) {
+        $(el).find('.loading-wrap').remove();
+      }
+    },
+    onLoadFailure: (el) => {
+      if (el) {
+        $(el).find('.loading-wrap svg').remove();
+        $(el).find('.loading-wrap').append('<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" d="M12 3L21 20H3L12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/></path><path stroke-dasharray="6" stroke-dashoffset="6" d="M12 10V14"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="6;0"/></path></g><circle cx="12" cy="17" r="1" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.4s" values="0;1"/></circle></svg>');
+        $(el).find('.loading-wrap').addClass('error');
+      }
+    },
+    request: (el, url, callback, onFailure) => {
+      const maxRetry = 3;
+      let retryCount = 0;
+
+      return new Promise((resolve, reject) => {
+        const load = () => {
+          utils.onLoading?.(el);
+
+          let timedOut = false;
+          const timeout = setTimeout(() => {
+            timedOut = true;
+            console.warn('[request] 超时:', url);
+
+            if (++retryCount >= maxRetry) {
+              utils.onLoadFailure?.(el);
+              onFailure?.();
+              reject('请求超时');
+            } else {
+              setTimeout(load, 1000);
+            }
+          }, 5000);
+
+          fetch(url).then(resp => {
+            if (timedOut) return;
+            clearTimeout(timeout);
+
+            if (!resp.ok) throw new Error('响应失败');
+            return resp;
+          }).then(data => {
+            if (timedOut) return;
+            utils.onLoadSuccess?.(el);
+            callback(data);
+            resolve(data);
+          }).catch(err => {
+            clearTimeout(timeout);
+            console.warn('[request] 错误:', err);
+
+            if (++retryCount >= maxRetry) {
+              utils.onLoadFailure?.(el);
+              onFailure?.();
+              reject(err);
+            } else {
+              setTimeout(load, 1000);
+            }
+          });
+        };
+
+        load();
+      });
+    },
+    requestWithoutLoading: (url, options = {}, maxRetry = 2, timeout = 5000) => {
+      return new Promise((resolve, reject) => {
+        let retryCount = 0;
+
+        const tryRequest = () => {
+          let timedOut = false;
+          const timer = setTimeout(() => {
+            timedOut = true;
+            if (++retryCount > maxRetry) reject('timeout');
+            else tryRequest();
+          }, timeout);
+
+          fetch(url, options)
+            .then(resp => {
+              clearTimeout(timer);
+              if (!resp.ok) throw new Error('bad response');
+              resolve(resp);
+            })
+            .catch(err => {
+              clearTimeout(timer);
+              if (++retryCount > maxRetry) reject(err);
+              else setTimeout(tryRequest, 500);
+            });
+        };
+
+        tryRequest();
+      });
+    },
+    /********************** requestAnimationFrame ********************************/
+    // 1、requestAnimationFrame 会把每一帧中的所有 DOM 操作集中起来，在一次重绘或回流中就完成，并且重绘或回流的时间间隔紧紧跟随浏览器的刷新频率，一般来说，这个频率为每秒60帧。
+    // 2、在隐藏或不可见的元素中，requestAnimationFrame 将不会进行重绘或回流，这当然就意味着更少的的 cpu，gpu 和内存使用量。
+    requestAnimationFrame: (fn) => {
+      if (!window.requestAnimationFrame) {
+        window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame;
+      }
+      window.requestAnimationFrame(fn)
+    },
+    dark: {},
+  };
+
+  // utils.dark.mode 当前模式 dark or light
+  // utils.dark.toggle() 暗黑模式触发器
+  // utils.dark.push(callBack[,"callBackName"]) 传入触发器回调函数
+  utils.dark.method = {
+    toggle: new RunItem(),
+  };
+  utils.dark = Object.assign(utils.dark, {
+    push: utils.dark.method.toggle.push,
+  });
+</script>
+<script>
+  const sidebar = {
+    leftbar: () => {
+      if (l_body) {
+        l_body.toggleAttribute('leftbar');
+        l_body.removeAttribute('rightbar');
+      }
+    },
+    rightbar: () => {
+      if (l_body) {
+        l_body.toggleAttribute('rightbar');
+        l_body.removeAttribute('leftbar');
+      }
+    },
+    dismiss: () => {
+      if (l_body) {
+        l_body.removeAttribute('leftbar');
+        l_body.removeAttribute('rightbar');
+      }
+    },
+    toggleTOC: () => {
+      document.querySelector('#data-toc').classList.toggle('collapse');
+    }
+  }
+</script>
+<script type="text/javascript">
+  (() => {
+    const tagSwitchers = document.querySelectorAll('.tag-subtree.parent-tag > a > .tag-switcher-wrapper')
+    for (const tagSwitcher of tagSwitchers) {
+      tagSwitcher.addEventListener('click', (e) => {
+        const parent = e.target.closest('.tag-subtree.parent-tag')
+        parent.classList.toggle('expanded')
+        e.preventDefault()
+      })
+    }
+
+    // Get active tag from query string, then activate it.
+    const urlParams = new URLSearchParams(window.location.search)
+    const activeTag = urlParams.get('tag')
+    if (activeTag) {
+      let tag = document.querySelector(`.tag-subtree[data-tag="${activeTag}"]`)
+      if (tag) {
+        tag.querySelector('a').classList.add('active')
+        
+        while (tag) {
+          tag.classList.add('expanded')
+          tag = tag.parentElement.closest('.tag-subtree.parent-tag')
+        }
+      }
+    }
+  })()
+</script>
+
+<script async src="https://gcore.jsdelivr.net/npm/vanilla-lazyload@19.1/dist/lazyload.min.js"></script>
+<script>
+  // https://www.npmjs.com/package/vanilla-lazyload
+  // Set the options globally
+  // to make LazyLoad self-initialize
+  window.lazyLoadOptions = {
+    elements_selector: ".lazy",
+    callback_loaded: (el) => {
+      el.classList.add('loaded');
+      const wrapper = el.closest('.lazy-box');
+      const icon = wrapper?.querySelector('.lazy-icon');
+      if (icon) icon.remove();
+    }
+  };
+  // Listen to the initialization event
+  // and get the instance of LazyLoad
+  window.addEventListener(
+    "LazyLoad::Initialized",
+    function (event) {
+      window.lazyLoadInstance = event.detail.instance;
+    },
+    false
+  );
+  document.addEventListener('DOMContentLoaded', function () {
+    window.lazyLoadInstance?.update();
+  });
+
+  window.wrapLazyloadImages = (container) => {
+    if (typeof container === 'string') {
+      container = document.querySelector(container);
+    }
+    if (!container) return;
+    
+    const images = container.querySelectorAll('img');
+    images.forEach((img) => {
+      if (img.classList.contains('lazy')) return;
+
+      const src = img.getAttribute('src');
+      if (!src) return;
+
+      const wrapper = document.createElement('div');
+      wrapper.className = 'lazy-box';
+
+      const newImg = img.cloneNode();
+      newImg.removeAttribute('src');
+      newImg.setAttribute('data-src', src);
+      newImg.classList.add('lazy');
+
+      const icon = document.createElement('div');
+      icon.className = 'lazy-icon';
+      if (def.loading) {
+        icon.style.backgroundImage = `url("${def.loading}")`;
+      }
+
+      wrapper.appendChild(newImg);
+      wrapper.appendChild(icon);
+
+      img.replaceWith(wrapper);
+    });
+
+    // 通知 LazyLoad 更新
+    if (window.lazyLoadInstance?.update) {
+      window.lazyLoadInstance.update();
+    }
+  }
+  
+</script>
+
+<!-- required -->
+<script src="/js/main.js?v=1.33.1" defer></script>
+
+<script type="text/javascript">
+  const applyTheme = (theme) => {
+    if (theme === 'auto') {
+      document.documentElement.removeAttribute('data-theme')
+    } else {
+      document.documentElement.setAttribute('data-theme', theme)
+    }
+
+    // applyThemeToGiscus(theme)
+  }
+
+  // FIXME: 这会导致无法使用 preferred_color_scheme 以外的主题
+  const applyThemeToGiscus = (theme) => {
+    // theme = theme === 'auto' ? 'preferred_color_scheme' : theme
+    const cmt = document.getElementById('giscus')
+    if (cmt) {
+      // This works before giscus load.
+      cmt.setAttribute('data-theme', theme)
+    }
+
+    const iframe = document.querySelector('#comments > section.giscus > iframe')
+    if (iframe) {
+      // This works after giscus loaded.
+      const src = iframe.src
+      const newSrc = src.replace(/theme=[\w]+/, `theme=${theme}`)
+      iframe.src = newSrc
+    }
+  }
+
+  const switchTheme = () => {
+    // light -> dark -> auto -> light -> ...
+    const currentTheme = document.documentElement.getAttribute('data-theme')
+    let newTheme;
+    switch (currentTheme) {
+      case 'light':
+        newTheme = 'dark'
+        break
+      case 'dark':
+        newTheme = 'auto'
+        break
+      default:
+        newTheme = 'light'
+    }
+    applyTheme(newTheme)
+    window.localStorage.setItem('Stellar.theme', newTheme)
+    utils.dark.mode = newTheme === 'auto' ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light") : newTheme;
+    utils.dark.method.toggle.start();
+
+    const messages = {
+      light: `切换到浅色模式`,
+      dark: `切换到深色模式`,
+      auto: `切换到跟随系统配色`,
+    }
+    hud?.toast?.(messages[newTheme])
+  }
+
+  (() => {
+    // Apply user's preferred theme, if any.
+    const theme = window.localStorage.getItem('Stellar.theme')
+    if (theme !== null) {
+      applyTheme(theme)
+    } else {
+      utils.dark.mode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+    utils.dark.method.toggle.start();
+  })()
+</script>
+
+
+<!-- optional -->
+
+  <script type="module">
+  import { init } from 'https://gcore.jsdelivr.net/npm/@waline/client@3.13.0/dist/waline.js';
+
+  const el = document.getElementById('waline_container');
+  util.viewportLazyload(el, load_waline, false);
+
+  function load_waline(){
+    if (!el) return;
+
+    utils.css('https://gcore.jsdelivr.net/npm/@waline/client@3.13.0/dist/waline.css');
+    utils.css('https://gcore.jsdelivr.net/npm/@waline/client@3.13.0/dist/waline-meta.css');
+
+    const path = el.getAttribute('comment_id') ?? decodeURI(window.location.pathname);
+    const waline = init(Object.assign({"js":"https://gcore.jsdelivr.net/npm/@waline/client@3.13.0/dist/waline.js","css":"https://gcore.jsdelivr.net/npm/@waline/client@3.13.0/dist/waline.css","meta_css":"https://gcore.jsdelivr.net/npm/@waline/client@3.13.0/dist/waline-meta.css","serverURL":"https://blogcomment-tan.vercel.app/","commentCount":true,"pageview":false}, {
+      el: '#waline_container',
+      path: path,
+      
+    }));
+  }
+</script>
+
+
+
+
+<script defer>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"rating":{"js":"/js/services/rating.js","api":"https://star-vote.xaox.cc/api/rating"},"vote":{"js":"/js/services/vote.js","api":"https://star-vote.xaox.cc/api/vote"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"friends_and_posts":{"js":"/js/services/friends_and_posts.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"},"voice":{"js":"/js/plugins/voice.js"},"video":{"js":"/js/plugins/video.js"},"download-file":{"js":"/js/plugins/download-file.js"},"twikoo":{"js":"/js/services/twikoo_latest_comment.js"},"waline":{"js":"/js/services/waline_latest_comment.js"},"artalk":{"js":"/js/services/artalk_latest_comment.js"},"giscus":{"js":"/js/services/giscus_latest_comment.js"},"contributors":{"edit_this_page":{"_posts/":null,"wiki/stellar/":"https://github.com/xaoxuu/hexo-theme-stellar-docs/blob/main/"},"js":"/js/services/contributors.js"},"rss":{"js":"/js/services/rss.js"}}`));
+    for (let id of Object.keys(ctx.services)) {
+      const js = ctx.services[id].js;
+      if (id == 'siteinfo') {
+        ctx.cardlinks = document.querySelectorAll('a.link-card[cardlink]');
+        if (ctx.cardlinks?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            setCardLink(ctx.cardlinks);
+          });
+        }
+      } else if (id == 'voice') {
+        ctx.voiceAudios = document.querySelectorAll('.voice>audio');
+        if (ctx.voiceAudios?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            createVoiceDom(ctx.voiceAudios);
+          });
+        }
+      } else if (id == 'video') {
+        ctx.videos = document.querySelectorAll('.video>video');
+        if (ctx.videos?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            videoEvents(ctx.videos);
+          });
+        }
+      } else if (id == 'download-file') {
+        ctx.files = document.querySelectorAll('.file');
+        if (ctx.files?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            downloadFileEvent(ctx.files);
+          });
+        }
+      } else {
+        const els = document.getElementsByClassName(`ds-${id}`);
+        if (els?.length > 0) {
+          utils.jq(() => {
+            if (id == 'timeline' || 'memos' || 'marked') {
+              utils.js(deps.marked).then(function () {
+                utils.js(js, { defer: true });
+              });
+            } else {
+              utils.js(js, { defer: true });
+            }
+          });
+        }
+      }
+    }
+
+    // chat iphone time
+    let phoneTimes = document.querySelectorAll('.chat .status-bar .time');
+
+    if (phoneTimes.length > 0) {
+      NowTime();
+      var date = new Date();
+      var sec = date.getSeconds();
+      var firstAdjustInterval = setInterval(firstAdjustTime, 1000 * (60 - sec));
+    }
+
+    function firstAdjustTime() {
+      NowTime();
+      clearInterval(firstAdjustInterval);
+      setInterval(NowTime, 1000 * 60);
+    }
+
+    function NowTime() {
+      for (let i = 0; i < phoneTimes.length; ++i) {
+        var timeSpan = phoneTimes[i];
+        var date = new Date();
+        var hour = date.getHours();
+        var min = date.getMinutes();
+        timeSpan.innerHTML = check(hour) + ":" + check(min);
+      }
+    };
+
+    function check(val) {
+      if (val < 10) {
+        return ("0" + val);
+      }
+      return (val);
+    }
+
+    // chat quote
+    const chat_quote_obverser = new IntersectionObserver((entries, observer) => {
+      entries.filter((entry) => { return entry.isIntersecting }).sort((a, b) => a.intersectionRect.y !== b.intersectionRect.y ? a.intersectionRect.y - b.intersectionRect.y : a.intersectionRect.x - b.intersectionRect.x).forEach((entry, index) => {
+          observer.unobserve(entry.target);
+          setTimeout(() => {
+            entry.target.classList.add('quote-blink');
+            setTimeout(() => {
+              entry.target.classList.remove('quote-blink');
+            }, 1000);
+          }, Math.max(100, 16) * (index + 1));
+        });
+    });
+
+    var chatQuotes = document.querySelectorAll(".chat .talk .quote");
+    chatQuotes.forEach((quote) => {
+      quote.addEventListener('click', function () {
+        var chatCellDom = document.getElementById("quote-" + quote.getAttribute("quotedCellTag"));
+        if (chatCellDom) {
+          var chatDiv = chatCellDom.parentElement;
+          var mid = chatDiv.clientHeight / 2;
+          var offsetTop = chatCellDom.offsetTop;
+          if (offsetTop > mid - chatCellDom.clientHeight / 2) {
+            chatDiv.scrollTo({
+              top: chatCellDom.offsetTop - mid + chatCellDom.clientHeight / 2,
+              behavior: "smooth"
+            });
+          } else {
+            chatDiv.scrollTo({
+              top: 0,
+              behavior: "smooth"
+            });
+          }
+          chat_quote_obverser.observe(chatCellDom);
+        }
+      });
+    });
+  });
+</script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    ctx.search = {
+      path: `/search.json`,
+    }
+    utils.js('/js/search/local-search.js', { defer: true });
+  });
+</script><script>
+  window.FPConfig = {
+    delay: 0,
+    ignoreKeywords: [],
+    maxRPS: 5,
+    hoverDelay: 25
+  };
+</script>
+<script defer src="https://gcore.jsdelivr.net/npm/flying-pages@2/flying-pages.min.js"></script><script>
+  ctx.fancybox = {
+    selector: `.timenode p>img`,
+    css: `https://gcore.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css`,
+    js: `https://gcore.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js`
+  };
+  var selector = '[data-fancybox]:not(.error), .with-fancybox .atk-content img:not([atk-emoticon])';
+  if (ctx.fancybox.selector) {
+    selector += `, ${ctx.fancybox.selector}`
+  }
+  var needFancybox = document.querySelectorAll(selector).length !== 0;
+  if (!needFancybox) {
+    const memos = document.getElementsByClassName('ds-memos');
+    if (memos != undefined && memos.length > 0) {
+      needFancybox = true;
+    }
+    const fancybox = document.getElementsByClassName('with-fancybox');
+    if (fancybox != undefined && fancybox.length > 0) {
+      needFancybox = true;
+    }
+  }
+  if (needFancybox) {
+    utils.css(ctx.fancybox.css);
+    utils.js(ctx.fancybox.js, { defer: true }).then(function () {
+      Fancybox.bind(selector, {
+        hideScrollbar: false,
+        Thumbs: {
+          autoStart: false,
+        },
+        caption: (fancybox, slide) => {
+          return slide.triggerEl.alt || slide.triggerEl.dataset.caption || null
+        }
+      });
+    })
+  }
+</script>
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    const swiper_api = document.getElementById('swiper-api');
+    if (swiper_api != undefined) {
+      utils.css(`https://unpkg.com/swiper@10.3/swiper-bundle.min.css`);
+      utils.js(`https://unpkg.com/swiper@10.3/swiper-bundle.min.js`, { defer: true }).then(function () {
+        const effect = swiper_api.getAttribute('effect') || '';
+        var swiper = new Swiper('.swiper#swiper-api', {
+          slidesPerView: 'auto',
+          spaceBetween: 8,
+          centeredSlides: true,
+          effect: effect,
+          rewind: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      })
+    }
+  });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    window.codeElements = document.querySelectorAll('.code');
+    if (window.codeElements.length > 0) {
+      ctx.copycode = {
+        default_text: `Copy`,
+        success_text: `Copied`,
+        toast: `复制成功`,
+      };
+      utils.js('/js/plugins/copycode.js');
+    }
+  });
+</script>
+
+
+<!-- inject -->
+
+</div></body></html>
