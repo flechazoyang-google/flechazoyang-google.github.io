@@ -1,5 +1,5 @@
 
-<!DOCTYPE html><html lang="zh-CN">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light">
 
 <head>
   <meta charset="utf-8">
@@ -616,7 +616,7 @@
     utils.css('https://gcore.jsdelivr.net/npm/@waline/client@3.13.0/dist/waline-meta.css');
 
     const path = el.getAttribute('comment_id') ?? decodeURI(window.location.pathname);
-    const waline = init(Object.assign({"js":"https://gcore.jsdelivr.net/npm/@waline/client@3.13.0/dist/waline.js","css":"https://gcore.jsdelivr.net/npm/@waline/client@3.13.0/dist/waline.css","meta_css":"https://gcore.jsdelivr.net/npm/@waline/client@3.13.0/dist/waline-meta.css","serverURL":"https://comment.flechazo.icu/","commentCount":true,"pageview":false,"dark":false}, {
+    const waline = init(Object.assign({"js":"https://gcore.jsdelivr.net/npm/@waline/client@3.13.0/dist/waline.js","css":"https://gcore.jsdelivr.net/npm/@waline/client@3.13.0/dist/waline.css","meta_css":"https://gcore.jsdelivr.net/npm/@waline/client@3.13.0/dist/waline-meta.css","serverURL":"https://comment.flechazo.icu/","commentCount":true,"pageview":false}, {
       el: '#waline_container',
       path: path,
       
