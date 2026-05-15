@@ -27,8 +27,8 @@
 <meta property="og:site_name" content="妄司逸">
 <meta property="og:description" content="title: 隐私政策layout: pagemenu_id: about  隐私政策最后更新日期：2026年5月   感谢您访问我的个人博客。您的隐私对我来说非常重要。本隐私政策说明我在收集、使用和保护您的个人信息方面的做法。   信息收集当您访问本博客时，我可能会收集以下类型的信息：    评论时您主动提供的昵称、邮箱和网站地址   浏览页面时的访问日志（IP地址、浏览器类型、访问时间等）">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-05-15T16:07:58.453Z">
-<meta property="article:modified_time" content="2026-05-15T16:07:58.453Z">
+<meta property="article:published_time" content="2026-05-15T16:23:23.266Z">
+<meta property="article:modified_time" content="2026-05-15T16:23:23.266Z">
 <meta property="article:author" content="妄司逸">
 <meta property="article:tag" content="个人博客, 学习, 技术, 个人成长">
 <meta name="twitter:card" content="summary">
@@ -82,7 +82,7 @@
   <span class="sep"></span>
   <a class="cap breadcrumb" href="/privacy/"></a>
   </div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2026-05-15T16:07:58.453Z">2026-05-16</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2026-05-15T16:07:58.453Z">2026-05-16</time></span></div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2026-05-15T16:23:23.266Z">2026-05-16</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2026-05-15T16:23:23.266Z">2026-05-16</time></span></div></div></div>
     
   </div>
   </div><article class="md-text content"><hr>
@@ -109,7 +109,7 @@
 <li>不蒜子：提供页面访问统计</li>
 </ul>
 <h2 id="数据安全"><a href="#数据安全" class="headerlink" title="数据安全"></a>数据安全</h2><p>我采取合理的技术措施保护您的个人信息安全，但请注意没有任何互联网传输或存储方式是100%%安全的。  </p>
-<h2 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h2><p>如您对本隐私政策有任何疑问，请通过邮箱 <a href="mailto:&#x33;&#49;&#51;&#x34;&#x38;&#x32;&#x35;&#x34;&#x38;&#50;&#x40;&#113;&#113;&#46;&#99;&#x6f;&#109;">3134825482@qq.com</a> 联系我。 </p>
+<h2 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h2><p>如您对本隐私政策有任何疑问，请通过邮箱 <a href="mailto:&#51;&#x31;&#51;&#x34;&#x38;&#50;&#x35;&#52;&#x38;&#x32;&#64;&#113;&#113;&#46;&#x63;&#x6f;&#x6d;">3134825482@qq.com</a> 联系我。 </p>
 </article>
 
   <div class="related-wrap md-text" id="comments">
@@ -117,10 +117,12 @@
       <p>快来参与讨论吧~</p>
 
     </section>
-    <section class='body cmt-body waline'>
+    <section class='body cmt-body giscus'>
       
 
-<div id="waline_container" class="waline_thread"><svg class="loading" style="vertical-align:middle;fill:currentColor;overflow:hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg></div>
+<svg class="loading" style="vertical-align:middle;fill:currentColor;overflow:hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg>
+
+<div id="giscus" src="https://giscus.app/client.js" data-repo="xxx/xxx" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="zh-CN" crossorigin="anonymous"></div>
 
     </section>
   </div>
@@ -629,23 +631,25 @@
 <!-- optional -->
 
   <script type="module">
-  import { init } from 'https://gcore.jsdelivr.net/npm/@waline/client@3.13.0/dist/waline.js';
+  const el = document.querySelector('#comments #giscus');
+  util.viewportLazyload(el, load_discus, false);
 
-  const el = document.getElementById('waline_container');
-  util.viewportLazyload(el, load_waline, false);
-
-  function load_waline(){
+  function load_discus() {
     if (!el) return;
-
-    utils.css('https://gcore.jsdelivr.net/npm/@waline/client@3.13.0/dist/waline.css');
-    utils.css('https://gcore.jsdelivr.net/npm/@waline/client@3.13.0/dist/waline-meta.css');
-
-    const path = el.getAttribute('comment_id') ?? decodeURI(window.location.pathname);
-    const waline = init(Object.assign({"js":"https://gcore.jsdelivr.net/npm/@waline/client@3.13.0/dist/waline.js","css":"https://gcore.jsdelivr.net/npm/@waline/client@3.13.0/dist/waline.css","meta_css":"https://gcore.jsdelivr.net/npm/@waline/client@3.13.0/dist/waline-meta.css","serverURL":"https://comment.flechazo.icu/","commentCount":true,"pageview":false}, {
-      el: '#waline_container',
-      path: path,
-      
-    }));
+    try {
+        el.innerHTML = '';
+      } catch (error) {
+        console.error(error);
+      }
+      const script = document.createElement('script');
+      script.async = true;
+      for (const key of Object.keys(el.attributes)) {
+        const attr = el.attributes[key];
+        if (['class', 'id'].includes(attr.name) === false) {
+          script.setAttribute(attr.name, attr.value);
+        }
+      }
+      el.appendChild(script);
   }
 </script>
 
