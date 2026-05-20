@@ -107,14 +107,20 @@
 <p>这段描述还是比较容易理解的，感觉有点像 GitHub actions 自动化任务，就是 <strong>在特定事件发生时，自动执行预设的代码</strong>。</p>
 <p>那么在 agent 中钩子是怎么体现的呢？</p>
 <p>这里在 B 站上找到了一个视频，搬运自 YouTube：</p>
-<div class="tag-plugin grid"  style=""><div class="cell" style="">
-    <div class="tag-plugin video-player" style="max-width:100%;">  <video controls preload playsinline webkit-playsinline>  <source src="https://b23.tv/nlAaot9" type="video/mp4">Your browser does not support the video tag.  </video>  </div>  
+<div class="tag-plugin video-player" style="aspect-ratio:1.7777777777777777;max-width:100%;">
+    <iframe src="https://player.bilibili.com/player.html?bvid=BV1rAdTBfEEn&autoplay=false" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
+    </iframe>
     </div>
-    <div class="cell" style="">
-    <div class="tag-plugin video-player" style="max-width:;">  <video controls preload playsinline webkit-playsinline>  <source src="https://www.youtube.com/watch?v = IkaPHiMDazM 100%" type="video/mp4">Your browser does not support the video tag.  </video>  </div>  
-    </div>
-    </div>
+    
 
+<p> <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1rAdTBfEEn/?share_source=copy_web">【Claude Code 中的钩子（Hooks）】</a></p>
+<div class="tag-plugin video-player" style="aspect-ratio:1.7777777777777777;max-width:100%;">
+    <iframe style="border:none" src="https://www.youtube.com/embed/IkaPHiMDazM?rel=0&disablekb=1&playsinline=1&autoplay=0" picture-in-picture="true" allowfullscreen="true" >
+    </iframe>
+    </div>
+    
+
+<p><a target="_blank" rel="noopener" href="https://youtu.be/IkaPHiMDazM?si=0wdwEAZkIggAeX2A">【Claude Code 中的钩子（Hooks）】</a></p>
 <p>视频中详细介绍了 hooks 和 Claude code 中 hooks 的使用场景和方式，</p>
 <h3 id="视频内容总结"><a href="#视频内容总结" class="headerlink" title="视频内容总结"></a>视频内容总结</h3><h4 id="什么是-Hooks？"><a href="#什么是-Hooks？" class="headerlink" title="什么是 Hooks？"></a>什么是 Hooks？</h4><ul>
 <li><strong>确定性执行</strong>：Hooks 与通过 <code>claude.md</code> 文件给出的提示词（Prompts）不同。提示词并不完美，有时可能被忽略；而 Hooks 是 <strong>决定性的（Deterministic）</strong>，只要触发条件满足，它们就一定会百分之百执行，绝无例外 [<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=IkaPHiMDazM&t=20">00:20</a>]。</li>
