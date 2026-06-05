@@ -827,7 +827,58 @@ document.addEventListener('DOMContentLoaded', function() {
       document.getElementById('runtime-secs').textContent = Math.floor((diff % 60000) / 1000);
     }
     updateRuntime();
-    setInterval(updateRuntime, 1000);
+
+    // ---- 时间进度条 ----
+    function isLeapYear(y) {
+      return (y % 4 === 0 && y % 100 !== 0) || (y % 400 === 0);
+    }
+    function daysInMonth(y, m) {
+      return new Date(y, m + 1, 0).getDate();
+    }
+    function updateTimeProgress() {
+      var now = new Date();
+      var y = now.getFullYear();
+      var m = now.getMonth();
+      var d = now.getDate();
+      var h = now.getHours();
+      var min = now.getMinutes();
+      var sec = now.getSeconds();
+
+      // 年度进度
+      var yearStart = new Date(y, 0, 1);
+      var yearEnd = new Date(y + 1, 0, 1);
+      var yearTotal = yearEnd - yearStart;
+      var yearElapsed = now - yearStart;
+      var yearPct = (yearElapsed / yearTotal * 100);
+      var yearDays = isLeapYear(y) ? 366 : 365;
+      var yearDayNum = Math.floor(yearElapsed / 86400000) + 1;
+      if (yearDayNum > yearDays) yearDayNum = yearDays;
+      document.getElementById('tp-year-fill').style.width = yearPct.toFixed(2) + '%';
+      document.getElementById('tp-year-pct').textContent = yearPct.toFixed(1) + '%';
+      document.getElementById('tp-year-day').textContent = '第 ' + yearDayNum + ' / ' + yearDays + ' 天';
+      document.getElementById('tp-year-left').textContent = '剩余 ' + (yearDays - yearDayNum) + ' 天';
+
+      // 月度进度
+      var monthDays = daysInMonth(y, m);
+      var monthPct = ((d - 1 + (h * 3600 + min * 60 + sec) / 86400) / monthDays * 100);
+      document.getElementById('tp-month-fill').style.width = monthPct.toFixed(2) + '%';
+      document.getElementById('tp-month-pct').textContent = monthPct.toFixed(1) + '%';
+      document.getElementById('tp-month-day').textContent = '第 ' + d + ' / ' + monthDays + ' 天';
+      document.getElementById('tp-month-left').textContent = '剩余 ' + (monthDays - d) + ' 天';
+
+      // 当日进度
+      var dayPct = ((h * 3600 + min * 60 + sec) / 86400 * 100);
+      document.getElementById('tp-day-fill').style.width = dayPct.toFixed(2) + '%';
+      document.getElementById('tp-day-pct').textContent = dayPct.toFixed(1) + '%';
+      document.getElementById('tp-day-hour').textContent = '已过 ' + h + ' 小时';
+      document.getElementById('tp-day-left').textContent = '剩余 ' + (23 - h) + ' 小时';
+    }
+    updateTimeProgress();
+
+    setInterval(function() {
+      updateRuntime();
+      updateTimeProgress();
+    }, 1000);
   }
 
 });

@@ -27,8 +27,8 @@
 <meta property="og:site_name" content="妄司逸">
 <meta property="og:description" content="栈 (Stack)只允许在一端进行插入和删除操作的线性表，后进先出 (LIFO)。  栈顶 (Top)：允许插入和删除的一端 栈底 (Bottom)：固定端  基本操作   操作 描述    push(x) 元素 x 入栈   pop() 栈顶元素出栈   top() 读取栈顶元素   empty() 判断栈是否为空   应用场景 函数调用栈 表达式求值（中缀转后缀） 括号匹配 递归转非递归  队">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-06-04T16:05:33.337Z">
-<meta property="article:modified_time" content="2026-06-04T16:05:33.337Z">
+<meta property="article:published_time" content="2026-06-05T06:57:46.338Z">
+<meta property="article:modified_time" content="2026-06-05T06:57:46.338Z">
 <meta property="article:author" content="妄司逸">
 <meta property="article:tag" content="个人博客, 学习, 技术, 个人成长">
 <meta name="twitter:card" content="summary">
@@ -86,7 +86,7 @@
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
 <span class="sep"></span><a class="cap breadcrumb" id="menu" href="/wiki/">文档</a><span class="sep"></span><a class="cap breadcrumb" id="proj" href="/wiki/datastruct/overview/">数据结构</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">更新于：<time datetime="2026-06-04T16:05:33.337Z">2026-06-05</time></span></div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">更新于：<time datetime="2026-06-05T06:57:46.338Z">2026-06-05</time></span></div></div></div>
     
     <div class="bottom only-title">
       
@@ -938,7 +938,58 @@ document.addEventListener('DOMContentLoaded', function() {
       document.getElementById('runtime-secs').textContent = Math.floor((diff % 60000) / 1000);
     }
     updateRuntime();
-    setInterval(updateRuntime, 1000);
+
+    // ---- 时间进度条 ----
+    function isLeapYear(y) {
+      return (y % 4 === 0 && y % 100 !== 0) || (y % 400 === 0);
+    }
+    function daysInMonth(y, m) {
+      return new Date(y, m + 1, 0).getDate();
+    }
+    function updateTimeProgress() {
+      var now = new Date();
+      var y = now.getFullYear();
+      var m = now.getMonth();
+      var d = now.getDate();
+      var h = now.getHours();
+      var min = now.getMinutes();
+      var sec = now.getSeconds();
+
+      // 年度进度
+      var yearStart = new Date(y, 0, 1);
+      var yearEnd = new Date(y + 1, 0, 1);
+      var yearTotal = yearEnd - yearStart;
+      var yearElapsed = now - yearStart;
+      var yearPct = (yearElapsed / yearTotal * 100);
+      var yearDays = isLeapYear(y) ? 366 : 365;
+      var yearDayNum = Math.floor(yearElapsed / 86400000) + 1;
+      if (yearDayNum > yearDays) yearDayNum = yearDays;
+      document.getElementById('tp-year-fill').style.width = yearPct.toFixed(2) + '%';
+      document.getElementById('tp-year-pct').textContent = yearPct.toFixed(1) + '%';
+      document.getElementById('tp-year-day').textContent = '第 ' + yearDayNum + ' / ' + yearDays + ' 天';
+      document.getElementById('tp-year-left').textContent = '剩余 ' + (yearDays - yearDayNum) + ' 天';
+
+      // 月度进度
+      var monthDays = daysInMonth(y, m);
+      var monthPct = ((d - 1 + (h * 3600 + min * 60 + sec) / 86400) / monthDays * 100);
+      document.getElementById('tp-month-fill').style.width = monthPct.toFixed(2) + '%';
+      document.getElementById('tp-month-pct').textContent = monthPct.toFixed(1) + '%';
+      document.getElementById('tp-month-day').textContent = '第 ' + d + ' / ' + monthDays + ' 天';
+      document.getElementById('tp-month-left').textContent = '剩余 ' + (monthDays - d) + ' 天';
+
+      // 当日进度
+      var dayPct = ((h * 3600 + min * 60 + sec) / 86400 * 100);
+      document.getElementById('tp-day-fill').style.width = dayPct.toFixed(2) + '%';
+      document.getElementById('tp-day-pct').textContent = dayPct.toFixed(1) + '%';
+      document.getElementById('tp-day-hour').textContent = '已过 ' + h + ' 小时';
+      document.getElementById('tp-day-left').textContent = '剩余 ' + (23 - h) + ' 小时';
+    }
+    updateTimeProgress();
+
+    setInterval(function() {
+      updateRuntime();
+      updateTimeProgress();
+    }, 1000);
   }
 
 });

@@ -375,7 +375,7 @@
 <p>示例：</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs markdown">访问 <span class="language-xml">&lt;https://www.example.com&gt;</span> 了解更多。<br>联系我们：<span class="language-xml">&lt;support@example.com&gt;</span><br></code></pre></td></tr></table></figure>
 
-<p>效果：<br>访问 <a target="_blank" rel="noopener" href="https://www.example.com/">https://www.example.com</a> 了解更多。<br>联系我们：<a href="mailto:&#115;&#117;&#112;&#x70;&#x6f;&#114;&#116;&#x40;&#x65;&#120;&#x61;&#109;&#x70;&#108;&#101;&#46;&#99;&#x6f;&#109;">support@example.com</a></p>
+<p>效果：<br>访问 <a target="_blank" rel="noopener" href="https://www.example.com/">https://www.example.com</a> 了解更多。<br>联系我们：<a href="mailto:&#115;&#x75;&#x70;&#112;&#x6f;&#114;&#116;&#x40;&#x65;&#x78;&#x61;&#109;&#x70;&#108;&#x65;&#x2e;&#99;&#x6f;&#109;">support@example.com</a></p>
 <h5 id="用链接引用图片"><a href="#用链接引用图片" class="headerlink" title="用链接引用图片"></a>用链接引用图片</h5><p>将图片语法嵌套在链接语法中，即可实现”点击图片跳转链接”的效果（详见图片章节）。</p>
 <p><code>[![alt](图片地址)](目标链接)</code></p>
 <hr>
@@ -1674,7 +1674,58 @@ document.addEventListener('DOMContentLoaded', function() {
       document.getElementById('runtime-secs').textContent = Math.floor((diff % 60000) / 1000);
     }
     updateRuntime();
-    setInterval(updateRuntime, 1000);
+
+    // ---- 时间进度条 ----
+    function isLeapYear(y) {
+      return (y % 4 === 0 && y % 100 !== 0) || (y % 400 === 0);
+    }
+    function daysInMonth(y, m) {
+      return new Date(y, m + 1, 0).getDate();
+    }
+    function updateTimeProgress() {
+      var now = new Date();
+      var y = now.getFullYear();
+      var m = now.getMonth();
+      var d = now.getDate();
+      var h = now.getHours();
+      var min = now.getMinutes();
+      var sec = now.getSeconds();
+
+      // 年度进度
+      var yearStart = new Date(y, 0, 1);
+      var yearEnd = new Date(y + 1, 0, 1);
+      var yearTotal = yearEnd - yearStart;
+      var yearElapsed = now - yearStart;
+      var yearPct = (yearElapsed / yearTotal * 100);
+      var yearDays = isLeapYear(y) ? 366 : 365;
+      var yearDayNum = Math.floor(yearElapsed / 86400000) + 1;
+      if (yearDayNum > yearDays) yearDayNum = yearDays;
+      document.getElementById('tp-year-fill').style.width = yearPct.toFixed(2) + '%';
+      document.getElementById('tp-year-pct').textContent = yearPct.toFixed(1) + '%';
+      document.getElementById('tp-year-day').textContent = '第 ' + yearDayNum + ' / ' + yearDays + ' 天';
+      document.getElementById('tp-year-left').textContent = '剩余 ' + (yearDays - yearDayNum) + ' 天';
+
+      // 月度进度
+      var monthDays = daysInMonth(y, m);
+      var monthPct = ((d - 1 + (h * 3600 + min * 60 + sec) / 86400) / monthDays * 100);
+      document.getElementById('tp-month-fill').style.width = monthPct.toFixed(2) + '%';
+      document.getElementById('tp-month-pct').textContent = monthPct.toFixed(1) + '%';
+      document.getElementById('tp-month-day').textContent = '第 ' + d + ' / ' + monthDays + ' 天';
+      document.getElementById('tp-month-left').textContent = '剩余 ' + (monthDays - d) + ' 天';
+
+      // 当日进度
+      var dayPct = ((h * 3600 + min * 60 + sec) / 86400 * 100);
+      document.getElementById('tp-day-fill').style.width = dayPct.toFixed(2) + '%';
+      document.getElementById('tp-day-pct').textContent = dayPct.toFixed(1) + '%';
+      document.getElementById('tp-day-hour').textContent = '已过 ' + h + ' 小时';
+      document.getElementById('tp-day-left').textContent = '剩余 ' + (23 - h) + ' 小时';
+    }
+    updateTimeProgress();
+
+    setInterval(function() {
+      updateRuntime();
+      updateTimeProgress();
+    }, 1000);
   }
 
 });
