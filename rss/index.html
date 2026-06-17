@@ -27,8 +27,8 @@
 <meta property="og:site_name" content="妄司逸">
 <meta property="og:description" content=".bread-nav, .article.banner.top .top .post-meta { display: none !important; } .rss-back {   display: inline-flex;   align-items: center;   gap: 6px;   margin-bottom: 16px;   color: var(--text-p3);">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-06-17T02:55:35.676Z">
-<meta property="article:modified_time" content="2026-06-17T02:55:35.676Z">
+<meta property="article:published_time" content="2026-06-17T03:00:51.193Z">
+<meta property="article:modified_time" content="2026-06-17T03:00:51.193Z">
 <meta property="article:author" content="妄司逸">
 <meta property="article:tag" content="个人博客, 学习, 技术, 个人成长">
 <meta name="twitter:card" content="summary">
@@ -82,7 +82,7 @@
   <span class="sep"></span>
   <a class="cap breadcrumb" href="/rss/">RSS 订阅</a>
   </div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2026-06-17T02:55:35.676Z">2026-06-17</time></span><span class="sep"></span><span class="text created">👀 <span id="vercount_value_page_pv">--</span> 次阅读</span></div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2026-06-17T03:00:51.193Z">2026-06-17</time></span><span class="sep"></span><span class="text created">👀 <span id="vercount_value_page_pv">--</span> 次阅读</span></div></div></div>
     
   </div>
   </div><article class="md-text content"><style>
@@ -819,9 +819,9 @@ if (document.getElementById('site-runtime')) {
 
   function load_twikoo() {
     if (!el) return;
-    utils.js('https://gcore.jsdelivr.net/npm/twikoo@1.7.9/dist/twikoo.all.min.js', {defer: true}).then(function () {
+    utils.js('https://cdn.jsdelivr.net/npm/twikoo@1.7.9/dist/twikoo.all.min.js', {defer: true}).then(function () {
       const path = el.getAttribute('comment_id') ?? decodeURI(window.location.pathname);
-      twikoo.init(Object.assign({"js":"https://gcore.jsdelivr.net/npm/twikoo@1.7.9/dist/twikoo.all.min.js","envId":"https://comments.flechazo.icu/"}, {
+      twikoo.init(Object.assign({"js":"https://cdn.jsdelivr.net/npm/twikoo@1.7.9/dist/twikoo.all.min.js","envId":"https://comments.flechazo.icu/"}, {
         el: '#twikoo_container',
         path: path,
       }));

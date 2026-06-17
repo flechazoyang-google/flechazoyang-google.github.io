@@ -763,9 +763,9 @@ if (document.getElementById('site-runtime')) {
 
   function load_twikoo() {
     if (!el) return;
-    utils.js('https://gcore.jsdelivr.net/npm/twikoo@1.7.9/dist/twikoo.all.min.js', {defer: true}).then(function () {
+    utils.js('https://cdn.jsdelivr.net/npm/twikoo@1.7.9/dist/twikoo.all.min.js', {defer: true}).then(function () {
       const path = el.getAttribute('comment_id') ?? decodeURI(window.location.pathname);
-      twikoo.init(Object.assign({"js":"https://gcore.jsdelivr.net/npm/twikoo@1.7.9/dist/twikoo.all.min.js","envId":"https://comments.flechazo.icu/"}, {
+      twikoo.init(Object.assign({"js":"https://cdn.jsdelivr.net/npm/twikoo@1.7.9/dist/twikoo.all.min.js","envId":"https://comments.flechazo.icu/"}, {
         el: '#twikoo_container',
         path: path,
       }));

@@ -27,8 +27,8 @@
 <meta property="og:site_name" content="妄司逸">
 <meta property="og:description" content="基本概念图 $G$ 由顶点集 $V$ 和边集 $E$ 组成，记为 $G &#x3D; (V, E)$。  有向图 &#x2F; 无向图：边是否有方向 完全图：任意两点之间都有边（无向完全图有 $\frac{n(n-1)}{2}$ 条边） 连通分量：无向图的极大连通子图 强连通分量：有向图中任意两点互相可达的极大子图  存储结构邻接矩阵用一个 $n \times n$ 的二维数组存储边信息： 123">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-06-17T02:55:35.677Z">
-<meta property="article:modified_time" content="2026-06-17T02:55:35.677Z">
+<meta property="article:published_time" content="2026-06-17T03:00:51.195Z">
+<meta property="article:modified_time" content="2026-06-17T03:00:51.195Z">
 <meta property="article:author" content="妄司逸">
 <meta property="article:tag" content="个人博客, 学习, 技术, 个人成长">
 <meta name="twitter:card" content="summary">
@@ -86,7 +86,7 @@
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
 <span class="sep"></span><a class="cap breadcrumb" id="menu" href="/wiki/">文档</a><span class="sep"></span><a class="cap breadcrumb" id="proj" href="/wiki/datastruct/overview/">数据结构</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">更新于：<time datetime="2026-06-17T02:55:35.677Z">2026-06-17</time></span></div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">更新于：<time datetime="2026-06-17T03:00:51.195Z">2026-06-17</time></span></div></div></div>
     
     <div class="bottom only-title">
       
@@ -670,9 +670,9 @@ if (document.getElementById('site-runtime')) {
 
   function load_twikoo() {
     if (!el) return;
-    utils.js('https://gcore.jsdelivr.net/npm/twikoo@1.7.9/dist/twikoo.all.min.js', {defer: true}).then(function () {
+    utils.js('https://cdn.jsdelivr.net/npm/twikoo@1.7.9/dist/twikoo.all.min.js', {defer: true}).then(function () {
       const path = el.getAttribute('comment_id') ?? decodeURI(window.location.pathname);
-      twikoo.init(Object.assign({"js":"https://gcore.jsdelivr.net/npm/twikoo@1.7.9/dist/twikoo.all.min.js","envId":"https://comments.flechazo.icu/"}, {
+      twikoo.init(Object.assign({"js":"https://cdn.jsdelivr.net/npm/twikoo@1.7.9/dist/twikoo.all.min.js","envId":"https://comments.flechazo.icu/"}, {
         el: '#twikoo_container',
         path: path,
       }));
